@@ -1,25 +1,29 @@
 import { Router } from "express";
 import { PrismaClient } from "@prisma/client";
+import todasAsMaterias from "./todasAsMaterias";
 
 const routes = Router()
 const prisma = new PrismaClient()
 
-routes.get('/materias', async (req, res) => {
-
+// rota para listar todas as materias
+routes.get('/listar-todas-as-materias', async (req, res) => {
   const materias = await prisma.materia.findMany()
-
   return res.json(materias)
 })
 
-routes.post('/materia', async (req , res) => {
-  const data = req.body
-  console.log(data)
+//rota para cadastrar várias materias
+routes.post('/cadastrar-varias-materias', async (req, res) => {
+  const allMat = todasAsMaterias
 
-  // await prisma.materia.create({
-  //   data: { codigo: 'adsf', nome: 'Elsa Prisma'},
-  // })
+  if(!allMat.length) {
+    return res.json({message: "Não há matérias para serem cadastradas!"})
+  }
 
-  return res.json({message: "Cadastro realizado"})
+  await prisma.materia.createMany({
+    data: todasAsMaterias,
+  })
+
+  return res.json({message: 'Cadastro de matérias realizado com sucesso!'})
 })
 
 export default routes;
