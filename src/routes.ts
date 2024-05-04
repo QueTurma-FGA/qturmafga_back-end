@@ -11,15 +11,13 @@ routes.get('/materias', async (req, res) => {
   return res.json(materias)
 })
 
-routes.post('/materia', async (req, res) => {
+routes.post('/materia', async (req , res) => {
   const data = req.body
   console.log(data)
-//  await prisma.materia.create({
-//     data: {
-//       codigo: 'adsf',
-//       nome: 'Elsa Prisma',
-//     },
-//   })
+
+  // await prisma.materia.create({
+  //   data: { codigo: 'adsf', nome: 'Elsa Prisma'},
+  // })
 
   return res.json({message: "Cadastro realizado"})
 })
