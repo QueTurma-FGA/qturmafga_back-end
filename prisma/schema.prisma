@@ -14,3 +14,11 @@ model Materia {
   codigo String @id
   nome   String
 }
+
+model Professor {
+  email String @id
+  nome   String
+  bio String
+  fto String
+}
+
