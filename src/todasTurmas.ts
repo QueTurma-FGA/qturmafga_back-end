@@ -1,4 +1,4 @@
-const todasAsMaterias = [
+const todasTurmas = [
     {codigo: "FGA0003", email: "bruno.ribas@unb.br , filomeno@unb.br"},
     {codigo: "FGA0006", email: "yehoshua@unb.br"},
     {codigo: "FGA0008", email: "rtoledo@unb.br"},
@@ -153,5 +153,5 @@ const todasAsMaterias = [
     {codigo: "IFD0173", email: "tiago.brito@unb.br, wytler.cordeiro@unb.br, morgado@unb.br,ronniamorim@unb.br, leandrocardoso@unb.br"},
   ]
   
-  export default todasAsMaterias
+  export default todasTurmas
   
