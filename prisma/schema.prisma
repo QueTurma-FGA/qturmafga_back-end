@@ -13,12 +13,29 @@ datasource db {
 model Materia {
   codigo String @id
   nome   String
+
+  professors Turma[]
+
+  // @@map("materias")
 }
 
 model Professor {
   email String @id
-  nome   String
-  bio String
-  fto String
+  nome  String
+  bio   String
+  fto   String
+
+  materias Turma[]
+
+  // @@map("professores")
 }
 
+model Turma {
+  materia     Materia   @relation(fields: [materiaId], references: [codigo])
+  materiaId   String
+  professor   Professor @relation(fields: [professorId], references: [email])
+  professorId String
+
+  @@id([materiaId, professorId])
+  @@map("turmas")
+}

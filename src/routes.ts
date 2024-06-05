@@ -6,14 +6,12 @@ import todosOsProfessores from "./todosOsProfessores";
 const routes = Router()
 const prisma = new PrismaClient()
 
-// rota para listar todas as materias
-routes.get('/listar-todas-as-materias', async (req, res) => {
+routes.get('/list-all-disciplines', async (req, res) => {
   const materias = await prisma.materia.findMany()
   return res.json(materias)
 })
 
-//rota para cadastrar várias materias
-routes.post('/cadastrar-varias-materias', async (req, res) => {
+routes.post('/register-many-disciplines', async (req, res) => {
   const allMat = todasAsMaterias
 
   if(!allMat.length) {
@@ -27,16 +25,12 @@ routes.post('/cadastrar-varias-materias', async (req, res) => {
   return res.json({message: 'Cadastro de matérias realizado com sucesso!'})
 })
 
-
-
-// rota para listar todos os professores 
-routes.get('/listar-todos-professores', async (req, res) => {
+routes.get('/list-all-professors', async (req, res) => {
   const professores = await prisma.professor.findMany() 
   return res.json(professores)
 })
 
-//rota para cadastrar vários professores
-routes.post('/cadastrar-varios-professores', async (req, res) => {
+routes.post('/register-many-professors', async (req, res) => {
   const allProfessores = todosOsProfessores 
 
   if(!allProfessores.length) {
@@ -48,6 +42,40 @@ routes.post('/cadastrar-varios-professores', async (req, res) => {
   })
 
   return res.json({message: 'Cadastro de professores realizado com sucesso!'})
+})
+
+routes.get('/list-professors-of-discipline/:codigo', async (req, res) => {
+  const { codigo } = req.params
+
+  const professorsList = await prisma.materia.findUnique({
+    where: { codigo },
+    include: {
+      professors: {
+        include: {
+          professor: true
+        }
+      }
+    }
+  })
+
+  return res.json(professorsList)
+})
+
+routes.get('/list-disciplines-of-professor/:email', async (req, res) => {
+  const { email } = req.params
+
+  const disciplinesList = await prisma.professor.findUnique({
+    where: { email },
+    include: {
+      materias: {
+        include: {
+          materia: true
+        }
+      }
+    }
+  })
+
+  return res.json(disciplinesList)
 })
 
 export default routes;
