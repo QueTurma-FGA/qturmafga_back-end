@@ -36,6 +36,22 @@ model Turma {
   professor   Professor @relation(fields: [professorId], references: [email])
   professorId String
 
+  Avaliacao Avaliacao[]
+
   @@id([materiaId, professorId])
   @@map("turmas")
+}
+
+model Avaliacao {
+  id                   Int    @id @default(autoincrement())
+  turma                Turma  @relation(fields: [professorId, materiaId], references: [professorId, materiaId])
+  materiaId            String
+  professorId          String
+  didatica             Int
+  metodologia          Int
+  coerenciaDeAvaliacao Int
+  disponibilidade      Int
+  materiaisDeApoio     Int
+
+  @@map("avaliacoes")
 }
