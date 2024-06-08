@@ -1,382 +1,934 @@
 const todosOsProfessores = [
+  {
+      "email": "adson@unb.br",
+      "nome": "Adson Ferreira da Rocha",
+      "bio": "Possui graduação em Engenharia Elétrica pela Universidade de Brasília (1988), mestrado em Engenharia Elétrica pela Universidade Estadual de Campinas (1991) e doutorado em Engenharia Biomédica pela University Of Texas At Austin (1997). Realizou estágio pós-doutoral no Politecnico di Torino (2005). Atualmente é Professor Associado da Universidade de Brasília, assessor ad hoc do CNPq, da CAPES e das Fundações de Amparo à Pesquisa do DF, de São Paulo, do Rio de Janeiro, de Minas Gerais, de Mato Grosso, do Rio Grande do Sul, do Espírito Santo e de Pernambuco. Participa da Comissão para avaliação dos programas de pós-graduação das Engenharias 4, da CAPES, desde o ano de 2010. É revisor das revistas Physics in Medicine and Biology, Physiological Measurement, Medical Engineering & Physics, Biomedical Engineering Online, IEEE América Latina e Revista Brasileira de Engenharia Biomédica. Foi presidente da seção Brasília do IEEE de abril de 2005 a abril de 2007 e vice-presidente no biênio anterior. Foi vice-presidente da Sociedade Brasileira de Engenharia Biomédica nos biênios de 2006 a 2008 e de 2008 a 2010. Foi sub-chefe e coordenador de pós-graduação do Departamento de Engenharia Elétrica da UnB. Foi o Presidente da Comissão Científica do XXI Congresso Brasileiro de Engenharia Biomédica. Foi co-chair do tema Signal Processing and Physiological System Modeling, do 32nd Annual International Conference of the IEEE Engineering in Medicine and Biology Society e coordenador de tema em vários congressos científicos nacionais. Tem experiência na área de Engenharia Biomédica, atuando principalmente em processamento de sinais biomédicos e instrumentacao biomédica. Tem experiência na área de processamento de sinais eletrocardiográficos e eletromiográficos, e em aplicações que envolvem fenômenos de transferência de calor. Publicou 20 artigos em 11 diferentes periódicos científicos, 154 artigos completos e 11 artigos resumidos em congressos nacionais e internacionais, 4 capítulos de livro internacional e 2 capítulos de livro nacional. Orientou 5 teses de doutorado, co-orientou 1 tese de doutorado, orientou 13 dissertações de mestrado, 18 projetos de iniciação científica e 59 projetos de final de curso. Foi conselheiro de diversos Conselhos e Câmaras superiores da Universidade de Brasília (CPP, CEPE, CAD e CONSUNI). Coordenou o grupo que iniciou o processo de criação da Faculdade UnB Gama, um novo campus avançado da Universidade de Brasília, e participa da equipe de construção do Campus desde então. Integrou a equipe que propôs o curso de Engenharia de Computação na Universidade de Brasília. Coordenou, junto com a Professora Lourdes Mattos Brasil, a equipe que propôs a criação do curso se mestrado em Engenharia Biomédica na Faculdade UnB Gama. De agosto de 2008 a setembro de 2010 foi o Coordenador Acadêmico da Faculdade UnB Gama.",
+      "fto" : "https://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4786231E1",
+    },
     {
-        "email": "adson@unb.br",
-        "nome": "Adson Ferreira da Rocha",
-        "bio": "Possui graduação em Engenharia Elétrica pela Universidade de Brasília (1988), mestrado em Engenharia Elétrica pela Universidade Estadual de Campinas (1991) e doutorado em Engenharia Biomédica pela University Of Texas At Austin (1997). Realizou estágio pós-doutoral no Politecnico di Torino (2005). Atualmente é Professor Associado da Universidade de Brasília, assessor ad hoc do CNPq, da CAPES e das Fundações de Amparo à Pesquisa do DF, de São Paulo, do Rio de Janeiro, de Minas Gerais, de Mato Grosso, do Rio Grande do Sul, do Espírito Santo e de Pernambuco. Participa da Comissão para avaliação dos programas de pós-graduação das Engenharias 4, da CAPES, desde o ano de 2010. É revisor das revistas Physics in Medicine and Biology, Physiological Measurement, Medical Engineering & Physics, Biomedical Engineering Online, IEEE América Latina e Revista Brasileira de Engenharia Biomédica. Foi presidente da seção Brasília do IEEE de abril de 2005 a abril de 2007 e vice-presidente no biênio anterior. Foi vice-presidente da Sociedade Brasileira de Engenharia Biomédica nos biênios de 2006 a 2008 e de 2008 a 2010. Foi sub-chefe e coordenador de pós-graduação do Departamento de Engenharia Elétrica da UnB. Foi o Presidente da Comissão Científica do XXI Congresso Brasileiro de Engenharia Biomédica. Foi co-chair do tema Signal Processing and Physiological System Modeling, do 32nd Annual International Conference of the IEEE Engineering in Medicine and Biology Society e coordenador de tema em vários congressos científicos nacionais. Tem experiência na área de Engenharia Biomédica, atuando principalmente em processamento de sinais biomédicos e instrumentacao biomédica. Tem experiência na área de processamento de sinais eletrocardiográficos e eletromiográficos, e em aplicações que envolvem fenômenos de transferência de calor. Publicou 20 artigos em 11 diferentes periódicos científicos, 154 artigos completos e 11 artigos resumidos em congressos nacionais e internacionais, 4 capítulos de livro internacional e 2 capítulos de livro nacional. Orientou 5 teses de doutorado, co-orientou 1 tese de doutorado, orientou 13 dissertações de mestrado, 18 projetos de iniciação científica e 59 projetos de final de curso. Foi conselheiro de diversos Conselhos e Câmaras superiores da Universidade de Brasília (CPP, CEPE, CAD e CONSUNI). Coordenou o grupo que iniciou o processo de criação da Faculdade UnB Gama, um novo campus avançado da Universidade de Brasília, e participa da equipe de construção do Campus desde então. Integrou a equipe que propôs o curso de Engenharia de Computação na Universidade de Brasília. Coordenou, junto com a Professora Lourdes Mattos Brasil, a equipe que propôs a criação do curso se mestrado em Engenharia Biomédica na Faculdade UnB Gama. De agosto de 2008 a setembro de 2010 foi o Coordenador Acadêmico da Faculdade UnB Gama.",
-        "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png"
-      },
-      {
-        "email": "abso@unb.br",
-        "nome": "Alessandro Borges Sousa Oliveira",
-        "bio": "Possui graduação em Engenharia Mecânica pela Universidade de Brasília (1994), mestrado em Engenharia Mecânica pela Universidade de Brasília (1997) e doutorado em Ecole Doctorale - Ecole Nationale Supérieure D'arts Et Métiers (2004). É professor adjunto da Universidade de Brasília. Tem experiência na área de Engenharia Mecânica, com ênfase em Calibração Dinâmica, atuando principalmente nos seguintes temas: calibração dinâmica, motores de combustão interna, metrologia, aquisição de sinais e tubo de choque, vibrações, projetos de sistemas mecânicos, CAD, Elementos finitos, Manutenção de Máquinas. Desde 1997 é coordenador do Projeto Baja SAE da UnB . Atualmente é Diretor do Campus da UnB no Gama, onde são ministrados os cursos de Engenharia Aeroespacial,Engenharia Automotiva, Engenharia de Energia, Engenharia Eletrônica e Engenharia de software.",
-        "fto" : "https://arquivos.unb.br/arquivos/2024150224ff243068307f3c4b15a8090/abso_2024.jpg"
-      },
-      {
-        "email": "andre.lanna@gmail.com",
-        "nome": "André Luiz Peron Martins Lanna",
-        "bio": "Possui graduação em Ciência da Computação pela Pontifícia Universidade Católica de Minas Gerais (2006) e mestrado em Engenharia Elétrica pela Pontifícia Universidade Católica de Minas Gerais (2009). Atualmente é professor assistente e aluno de doutorado da Universidade de Brasília. Tem experiência na área de Ciência da Computação, com ênfase em Engenharia de Software, atuando principalmente nos seguintes temas: reuso de softrware, linhas de produto de software, qualidade de software e processo de software.",
-        "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png"
-      },
-      {
-        "email": "andreiaacosta@unb.br",
-        "nome": "Andréia Alves Costa",
-        "bio": "Graduada em Química pela Universidade de Brasília (Bacharel em 2003 e Licenciada em 2006), e Mestre em Química pela mesma instituição (2006). Concluiu o doutorado em Química pela Universidade de Brasília (2011), participando em um projeto de doutorado Sandwiche (2009-2010) na University of Central Florida (USA). Experiência na área de Química Inorgânica com ênfase em Catálise, atuando principalmente na aplicação de catalisadores suportados em reações de oxidação, reações de esterificação para produção de biodiesel e reações de adsorção envolvendo hidrocarbonetos policíclicos aromáticos. Atualmente, trabalha como professora na Faculdade UnB-Gama (FGA) na área de Engenharia de Energia com ênfase em atividades envolvendo a área de Processamento de Petróleo e Gás.",
-        "fto" : "https://arquivos.unb.br/arquivos/2020097188d3e82049490ebf714c01af2/DSC_0794_4.JPG"
-      },
-      {
-        "email": "andrianov@unb.br",
-        "nome": "Artem Andrianov",
-        "bio": "Formado pela Universidade Nacional de Dnipropetrovsk (Ucrânia) com diploma de Mestrado em Ferramenta de Máquinas e Sistemas (2002). Ph.D. em Ciência dos Materiais (de gestão dos resíduos radioactivos e da radiação) na mesma instituição (2008). Leccionou as disciplinas de tecnologia aeroespacial como professor associado da Universidade Nacional de Dnipropetrovsk e estudou problemas de conversão de tecnologia aeroespacial para a gestão dos resíduos radioactivos como o principal especialista do Centro Aeroespacial da Educação Nacional da Juventude (Ucrânia). Possui experiência no desenvolvimento de materiais compósitos para blindagem de sistemas eletrônicos de satélites contra radiação espacial ionizante. Atualmente é professor da Universidade de Brasília (Campus Gama) no curso de Engenharia Aeroespacial, ministrando disciplinas e desenvolvendo pesquisas nas áreas de Mecânica de Estruturas Aeroespaciais e Projeto de Sistemas Aeroespaciais. ",
-        "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png"
-      },
-      {
-        "email": "bertoldi@unb.br ",
-        "nome": "Prof.Artur Elias de Morais Bertoldi",
-        "bio": "Possui graduação em Física pela Universidade Federal de São Carlos (2004) e mestrado em Ciências Mecânicas pela Universidade de Brasília (2007). Atualmente é professor Assistente da Universidade de Brasília. Tem experiência na área de Engenharia Aeroespacial, com ênfase em propulsão de foguetes, atuando principalmente nos seguintes temas: Sistemas Propulsivos Híbridos, combustíveis híbridos a base de hidrocarbonetos de cadeia longa, instabilidade de combustão em motores de foguete a propelente híbrido.",
-        "fto" : "https://arquivos.unb.br/arquivos/2020177047ab3c20459134b454fe1dfd7/artur.png"
-      },
-      {
-        "email": "ambrasil@unb.br",
-        "nome": "Augusto César de Mendonça Brasil",
-        "bio": "Possui graduação em Engenharia Mecânica pela Universidade Federal do Pará (1988), mestrado em Engenharia Ambiental pela Universidade Federal do Espírito Santo (1992), doutorado em Engenharia Mecânica pelo Instituto Superior Técnico da Universidade Técnica de Lisboa (2000) e Pós Doutorado pelo Instituto Superior Técnico na área de Consumo Energético e Emissão de Poluentes de Veículos de Transportes. Atualmente é professor associado da Universidade de Brasília. Tem experiência na área de Engenharia Mecânica, Engenharia Ambiental e Engenharia de Energia. Atua principalmente nos seguintes temas: transportes e energia, biomassa como fonte energética, poluição atmosférica, consumos e emissões dos transportes e combustíveis alternativos.",
-        "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png"
-      },
-      {
-        "email": "anflor@unb.br",
-        "nome": "Carla Tatiana Mota Anflor",
-        "bio": "Possui graduação em Engenharia Mecânica pela Universidade de Passo Fundo (2000), mestrado em Engenharia Mecânica pela Universidade Federal do Rio Grande do Sul (2003) e doutorado em Engenharia Mecânica pela Universidade Federal do Rio Grande do Sul (2007). Atualmente é Professora da Engenharia Automotiva pela Universidade de Brasília, Campus do Gama. Possui conhecimento na área de vibrações mecânicas e tratamentos de dados estocásticos empregando técnicas de análise espectral em sinais. Seu tema principal de atuação refere-se à pesquisa de desenvolvimento de métodos numéricos para problemas de otimização em sólidos empregando elementos de contorno. Membro integrante do Grupo de Mecânica Experimental e Computacional (GMEC) da Universidade de Brasília. Docente credenciado aos Programas de Pós-Graduação em Ciências Mecânicas e Pós-Graduação em Integridade de Materiais da Engenharia.",
-        "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png"
-      },
-      {
-        "email": "rocha.carla@gmail.com/caguiar@unb.br",
-        "nome": "Carla Silva Rocha Aguiar",
-        "bio": "Carla Rocha é docente na Universidade de Brasília (UnB), no curso de Engenharia de Software. É pesquisadora e uma das coordenadoras do Laboratório Avançado de Produção Pesquisa e Inovação de Software (LAPPIS). Obteve seu doutorado em 2009 pelo LIRMM (Laboratoire d'Informatique, de Robotique et de Microélectronique de Montpellier), na área de processamento de imagens de profundidade no contexto de restauração e herança cultural. Possui graduação em Engenharia Mecatrônica (2005) pela Universidade de Brasília (UnB). Suas áreas de pesquisa e interesses são: métodos colaborativos e empíricos de desenvolvimento software, ecossistema das comunidades de software livre, mineração de repositórios de software, assistentes conversacionais (chatbots), DevOps, MLOps, educação, diversidade e minorias em Engenharia de Software.",
-        "fto" : "https://arquivos.unb.br/arquivos/2020049025f17f2054547e76459bd76e8/WhatsApp_Image_2020-07-06_at_09.34.26_1.jpeg"
-      },
-      {
-        "email": "chantal@aerospace.unb.br ",
-        "nome": "Chantal Cappelletti",
-        "bio": "●\tDoutorado em  Engenharia Aeroespacial  - Scuola di Ingegneria Aerospaziale, Università di Roma Sapienza. ●\tMestrado em Engenharia Astronáutica -Scuola di Ingegneria Aerospaziale, Università di Roma Sapienza. Atuação profissional ●\tÉ Professor Adjunto (desde fevereiro 2013) em Sistemas Aeroespaciais na Faculdade do Gama, Universidade de Brasília - UnB, DF, Brasil. ●\tÉ membro eleito da IAA- International Academy of Astronautics ●\tÉ Sócio fondator da empresa GAUSS Srl (Itália). ●\tFoi Responsável do projeto SERPENS. ●\tFoi delegado da Agência Espacial Italiana no IADC (Inter- Agency Debris Committee) [2006-2012] ●\tPrêmio \"I Guidoniani\", Associação Italiana de Medicina Espacial (AIMAS) pela melhor pesquisa em biomedicina aeroespacial (área de engenharia) [2012] Experiência ●\tTem experiência na área de Engenharia Aeroespacial, com ênfase em Sistemas, Mecânica do Vôo Espacial, Projeto de Sistemas, Space Debris, Astrodinâmica ●\t12 anos de experiência em projetação de pequeno satélites, sendo Project Manager de 5 satélites (EduSat, UniCubeSat-GG, UniSat-5, SERPENS, TUPOD) e Principal Investigator do satélite UniSat-6. ●\tNa área de biomedicina aeroespacial fui o PI da duas missões GlioLab-0 lançados no espaço com o Space Shuttle no 2011 com as missões STS-134 e STS-135 ●\tPesquisador visitante na Morehead State University (2009-2012) ●\tPorfessor Assistente no curso de alta formação \"High-Level Postgraduate Advanced Course in Aerospace Engineering\"- Università di Roma- Sapienza ●\tAutor de mais de 30 pubblicações na area.",
-        "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png"
-      },
-      {
-        "email": "vendittozzi@aerospace.unb.br",
-        "nome": "Cristian Vendittozzi",
-        "bio": "Possui mestrado em Engenharia Aeroespacial (2009), e doutorado em Engenharia de Materiais pela Sapienza, Universidade de Roma, Italia (2013) e completou a formação com um Mestrado em Administração de Empresas, (Executive MBA), pelo MIP, a business school do Politecnico di Milano (2014). Atualmente é professor adjunto da Universidade de Brasília - Faculdade UnB Gama nas áreas de Engenharia Aeroespacial e Automotiva. De 2007 para 2014 foi membro da equipe de desenho e desenvolvimento da missão espacial LARES. O satélite LARES foi colocado em órbita em fevereiro de 2012. Neste período, as principais tarefas realizadas foram: Projeto do Corpo Satellite (Qualification Model e Flight Model). Projeto de sistema de montagem de bordo para os Corne Cube Reflectors (CCR). Projeto do MGSE (equipamentos mecânicos de terra para o satellite). De 2010 a 2015 participou em vários projectos multidisciplinares: o Prin2008 (PRojeto de Interesse Nacional, financiado do Ministério da Universidade e da Pesquisa Italiano) e dois projetos de pós-doutorado (2013-2014 e 2014-2015), no departamento de engenharia de materiais, química e ambiente da Universidade Sapienza de Roma. É o autor de um livro, mais de trinta artigos científicos e duas patentes italianas.",
-        "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png" 
-      },
-      {
-        "email": "cristianeSramos@unb.br",
-        "nome": "Cristiane Soares Ramos",
-        "bio": "Professora Assistente na Faculdade Gama (FGA) da Universidade de Brasília (UnB), curso de Engenharia de Software. Doutoranda em Engenharia de Sistemas e Computação (COPPE/UFRJ). Mestre em Gestão do Conhecimento e Tecnologia da Informação área de concentração: Engenharia de software; Bacharel em Ciência da Computação e Tecnóloga em Processamento de Dados, pela Universidade Católica de Brasília. É credenciada pela Softex como Implementadora e Avaliadora do MPS.BR. Tem experiência em: desenvolvimento de software; gerência de projetos; implantação de processos segundo os modelos MR-MPS e CMMI-DEV; e avaliação segundo o MA-MPS / SCAMPI. Experiência em definição e melhoria de processos de software, implantação dos modelos de qualidade CMMI / MPS.BR, auditorias de qualidade e avaliação independente de garantia da qualidade de processo e produto. Exerce atividades como docente desde 2005 em cursos de pós-graduação ministrando disciplinas relacionadas à Qualidade de Software e Melhoria de Processos de Software.",
-        "fto" : "https://arquivos.unb.br/arquivos/202011108717482048458e7f63ad71db6/Foto_perfil.jpg"
-      },
-      {
-        "email": "jacques.unb@gmail.com",
-        "nome": "Cristiano Jacques Miosso",
-        "bio": "Professor Adjunto da Faculdade do UnB Gama desde 24/03/2011. Doutor em Engenharia Elétrica e de Computação pela Universidade do Texas em El Paso (UTEP), possui ainda mestrado em Engenharia Elétrica pela Universidade de Brasília (2001). Graduou-se por esta universidade em 1999, quando recebeu o prêmio de melhor aluno de graduação do departamento de Engenharia Elétrica. Suas áreas de interesse incluem processamento estatístico de sinais, compressive sensing, imageamento, ressonância magnética, processos estocásticos, aprendizagem de máquina e teoria de comunicação digital. Pelo seu trabalho de doutoramento, recebeu, em 2011, o prêmio de melhor aluno de doutorado do departamento de Engenharia Elétrica e de Computação, da UTEP, o prêmio de melhor tese de doutorado do mesmo departamento, e o prêmio de melhor tese de doutorado de toda a UTEP, incluindo todas as áreas de ciências exatas e ciências da saúde.",
-        "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png"
-      },
-      {
-        "email": "caabreu@gmail.com",
-        "nome": "Cristina de Abreu Silveira",
-        "bio": "Possui graduação em Engenharia Elétrica pela Universidade Federal da Bahia (1979 - Eletrotécnica e 1986 - Eletrônica), graduação em Musicoterapia pela Universidade Católica do Salvador (1997), especialização em Tecnologia Digital pela Universidade Federal da Bahia (1993), especialização em Proteção de Sistemas de Geração e Transmissão pela Companhia Energética de São Paulo (1984), (bolsista do MEC/CEDATE pelo CENTEC), especialização em Equipamentos AT- Compensação Estática - Harmônicos na Siemens AG (bolsista pela Cooperação Técnica Internacional Brasil-Alemanha Fundação Carl Duisberg) Erlangen, Alemanha (1982/1983). Possui Mestrado em Engenharia Elétrica pela Universidade Federal da Bahia (1999) e Doutorado em Engenharia Elétrica pela Universidade Federal de Pernambuco (2004). Atuou como docente do 3º grau - Professora Associada 2 - no Instituto Federal de Educação, Ciência e Tecnologia da Bahia (ex-CEFET-BA) desde 1980 onde lecionou disciplinas do curso de Engenharia Industrial Elétrica e atua em projetos de pesquisa e desenvolvimento em parceria com outras instituições até 09 de dezembro de 2011, quando pediu vacância de seu cargo por posse em cargo inacumulável na Universidade de Brasília - Faculdade do Gama. Tem experiência profissional em Processamento de Energia e Sistemas Elétricos, atuando principalmente nas áreas de: compatibilidade eletromagnética, transitórios eletromagnéticos, interferência eletromagnética, eficiência energética, qualidade da energia elétrica e sistemas de aterramento. É membro do IEEE-BA, tendo sido Conselheira do Ramo Estudantil do IEEE/IFBA até 2011 e presidente do Capítulo de Aplicações Industriais no biênio 2010-2011. Foi Conselheira do CREA-BA pelo IFBA no período 2009-2011, Coordenadora da Câmara Especializada de Engenharia Elétrica do CREA-BA em 2010 e 2011 e Coordenadora Nacional das Câmaras /especializadas de Engenharia Elétrica do Sistema CONFEA/CREAs em 2011. Foi Membro do Colegiado do Curso de Engenharia Industrial Elétrica do IFBA de 2007 a 2009 e é professora colaboradora do Programa de Pós-Graduação em Engenharia Elétrica da Universidade Federal da Bahia. Atualmente encontra-se em estágio probatório na UnB - Campus Gama, como docente da área de Engenharia de Energia lecionando disciplinas da área de Sistemas Elétricos de Potência",
-        "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png" 
-      },   
-      {
-        "email": "danielrosa@unb.br",
-        "nome": "Daniel Monteiro Rosa",
-        "bio": "possui graduação em Engenharia Mecânica pela Universidade Federal do Pará (2002), graduação em Tecnologia em Processamento de Dados pelo Centro de Ensino Superior do Pará (1994), mestrado em Engenharia Mecânica pela Universidade Estadual de Campinas (2004) e doutorado em Engenharia Mecânica pela Universidade Estadual de Campinas (2007). Tem experiência na área de Engenharia de Materiais e Metalúrgica, com ênfase em Propriedades Mecânicas dos Metais e Ligas, atuando principalmente nos seguintes temas: espaçamentos dendríticos, solidificação unidirecional descendente, convecção no líquido, ligas sn-pb e macroestrutura.",
-        "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png"
-      },
-      {
-        "email": "diogogarcia(at)unb.br",
-        "nome": "Diogo Caetano Garcia",
-        "bio": "Professor adjunto da Universidade de Brasília, Campus Gama. Possui graduação em Engenharia Elétrica (2006), mestrado em Engenharia Elétrica (2007) e doutorado em Engenharia Elétrica (2012), todos pela Universidade de Brasília. Atuou em projetos de pesquisa e desenvolvimento junto a diversas empresas e órgãos governamentais, tais como a Eletrobrás Eletronorte, Hewlett-Packard Brasil, Petrobrás e Samsung Research Brasil. Foi engenheiro de manutenção eletrônica na Eletronorte em 2007, e professor no Instituto Federal de Brasília (IFB) em 2011. Tem experiência em processamento digital de sinais, atuando principalmente em compressão de imagem e video, processamento 3D e de múltiplas vistas, super-resolução e qualidade de energia.",
-        "fto" : "https://arquivos.unb.br/arquivos/202015618332212038112d5302dd4fb22/citations_big.jpeg"
-      },
-      {
-        "email": "domenico.simone@aerospace.unb.br",
-        "nome": "Domenico Simone",
-        "bio": "Possui graduação (BSc+MSc) em Engenharia Aeronáutica pela University of Rome \"Sapienza\", e doutorado (PhD)  em Theoretical and Applied Mechanics pela University of Rome \"Sapienza\". Atualmente é Professor Adjunto da Universidade de Brasília. Tem experiência na área de Engenharia Aeroespacial, com ênfase em Propulsão Aeroespacial, atuando principalmente na Propulsão Química Espacial (Foguetes solidos, liquidos e Híbridos) e Aeronáutica, com ênfase em modelagem numérica de escoamentos reativos em Ramjet e Scramjet",
-        "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png" 
-      },
-      {
-        "email": "eberthcorrea@gmail.com",
-        "nome": "Eberth de Almeida Corrêa",
-        "bio": "Possui graduação em Bacharel em Física pela Universidade de Brasília (1999), mestrado em Física pela Universidade de Brasília (2002) e doutorado em Física pela Universidade de Brasília (2006). Atualmente é professor adjunto da Universidade de Brasília Campus Gama-UnB-FGA. Seu principal interesse é na parte de simulações numéricas aplicadas à Física. Tem experiência na área de Física, com ênfase em Supercondutividade, atuando principalmente nos seguintes temas: Simulação Computacional, Grupo de Renormalização e Cálculos de Monte Carlo Clássico e Quântico.",
-        "fto" : "https://arquivos.unb.br/arquivos/20202100202b2f2060850ed5c4a65b31a/foto_recente.png"
-      },
-      {
-        "email": "ecosta@unb.br",
-        "nome": "Edgard Costa Oliveira",
-        "bio": "Professor Adjunto da Universidade de Brasília, UnB, Campus Gama, cursos de graduação em Engenharia. Doutor e Mestre em Ciência da Informação pela UnB/CID (2006 e 2001). Pesquisador e professor em disciplinas: humanidades, engenharia de software, gerenciamento de projetos de TI, planejamento de sistemas de informação, produção de documentos e análise da informação. 20 anos de experiência profissional e de pesquisa em TI, com ênfase em segurança da informação, gestão de riscos, engenharia de software, gerenciamento de projetos e organização da informação.",
-        "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png"
-      },
-      {
-        "email": "cueva@unb.br",
-        "nome": "Gustavo Cueva Galárraga",
-        "bio": "Possui graduação em Engenharia Mecânica pela Escuela Politécnica Nacional de Quito, Equador (1993), mestrado em Engenharia Metalúrgica e de Materiais pela Universidade de São Paulo (1997), doutorado em Engenharia Metalúrgica e de Materiais pela Universidade de São Paulo (2002), e pós doutorado em Engenharia Mecânica pela Universidade de São Paulo (2005 e 2008). Atualmente é professor adjunto da Universidade de Brasília - Faculdade Gama. Tem experiência na área de Engenharia Metalúrgica e de Materiais, com ênfase em Estrutura dos Metais e Ligas, Transformação de Fase e Tratamentos Térmicos, atuando principalmente nos seguintes temas: desgaste de materiais por deslizamento, abrasão e erosão-cavitação, particularmente de ferros fundidos e aços carbono.",
-        "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png"
-      },
-      {
-        "email": "edna.canedo@gmail.com",
-        "nome": "Edna Dias Canedo",
-        "bio": "Doutora em Engenharia Elétrica pela Universidade de Brasília (UNB). Área de concentração: Telecomunicações. título concedido em 15.08.2012. Mestre pela Universidade Federal da Paraíba UFPB. Área de concentração: Sistemas de Software. Área Especifica: Engenharia de Software, título concedido em 29.08.2002. Graduada em Análise de Sistemas pela Universidade Salgado de Oliveira; Goiás (1999). Professora do curso de Engenharia de Software da Faculdade FGA Gama, da Universidade de Brasília UNB. Atua na área de desenvolvimento de sistemas desde 1998, tendo trabalhado como Analista de Sistemas na Empresa de Processamento de Dados do Estado de Goiás Prodago, até o ano de 2000. Em Brasília atuou na Poliedro como Consultora de Desenvolvimento e Gerência de Projetos e como Analista de Sistemas Pleno em Desenvolvimento na ECT - Empresa de Correios e Telégrafos até abril de 2010, desenvolvendo atividades na área de Governança em Tecnologia da Informação na implantação do framework COBIT. Desde 2000 dedica-se a atividades de docência universitária nos cursos de graduação e pós-graduação, atuando na área de Sistemas de Software, Redes de Petri, Engenharia de Software, Orientação a Objetos, Gerência de Projetos, Teste de Software, Arquitetura Orientada a Serviços, Programação e Governança em Tecnologia da Informação.",
-        "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png" 
-      },
-      {
-        "email": "mintsu@unb.br",
-        "nome": "Edson Mintsu Hung",
-        "bio": "Possui graduação, mestrado e doutorado pelo Departamento de Engenharia Elétrica da Universidade de Brasília. Atualmente é professor e coordenador de Engenharia Eletrônica na Universidade de Brasília no campus do Gama. Tem experiência na área de Engenharia Elétrica, com ênfase em Processamento de Sinais e Eletrônica, atuando principalmente nos seguintes temas: compressão de imagem, compressão de vídeo, processamento de imagens, sistemas embarcados e implementação de sistemas criptográficos (em software, hardware e firmware).",
-        "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png"
-      },
-      {
-        "email": "elainevenson@unb.br",
-        "nome": "Elaine Venson",
-        "bio": " Professora do Curso de Engenharia de Software da Faculdade Gama (FGA), da Universidade de Brasília (UnB), vinculada ao CQTS (Centro de Qualidade e Testes de Software). Possui graduação e mestrado em Ciências da Computação pela Universidade Federal de Santa Catarina. Atuou por 10 anos no mercado de Engenharia de Software nas áreas de engenharia de requisitos, métricas de software, gestão de projetos e melhoria de processos. Exerceu cargos como coordenadora de grupos de analistas de requisitos, gerente de projeto, gerente de fábrica de software, especialista e coordenadora de métricas. Integrou equipes de definição de processos e avaliação de nível de maturidade CMMI. Participou ativamente de projetos de software de grande porte em organizações como Petrobras, Vale, Bank Boston e CAIXA Econômica Federal. ",
-        "fto" : "https://arquivos.unb.br/arquivos/202111203784532193127b3c6e06e85bf/aIMG_7499.jpg" 
-      },
-      {
-        "email": "emmanuel@unb.br",
-        "nome": "Emmanuel Pacheco Rocha Lima",
-        "bio": "Possui graduação em Engenharia Mecânica pela Universidade Federal de Pernambuco (1999), mestrado em Engenharia Mecânica pela Universidade Federal de Pernambuco (2002) e doutorado em Ciências na Área de Tecnologia Nuclear Materiais pelo Instituto de Pesquisas Energéticas e Nucleares - IPEN (2008). Tem experiência na área de Engenharia de Materiais e Metalúrgica, com ênfase em materiais metálicos, atuando principalmente nos seguintes temas: ligas de alumínio de alta formabilidade, cinética de recristalização, transformação de fases, decomposição em ligas de alumínio, evoluçao e controle microestrutural, aços rápidos, metalurgia do pó, sinterização e tratamentos termomecânicos. Atualmente é Professor Adjunto e Coordenador de Graduação do curso de Engenharia Automotiva da Universidade de Brasília Campus Gama - FGA/UnB",
-        "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png" 
-      },
-      {
-        "email": "eneidagv@unb.br",
-        "nome": "Eneida Gonzalez Valdes",
-        "bio": "Possui graduação em Engenharia Mecânica pelo Instituto Superior Politecnico Jose Antonio Echevarria (1984) e mestrado em Engenharia Mecânica pela Universidade de Brasília (1999). Tem experiência na área de Engenharia Mecânica, com ênfase em Projetos de Engenharia Mecânica, atuando principalmente em Projeto de Sistemas Mecânicos, Desenvolvimento de Equipamentos (produtos) e Projetos Industriais. Dezenove anos de experiência como professora universitária, ministrando diferentes disciplinas tais como: Desenho Técnico, Desenho de Arquitetura, Geometria Descritiva, Processos de Fabricação Mecânica, Mecânica Geral, Introdução a Robótica, Ciência dos Materiais, Resistência dos Materiais 1 e 2, Materiais de Construção Civil, Elementos de Máquinas I e II, Processos de Fabricação Mecânica I, e Materiais de Fabricação Mecânica I. Professora da Universidade de Brasília no Campus de Gama lecionando atualmente as disciplina de Desenho Industrial Assistido por Computador e Design e Concepção de Veículos.",
-        "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png" 
-      },
-      {
-        "email": "evgarcia@unb.br",
-        "nome": "Euler de Vilhena Garcia",
-        "bio": "Professor Adjunto 2 da Universidade de Brasília, campus Gama. Possui experiência em pesquisas clínicas na área de eletrocardiologia, tendo sido engenheiro e pesquisador do Instituto do Coração do Hospital das Clínicas da Faculdade de Medicina da USP e consultor autônomo para a filial brasileira da GE Healthcare na área de equipamentos de eletrocardiologia. Seus interesses são na área de Engenharia Biomédica e Educação em Engenharia. Atua em equipes multidisciplinares, tendo publicado artigos científicos em periódicos internacionais das áreas de Engenharia Biomédica, Medicina/Cardiologia e Ciências da Saúde, bem como capítulo de livro na área de Eletrocardiologia (repolarização ventricular/micro-alternância de onda T).",
-        "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png" 
-      },
-      {
-        "email": "evandroleonardo@unb.br",
-        "nome": "Evandro Leonardo Silva Teixeira",
-        "bio": "Possui graduação em Eletromecânica pelo Centro Federal de Educação Tecnológica de Goiás (2004), Mestrado em Sistemas Mecatrônicos (2006) e Doutorado em Sistemas Mecatrônicos (2012) pela Universidade de Brasília. Atualmente é professor dos cursos de Engenharia Automotiva e Engenharia Eletrônica da Faculdade Gama - Universidade de Brasília. Tem experiência na área de Engenharia Elétrica, Mecânica e Computação atuando principalmente nos seguintes temas: Automação, Controle e Integração de Sistemas de Manufatura, Eletrônica Veicular, Sistemas Embarcados, Gerenciamento Integrado da Saúde Veicular (IVHM) e Sistema Produto-Serviço Industrial.",
-        "fto" : "https://arquivos.unb.br/arquivos/2020226060a16420415381fdebba5c099/1-s2.0-S0967066119301091-pic3.jpg"
-      },
-      {
-        "email": "fabianamendes@unb.br",
-        "nome": "Fabiana Freitas Mendes",
-        "bio": "Doutorado Doctor of Philosophy, University of Oulu, Finlândia. Ano de Conclusão: 2021 Título da Tese: Insights from personality and decision-making in software engineering context   Pulicações: ●\tThe relationship between personality and value-based decision-making ●\tThe relationship between personality and decision-making: A systematic literature review ●\tInsights on the relationship between decision-making style and personality in software engineering Mestrado Mestre em Ciência da Computação pela Universidade Federal de Goiás Ano de Conclusão: 2010 Título da Dissertação: Melhoria de Tecnologia de Informação Multi-Modelo   Graduação Bacharel em Ciência da Computação pela Universidade Federal de Goiás Ano de Conclusão: 2007 Título do Trabalho de Final de Curso: Perspectivas Técnicas e Gerenciais nas Estratégias para Melhoria de Processos de Software",
-        "fto" : "https://arquivos.unb.br/arquivos/202014613120152040832ff8dd714efd5/2019-08-10_18.41.44.jpg" 
-      },
-      {
-        "email": "fabianosoares@unb.br",
-        "nome": "Fabiano Araujo Soares",
-        "bio": "Fabiano Araujo Soares graduou-se em Engenharia de Redes de Comunicações pela Universidade de Brasília em 2004 obteve o título de mestre em Engenharia Elétrica pela mesma universidade em 2007. Em 2013, também pela Universidade de Brasília, concluiu seu doutorado em Engenharia Eletrônica na área de processamento de sinais biomédicos. Como experiência profissional, Fabiano trabalhou na empresa de telecomunicações Brasil Telecom (2005 - 2006) na área comutação e na empresa Mahvla Telecomm (2006 - 2007) na área de TI. Foi pesquisador convidado do Laboratorio di Ingegneria del Sistema Neuromuscolare e della Riabilitazione Motoria LISiN, laboratório associado ao Politécnico de Torino, Torino - Itália (2008). Em fevereiro de 2014 participou de pesquisa em parceria com a University of Texas at El Paso (UTEP), como parte da cooperação entre as duas universidades. Atualmente é professor adjunto do curso de engenharia eletrônica no campus Gama da Universidade de Brasília. Fabiano tem experiência nas áreas de engenharia biomédica, processamento de sinais e imagens e reconhecimento de padrões. Suas áreas de interesse são: processamento de sinais e imagens, instrumentação eletrônica, sistemas inteligentes e eletrônica aeroespacial.",
-        "fto" : "https://arquivos.unb.br/arquivos/20202481375a2020571150f5bdc147879/Sem_ttulo.png" 
-      },
-      {
-        "email": "fabraz.at@unb.br",
-        "nome": "Fabricio Braz",
-        "bio": "Fabricio Braz é professor adjunto do curso de Engenharia de Software da Faculdade do Gama da Universidade de Brasília. De 2004 a 2012 desenvolveu atividades na área de segurança de software, tendo participado de vários projetos que tratam desse tema, quer seja como bolsista da UnB ou como consultor. Em 2009 conquistou o título de Doutor em Engenharia Elétrica, pesquisando Padrões de Projeto para Segurança de Software em parceria com o Security System Engineering Group da Universidade Flórida Atlântica. Desde 2013 tem pesquisado e na área de aprendizagem de máquina voltada para detecção de padrões, com aplicação em detecção de anomalia em tráfego de redes de comunicação de dados e sensoriamento remoto.",
-        "fto" : "https://arquivos.unb.br/arquivos/202016511985e42041190d90757c695e7/54357e_2c44bb8ee1c8414083b1bb04e8dcc9d5mv2.jpg"
-      },
-      {
-        "email": "fcarbajal@unb.br",
-        "nome": "Felix Martin Carbajal Gamarra",
-        "bio": " Possui Pós Doutorado pela Virginia Tech. Doutorado em Engenharia Química pela Universidade Estadual de Campinas (2006). Mestrado em Engenharia de Alimentos pela Universidade Estadual de Campinas (2004) e Graduação em Engenharia Química - Universidad Nacional Pedro Ruiz Gallo (2000). Experiência na área de Engenharia Química, Engenharia de Energia, Engenharia e Ciências de Materiais. Com ênfase no Desenvolvimento de Novos Métodos de Extração, Operações-Processos Industriais, Biorrefinarias, Biocombustíveis, Compostos Bioativos, simulação computacional, Materiais e desenvolvimento de novos Produtos e Materiais.",
-        "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png"
-      },
-      {
-        "email": "fscardua@unb.br",
-        "nome": "Fernando Paiva Scardua",
-        "bio": "Fernando Paiva Scardua graduado em Engenharia Florestal pela Universidade de Brasília (1991), com mestrado em Ciências Florestais pela Escola Superior de Agricultura \"Luiz de Queiroz\" - ESALQ/USP - Piracicaba (1994), doutorado em Desenvolvimento Sustentável pela Universidade de Brasília (2003) e Pós-Doutorado pelo Institut de Recherche pour le Développement, França (2006). Atualmente é Professor Adjunto da Faculdade UnB Gama da Universidade de Brasília (UnB). Tem experiência na área ambiental nos seguintes temas: licenciamento ambiental, Políticas Públicas, Descentralização, Gestão Ambiental, Unidades de Conservação, Política Ambiental, Recursos Hídricos, Biodiversidade e Recursos Florestais. (17/02/2007)",
-        "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png" 
-      },
-      {
-        "email": "fwcruz@unb.br",
-        "nome": "Fernando William Cruz",
-        "bio": "Possui graduação em Processamento de Dados pela Universidade de Brasília (1988), mestrado em Ciência da Computação pela Universidade Federal da Paraíba (1992) e doutorado em Ciências da Informação pela Universidade de Brasília (2008). Atualmente é professor da Universidade de Brasília - Campus do Gama. Tem experiência na área de Ciência da Computação, com ênfase em Telecomunicações, atuando principalmente nos seguintes temas: estudo de usuários, web semântica, bibliotecas digitais, computação musical, sistemas distribuídos e redes de computadores.",
-        "fto" : "https://arquivos.unb.br/arquivos/2020192187cc952040915bcf7e52e5803/IMG_0476.jpeg" 
-      },
-      {
-        "email": "fhsilva@unb.br",
-        "nome": "Flávio",
-        "bio": " Flávio concluiu o doutorado em Engenharia Elétrica na Escola de Engenharia de São Carlos (EESC) da Universidade de São Paulo (USP) em 2004. Atualmente é professor adjunto da Universidade de Brasília (UnB) - Faculdade do Gama. Atua na área de Engenharia Elétrica, com ênfase em análise e controle de sistemas não lineares com aplicações em sistemas elétricos de potência.",
-        "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png"
-      },
-      {
-        "email": "fabioalfaia@unb.br ",
-        "nome": "Fábio Alfaia da Cunha",
-        "bio": "Graduado em Engenharia Mecânica pela Universidade Federal do Pará (1998-2002), com mestrado pela mesma instituição (2003-2005) e doutorado em Ciências Mecânicas pela Universidade de Brasília (2006-2010). Ingressou na Universidade de Brasília como professor substituto em 2008 e se tornou professor Adjunto em 2011. Atualmente é Professor Associado na UnB e atua nos cursos de Engenharia Aeroespacial, Automotiva e Energia. Pesquisa e orienta assuntos relacionados a simulação computacional da combustão de sólidos, líquidos e gases. ",
-        "fto" : "https://arquivos.unb.br/arquivos/2024164092ac5d30451505a49f70d3410/foto2024.png"
-      },
-      {
-        "email": "fabiomacedomendes@unb.br",
-        "nome": "Fábio Macedo Mendes",
-        "bio": "Possui mestrado em Física pela Universidade de Brasília(2006) e doutorado em Física pela Universidade de Brasília(2009). Atualmente é Professor Adjunto da Universidade de Brasília. Tem experiência na área de Física, com ênfase em Física Estatística. Atuando principalmente nos seguintes temas:Processos Gaussianos, Inferência Bayesiana, Processos estocásticos, Equação de Langevin.",
-        "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png" 
-      },
-      {
-        "email": "possa@unb.br",
-        "nome": "Prof. Gabriela Possa",
-        "bio": "Possui graduação em Física - Bacharelado pela Universidade de Brasília (2006), graduação em Física - Licenciatura pela Universidade de Brasília (2009), mestrado em Física pela Universidade de Brasília (2009) e mestrado em Engenharia Aeroespacial - Georgia Institute of Technology (2012). Atualmente é doutoranda pelo Instituto de Física da Universidade de Brasília e professora assistente na mesma instituição. Tem experiência nas áreas de física e engenharia aeroespacial, com ênfase em propulsão espacial, sistemas de vácuo, instrumentação científica e fotobiorreatores.",
-        "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png" 
-      },
-      {
-        "email": "georgemarsicano@unb.br",
-        "nome": "George Marsicano Corrêa",
-        "bio": "Atualmente, é docente do curso de Engenharia de Software na Universidade de Brasília (UnB). Mestre em Gestão do Conhecimento e da Tecnologia da Informação MGCTI (UCB), Especialista em Sistemas Orientados a Objetos (UCB) e Graduado em Processamento de Dados (UCB). Coach certificado pela Escola Internacional de Coach - The Newfield Network, Santiago do Chile, Gerente de Projeto certificado PMP e Scrum Master. Como docente atuou no curso de Pós-Graduação em Engenharia de Software, da Fundação Universa / Universidade Católica de Brasília, e como pesquisador / autor possui artigos publicados no Brasil e no exterior. Experiência, desde 1999, em Engenharia de Software, tendo atuado como: desenvolvedor, analista de requisitos, analista de negócios, analista de processos e gerente de projetos. Experiência, desde 2002, em projetos com utilização de processos baseado em RUP e tecnologia Java. Já participou da implantação de processos baseados em RUP, com apoio do CMMI e/ou MPS-Br. A partir de 2004, atua como Gerente de Projetos, utilizando a metodologia proposta pelo PMI. Nesse período, atuou no Governo Federal: SERPRO, MPOG, MS, MDS, TJDFT, CONAB e MPS; e em empresas privadas: Fóton Informática, Cast Informática, Politec e CTIS.",
-        "fto" : "https://arquivos.unb.br/arquivos/20220081144a0d2548630fe4303562ae1/FotoGeorge.jpeg" 
-      },
-      {
-        "email": "georges@unb.br ",
-        "nome": "Georges Daniel Amvame Nze",
-        "bio": "Possui graduação em Engenharia Elétrica pela Universidade de Brasília (1999), mestrado em Engenharia Elétrica pela Universidade de Brasília (2002) e doutorado em Engenharia Elétrica pela Universidade de Brasília (2006). Atualmente é professor adjunto-I da Universidade de Brasília. Tem experiência na área de Engenharia Elétrica, com ênfase em Sistemas de Telecomunicações, atuando principalmente nos seguintes temas: SIG para Dengue, Mini VANT e Inclusão Digital/Social. ",
-        "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png" 
-      },
-      {
-        "email": "gerardo.idrobo@gmail.com",
-        "nome": "Gerardo Antonio Idrobo Pizo",
-        "bio": "Possui graduação em Engenharia Física pela Universidade do Cauca (2005) - Colômbia e Mestrado em Sistemas Mecatrônicos pela Universidade de Brasilia (2009) - Brasil. Atualmente é Doutorando em Sistemas Mecatrônicos pela Universidade de Brasília e Professor Assistente da Universidade de Brasília (UnB), Faculdade UnB-Gama (FGA), onde atua no programa de Engenharia Eletrônica. Possui experiência na área de Eletrônica , Elétrica, Robótica, Mecatrônica, Automação, Ciências da Computação e Física. Atuando principalmente nos seguintes temas: Robótica, Desenvolvimento de sistemas reconfiguráveis, Instrumentação Óptica, Instrumentação Eletrônica, Controle Linear e Não Linear, Processamento Digital de Sinais, Imagens e Vídeo, Visão Computacional, Calibração de Câmeras, Digitalização de Superfícies, Varredura Laser, Reconstrução 3D e Banco de Dados.",
-        "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png"
-      },
-      {
-        "email": "gilmar.beserra@gmail.com",
-        "nome": "Gilmar Silva Beserra",
-        "bio": "Possui graduação (2002), mestrado (2004) e doutorado (2010) em Engenharia Elétrica pela Universidade de Brasília. Tem trabalhado na área de Microeletrônica desde 2002, com ênfase em projeto de circuitos integrados digitais utilizando ferramentas Cadence, atuando como bolsista do Programa Nacional de Microeletrônica na área de Sistemas em Chip (SoC). Sua área de interesse no doutorado foi a modelagem de sistemas mistos em alto nível utilizando SystemC TLM (Transaction Level Modeling) e SystemC-AMS. Em seu pós-doutorado e posteriormente, como pesquisador visitante, trabalhou no projeto SYSMODEL no Instituto Real de Tecnologia (KTH), em Estocolmo. As atividades consistiram na implementação em SystemC de um framework com base na metodologia ForSyDe para a modelagem de sistemas heterogêneos utilizando diferentes modelos de computação.",
-        "fto" : "https://arquivos.unb.br/arquivos/20202310129c50204938129434355070f/rg3.jpg" 
-      },
-      {
-        "email": "giovannix@unb.br",
-        "nome": "Giovanni Almeida Santos",
-        "bio": "Professor Assistente da Universidade de Brasília (UnB). Doutorando do Programa de Pós-Graduação em Engenharia Elétrica da UnB. Possui título de Mestre em Informática (2001) e Graduação em Bacharelado em Ciência da Computação (1998) pela Universidade Federal da Paraíba - Campus II - Campina Grande. Áreas de interesse: Arquitetura Orientada a Serviços, Gerenciamento de Processos de Negócio, Robótica Educacional, Software livre.",
-        "fto" : "https://arquivos.unb.br/arquivos/2021120041361d2169813632f7bb04c53/perfil.jpg"
-      },
-      {
-        "email": "glauceny@unb.br",
-        "nome": "Glauceny Cirne de Medeiros",
-        "bio": "Possui graduação em ENGENHARIA CIVIL pela Universidade Federal da Paraíba (1998), mestrado em Estruturas e Construção Civil pela Universidade de Brasília (2001) e doutorado em Estruturas e Construção Civil pela Universidade de Brasília (2005). Atualmente, atua como professora e pesquisadora nos cursos de Engenharia, da Universidade de Brasília no Campus do Gama. Tem experiência na área de Engenharia Civil, com ênfase em Estruturas, atuando principalmente nos seguintes temas: métodos númericos, mecânica dos materiais e mecânica computacional.",
-        "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png" 
-      },
-      {
-        "email": "hgmoura@yahoo.com.br",
-        "nome": "Henrique Gomes de Moura",
-        "bio": "Graduação em Engenharia Mecânica pela Universidade Federal de Uberlândia (2002); Mestrado em Engenharia Mecânica pela Universidade Federal de Uberlândia (2005). Doutorado em Engenharia Mecânica pela Universidade Federal de Santa Catarina em 2010. Experiências nas áreas de métodos numéricos e matemáticos aplicados à engenharia mecânica, modelagem e projeto de sistemas vibroacústicos, controle de ruído e vibrações, engenharia de testes e engenharia de softwares.",
-        "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png" 
-      },
-      {
-        "email": "hilmer@unb.br",
-        "nome": "Hilmer Rodrigues Neri",
-        "bio": "Possui mestrado em Ciência da Computação pela Universidade Federal de Campina Grande-UFCG (2002). Atua em Engenharia de Software e possui larga experiência profissional na área de processo de desenvolvimento de software e gestão de projetos de software, tendo atuado em empresas nas esferas pública e privada, além de ter sido consultor do Programa das Nações Unidas para Desenvolvimento-PNUD. Foi gestor de projetos de desenvolvimento e manutenção de software e de customização de processo de desenvolvimento de software. Atualmente é professor do curso de Engenharia de Software da Faculdade Gama, da Universidade de Brasília - UNB.",
-         "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png"
-      },
-      {
-        "email": "jeramos@unb.br",
-        "nome": "Jesús Ernesto Ramos Ibarra",
-        "bio": "Possui graduação em Engenharia Física e portanto uma formação sólida em física, matemática e informática. Eu sou capaz de modelar matematicamente e resolver problemas complexos em diversas áreas e adaptar-me rapidamente aos métodos emergentes. Ao mesmo tempo, estou na capacidade de pesquisa e desenvolvimento de novas tecnologias, e também posso identificar potenciais negócios de tecnologia em pesquisa realizada por outros cientistas. Eu fiz a minha pós-graduação em física na Universidade de Brasília, onde eu ganhei conhecimento aprofundizado na área de Física, especialmente em técnicas de caracterização e propriedades de materiais Magnéticos.",
-        "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png"
-      },
-      {
-        "email": "jhongoulart@yahoo.com.br",
-        "nome": "Jhon Nero Vaz Goulart",
-        "bio": "Possui graduação em Engenharia Civil pela Universidade de Passo Fundo (1999), Mestrado e Doutorado em Engenharia Mecânica pela Universidade Federal do Rio Grande do Sul na área de Fenômenos de transporte. Atua de forma numérica e experimental nas áreas envolvendo máquinas de fluxo, mecânica dos fluidos e turbulência. Como principais técnicas experimentais empregadas estão: anemometria de fio quente e transdutores de pressão. Suas principais pesquisas estão relacionadas a escoamento turbulento em canais compostos e feixe de barras, sobre cilindros e experimentação em turbomáquinas. Atualmente é Professor de ensino superior na Universidade de Brasília - Campus Gama, divisão de energia e vem se dedicando ao aprendizado de técnicas numéricas em CFD e BEM. Atualmente é professor credenciado no Programa de Pós-Graduação em Integridade de Materiais da Engenharia - PG-Intgr e é membro integrande do Grupo de Mecânica Experimental e Computacional da Universidade de Brasília - GMEC.",
-        "fto" : "https://arquivos.unb.br/arquivos/2021182151eab3217329750807ece4082/IMG_20201224_111834777_MP.jpg"
-      },
-      {
-        "email": "jcormane@unb.br",
-        "nome": "Jorge Andrés Cormane Angarita",
-        "bio": "Possui graduação e mestrado em Engenharia Elétrica pela Universidad Industrial de Santander (2003) - Colômbia. Doutorado em Engenharia Elétrica (2013) pela Universidade de Brasília. Atualmente é professor assistente da Universidade de Brasília. Tem experiência em Sistemas Elétricos de Potência, com ênfase em aplicações de técnicas de processamento de sinais em sistemas elétricos de potência, qualidade da energia elétrica e fontes renováveis para a geração de energia elétrica.",
-        "fto" : "https://arquivos.unb.br/arquivos/2020140164696320588106187dbbd88bc/Nova_Imagem.bmp" 
-      },
-      {
-        "email": "josianeaguiar@gmail.com",
-        "nome": "Josiane do Socorro Aguiar de Souza",
-        "bio": "Doutora e mestre em Desenvolvimento Sustentável pela Universidade de Brasília (UnB). Licenciada e bacharel em Geografia pela Universidade Federal do Amapá. Atualmente é professora adjunta da UnB/ FGA e pós-doutoranda com o Projeto de Geração Descentralizada de Energia por meio de fontes alternativas - Tecnologia e Produção de Energia elétrica na Faculdade de Tecnologia da UnB. Tem experiência na área de Geografia, com ênfase em Geografia Urbana, atuando principalmente nos seguintes temas: ordenamento territorial, desenvolvimento sustentável, indicadores, energia e ambiente, gestão ambiental e planejamento",
-         "fto" : "https://arquivos.unb.br/arquivos/20211920925a0c2139287103e65c180b6/foto_watsap2.jpg"
-      },
-      {
-        "email": "jfelicio@unb.br",
-        "nome": "José Felício da Silva",
-        "bio": "Possui graduação em Engenharia Elétrica Opção Eletronica pela Universidade Federal da Paraíba (1977) e doutorado em Genie Biologique - Institut National Polytechnique de Lorraine (1992). Tem experiência na área de Engenharia Biomédica, com ênfase em Instrumentação Odontológica e Médico-Hospitalar, atuando principalmente nos seguintes temas: engenharia clinica, redes neurais artificiais, sistema respiratorio, manutenção e integridade.",
-        "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png" 
-      },
-      {
-        "email": "jpetrocchi@unb.br",
-        "nome": "Juliana Petrocchi Rodrigues",
-        "bio": "Possui graduação em Bacharelado em Química pela Universidade de Brasília (2004) e Mestrado em físico-química pela mesma instituição. Doutorado também em química na UnB na área de produção de biocombustíveis derivados de biomassa.Tem experiência na área de Química, com ênfase em Química Orgânica e tecnologia química, atuando principalmente nos seguintes temas: biocombustíveis, biomassa, catalise, craqueamento térmico e catalítico, hidrocraqueamento, análises de combustíveis, cromatografia e educação ambiental. Atualmente, é Professora Adjunta na Universidade de Brasília, na área de Engenharia de Energia e Coordenadora de Extensão da UnB- Faculdade do Gama.",
-        "fto" : "https://arquivos.unb.br/arquivos/2023088066f4842738352a64f1bd549c0/foto_perfil_2.jpg"
-      },
-      {
-        "email": "aguayo@unb.br",
-        "nome": "Leonardo Aguayo",
-        "bio": "Possui graduação em Engenharia Elétrica, Ênfase Telecomunicações pela Universidade de São Paulo (1994), mestrado em Engenharia Elétrica pela Universidade de São Paulo (1999) e Doutorado em Teleinformática pela Universidade Federal do Ceará (2008). Atuou durante 5 anos no Instituto Nokia de Tecnologia em pesquisas de redes sem fio. Trabalhou como pesquisador associado da Universidade de Brasília e como bolsista na Universidade de São Paulo. Tem experiência na área de Engenharia Elétrica, com ênfase em Sistemas de Telecomunicações, atuando principalmente nos seguintes temas: redes neurais artificais, análise de séries temporais, filtros adaptativos e algoritmos RLS rápidos. Atuou como Professor Visitante no Departamento de Engenharia Elétrica na UnB e atualmente é Professor Adjunto na UnB, Campus do Gama.",
-        "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png"
-      },
-      {
-        "email": "lbomcarvalho@gmail.com",
-        "nome": "Lindomar Bomfim de Carvalho",
-        "bio": "É Bacharel e Licenciado em Física pela Universidade de Brasília (1997 e 1998) e Doutor em Física pela Universidade de Houston - Texas, US (2005). Tem experiência na área de Física da Matéria Condensada, com ênfase no estudo de estruturas de Líquidos e Sólidos, propriedades magnéticas dos sólidos; difractometria; espalhamento de nêutrons; XRD e montagem e operação de sistema de crescimento de filmes finos por sputtering; experiência na montagem e uso de forno de centelha voltaica (Tri-arc furnace) - preparação de amostras inter-metálicas. Tem também trabalhado na montagem e operação da plataforma de medidas físicas (Physical Property Measurements System - PPMS), especialmente com as opções Capacidade Térmica (HC), VSM e ACMS.",
-        "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png"
-      },
-      {
-        "email": "loana@unb.br",
-        "nome": "Loana Nunes Velasco",
-        "bio": "Graduada em 2005 pela Universidade Federal de Mato Grosso, no curso de Engenharia Elétrica, mestrado no programa de pós-graduação da Universidade Estadual Paulista Júlio de Mesquita Filho do campus de Ilha Solteira, na área de Qualidade de Energia (2007). Doutorado na Universidade Federal de Uberlândia, na Área de Qualidade de Energia, (2013).",
-        "fto" : "https://arquivos.unb.br/arquivos/2022216028b828246243491e5aae204dd/FOTO_TEAMS.jpg"
-      },
-      {
-        "email": "lmbrasil@gmail.com",
-        "nome": "Lourdes Mattos Brasil",
-        "bio": "Lourdes Mattos Brasil possui graduação em Engenharia Elétrica pela Universidade Federal de Santa Catarina (1989), Mestrado em Engenharia Elétrica pela Universidade Federal de Santa Catarina (1994) e concluiu o doutorado em Engenharia Elétrica pela Universidade Federal de Santa Catarina em 1999, sendo parte realizado na Facultés Universitaires Notre-Dame de La Paix (FUNDP), Namur Belgium (1998). Realizou estágio Pós-Doutoral no Programa de Pós-Graduação em Engenharia Biomédica da Universidade Federal da Paraíba (2001-2002). Atualmente é Professor Adjunto da Universidade de Brasília (UnB), Faculdade UnB-Gama (FGA), onde atua na Engenharia Eletrônica, bem como é coordenadora do Lato Sensu em Engenharia Clínica e do Stricto Sensu, Mestrado em Engenharia Biomédica. Tem experiência na área de Engenharia Biomédica, com ênfase em Informática em Saúde, atuando principalmente nos seguintes temas: informática em saúde, inteligência artificial em saúde, engenharia biomédica, redes neurais artificiais, sistemas baseados no conhecimento, descoberta de conhecimento, realidade virtual, sistemas tutores inteligentes, sistemas especialistas híbridos e gestão do conhecimento. Suas produções técnicas-científicas permeiam essas áreas, bem como suas publicações de livros, prêmios, palestras/seminários, pareceres, consultorias. Também participa como membro das sociedades brasileira e internacional: SBC, SBEB e IEEE.",
-        "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png" 
-      },
-      {
-        "email": "luciano.unb@gmail.com",
-        "nome": "Luciano Emidio Neves da Fonseca",
-        "bio": "Possui doutorado em Engenharia Oceânica pela Universidade de New Hampshire, EUA (2001), mestrado em Engenharia Elétrica pela Universidade Estadual de Campinas (1990) e graduação em Engenharia Elétrica pela Universidade de Brasília (1986). Atualmente é Professor Adjunto da Faculdade de Engenharia do Gama da Universidade de Brasília. Foi Professor Associado da University of New Hampshire, Departamento de Engenharia Oceânica; e Especialista do Programa de Geofísica Marinha da Comissão Oceanográfica Intergovernamental da Nações Unidas. Tem experiência na área de Engenharia Oceânica e Processamento digital de Sinais, com ênfase em Acústica Submarina, atuando principalmente nos seguintes temas: Geofísica marinha, Sensoriamento Remoto, GIS marinho e Visualização Científica de dados oceanográficos, ciências oceânicas e geoengenharia. Atualmente é Coordenador Geral de Graduação do Campus UnB-Gama, onde são ministrados cursos de Engenharia Aeroespacial, Engenharia Automotiva, Engenharia de Energia, Engenharia Eletrônica e Engenharia de software.",
-        "fto" : "https://arquivos.unb.br/arquivos/20200202017b512057463edc60763d09d/20525577_1324385751006224_4911600222133387043_n.jpg" 
-      },
-      {
-        "email": "lucianonoleto@unb.br",
-        "nome": "Luciano Gonçalves Noleto",
-        "bio": "Luciano Gonçalves Noleto é Engenheiro Mecânico (2004), mestre em Ciências Mecânicas (2006) e Doutor em Ciências Mecânicas (2010) pela Universidade de Brasília. No presente momento é professor adjunto da Universidade de Brasília, lotado na Faculdade UnB Gama e atuando no curso de Engenharia de Energia. Durante os anos de 2006 a 2008 exerceu o cargo de professor substituto no departamento de Engenharia Mecânica da UnB, lecionando nas áreas de Termodinâmica, Mecânica dos Fluidos, Transferência de Calor e Métodos Numéricos. Os temas recorrentes nos trabalhos publicados são: Escoamentos Turbulentos, Escoamentos Ambientais, Turbinas Hidráulicas, Métodos Numéricos e Método dos Elementos Finitos.",
-        "fto" : "https://arquivos.unb.br/arquivos/20201721587fd92041578c3e266ddea38/IMG_2456.JPG"
-      },
-      {
-        "email": "souesil@unb.br",
-        "nome": "Maria de Fátima Souza e Silva",
-        "bio": "Possui graduação em Engenharia Civil pela Universidade Federal de Santa Maria (1987), graduação em Matemática e Física Licenciatura Plena pela Faculdade Imaculada Conceição (1982), mestrado em Engenharia Civil pela Universidade Federal do Rio Grande do Sul (1995) e doutorado em Engenharia de Produção pela Universidade Federal de Santa Catarina (2005). Atualmente é professor adjunto 4 da Faculdade UnB Gama, responsável pelas disciplinas de Gestão da Produção e Qualidade. Compõe o quadro de professores do Programa de Pós-graduação em Desenvolvimento, Sociedade e Cooperação Internacional onde ministrou as disciplinas de Políticas Públicas (enfase em avaliação), Metodologia Científica e Teorias do Desenvolvimento. Orientou uma dissertação de mestrado no Programa de Pós-graduação em Estruturas e Construção Civil, uma no Programa de Pós-graduação em Arquitetura e Urbanismo e uma no Programa de Pós-graduação em Ciência da Informação. Atualmente, orienta no PPGDSCI uma dissertação de mestrado. Tem experiência na área de Gestão da Produção, atuando nos seguintes campos: Educação em Engenharia; Habitação de Interesse Social; Gestão da Produção com ênfase em edificações e automotiva; Processo de Projetos Tecnológicos, incluindo sistemas e processos de monitoramento de políticas públicas, desenvolvimento de projetos de fábricas baseados na gestão de processos e desenvolvimento de protótipos de projetos inovadores como carros elétricos e sistemas alternativos para a produção de energia. Possui 33 artigos publicados em anais de eventos, dois artigos publicados em periódicos científicos, um livro publicado em co-autoria e dois capítulos de livros em co-autoria.",
-        "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png"
-      },
-      {
-        "email": "mariliamfg@gmail.com",
-        "nome": "Marília Miranda Forte Gomes",
-        "bio": "Bacharel em Estatística pela Universidade de Brasília (2005). Mestre (2008) e Doutora (2011) em Demografia pelo programa de Pós-Graduação do Centro de Desenvolvimento e Planejamento Regional Cedeplar/FACE/UFMG. Atualmente é Professora Adjunta da Faculdade do Gama (FGA) da Universidade de Brasília (UnB). Áreas de interesse: Probabilidade e Estatística, Estatística Aplicada, Métodos Quantitativos Aplicados às Engenharias, Ciências Contábeis e Atuariais/Administração/Ciências Sociais/Relações Internacionais/Saúde/Ciências biológicas, População e saúde, Técnicas de Análise Demográfica, Envelhecimento, Mortalidade e Previdência.",
-         "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png"
-      },
-      {
-        "email": "mateusmiranda@unb.br",
-        "nome": "Mateus Rodrigues Miranda",
-        "bio": "Pós-Doutorado em Design de Transporte e Ergonomia do Produto pela Universidade de Quebec em Montreal - UQÀM (2015). - Doutorado em Ciências Mecânicas pela Universidade de Brasília (2014). - Mestrado em Engenharia Aeronáutica e Mecânica pelo Instituto Tecnológico de Aeronáutica / ITA (2004). - Graduação em Engenharia Mecânica pela Universidade de Brasília (2000) Professor Adjunto da Universidade de Brasília - UnB (Campus Gama) nos Cursos de Engenharia Automotiva e de Engenharia Aeroespacial, ministrando disciplinas e desenvolvendo pesquisas nas áreas de Design Automotivo, Ergonomia do Produto e Sistemas Aeroespaciais. Experiência profissional nas áreas de Engenharia Mecânica, Engenharia Aeronáutica, Design de Produto e Ergonomia, incluindo trabalhos desenvolvidos na EMBRAER (2004-2009), onde atuou como engenheiro de desenvolvimento do produto. Também atuou profissionalmente nas áreas automação e inspeção veicular. Membro do Laboratório de Arte e Tecnociência - LART, desenvolvendo pesquisas nas áreas de Projeto de Produto, Design, Ergonomia, Simulação e Realidade Virtual.",
-        "fto" : "https://arquivos.unb.br/arquivos/202006111361ff20463131959cc7f11dc/foto_perfil_menor2.jpg"
-      },
-      {
-        "email": "maura@unb.br",
-        "nome": "Maura Angelica Milfont Shzu",
-        "bio": "Professora da Universidade de Brasília, campus Gama. Possui doutorado em Estruturas e Construção Civil pela Universidade de Brasília (2006), mestrado em Engenharia Civil, área de concentração: Estruturas e Construção Civil, pela Universidade Federal de Pernambuco (2001), e graduação em Engenharia Civil pela Universidade de Pernambuco (1997). Atuou durante dois anos como engenheira calculista de estruturas e fundações. Lecionou na graduação e pós-graduação do curso de engenharia civil da UnB na condição de monitora e estagiária. Lecionou na graduação dos cursos de engenharia civil e elétrica da UnB, na condição de professora substituta. Tem experiência acadêmica na área de Engenharia Civil, com ênfase em Mecânica dos Sólidos e Mecânica da fratura, atuando principalmente na área de otimização e propagação de fissuras.",
-        "fto" : "https://arquivos.unb.br/arquivos/202012303701b420474519724e2ba6774/WhatsApp_Image_2020-06-09_at_19.34.04.jpeg"
-      },
-      {
-        "email": "serr.mau@gmail.com",
-        "nome": "Maurício Serrano",
-        "bio": "Possui graduação em Engenharia da Computação pela Universidade Federal de São Carlos (2001) e mestrado em Ciência da Computação pela Universidade Federal de São Carlos (2003). Foi docente da Universidade de Franca e professor contratado pelo Departamento de Ciência da Computação do ICMC/USP - São Carlos, ministrando disciplinas da área da computação. Defendeu a tese de doutorado em 23 de Agosto de 2011 na Pontifícia Universidade Católica do Rio de Janeiro (PUC-Rio), orientado pelo Professor Dr. Julio Cesar Sampaio do Prado Leite. Atualmente, é professor adjunto na Universidade de Brasília, campus do Gama (UnB/FGa), no curso de Engenharia de Software. Tem experiência na área de Ciência da Computação, com ênfase em Engenharia de Software, atuando principalmente nos seguintes temas: arquitetura de software, engenharia de requisitos, rastreabilidade, sistemas multi-agentes (mas), paradigma intencional e robótica educacional.",
-        "fto" : "https://arquivos.unb.br/arquivos/20200252175954205888395e8adf3014b/photo_2020-06-01_15-19-11.jpg" 
-      },
-      {
-        "email": "mileneserrano@unb.br",
-        "nome": "Milene Serrano",
-        "bio": "Sou graduada em Engenharia de Computação pela Universidade Federal de São Carlos (UFSCar) e pós-graduada (mestrado) em Ciência da Computação pela mesma instituição de ensino, sob a orientação da Professora Dra. Rosângela Aparecida Dellosso Penteado. Durante a realização do mestrado, fui bolsista CAPES por mérito e classificação segundo os critérios do Departamento de Computação da UFSCar. Fiz estágio supervisionado para docente da UFSCar...",
-       "fto": "https://arquivos.unb.br/arquivos/202012303701b420474519724e2ba6774/WhatsApp_Image_2020-06-09_at_19.34.04.jpeg"
-       }
+      "email": "abso@unb.br",
+      "nome": "Alessandro Borges Sousa Oliveira",
+      "bio": "Possui graduação em Engenharia Mecânica pela Universidade de Brasília (1994), mestrado em Engenharia Mecânica pela Universidade de Brasília (1997) e doutorado em Ecole Doctorale - Ecole Nationale Supérieure D'arts Et Métiers (2004). É professor adjunto da Universidade de Brasília. Tem experiência na área de Engenharia Mecânica, com ênfase em Calibração Dinâmica, atuando principalmente nos seguintes temas: calibração dinâmica, motores de combustão interna, metrologia, aquisição de sinais e tubo de choque, vibrações, projetos de sistemas mecânicos, CAD, Elementos finitos, Manutenção de Máquinas. Desde 1997 é coordenador do Projeto Baja SAE da UnB . Atualmente é Diretor do Campus da UnB no Gama, onde são ministrados os cursos de Engenharia Aeroespacial,Engenharia Automotiva, Engenharia de Energia, Engenharia Eletrônica e Engenharia de software.",
+      "fto" : "https://arquivos.unb.br/arquivos/2024150224ff243068307f3c4b15a8090/abso_2024.jpg",
+    },
+    {
+      "email": "alexreis@unb.br",
+      "nome": "ALEX REIS",
+      "bio": "É vinculado ao curso de Engenharia de Energia na Universidade de Brasília (UnB), Faculdade UnB Gama (FGA), atuando em ensino, pesquisa e extensão na área de Sistemas Elétricos de Potência. Ele é graduado e doutor em Engenharia Elétrica pela Universidade Federal de Uberlândia, com ênfase em Sistemas de Energia Elétrica. Suas áreas de interesse incluem Qualidade da Energia Elétrica, Eficiência Energética, Integração de sistemas eólicos e fotovoltaicos à rede elétrica, Desenvolvimento de projetos de instalações em BIM e Desenvolvimento de sistemas eletrônicos IoT para automatização de equipamentos elétricos.",
+      "fto" : "https://arquivos.unb.br/arquivos/2020010191738e2048786ae0a675ab743/IMG-1192.jpg",
+    },
+    {
+      "email": "Não informado",
+      "nome": "ANDRE BARROS DE SALES",
+      "bio": "O professor é afiliado ao curso de Engenharia de Software na Faculdade do Gama da Universidade de Brasília. Ele possui uma graduação em Tecnologia em Processamento de Dados pelo Instituto Unificado de Ensino Superior Objetivo (1993), especialização em Análise e Projeto de Sistemas de Informação pela Universidade Federal de Goiás (1997), mestrado em Ciência da Computação pela Universidade Federal de Santa Catarina (2000), doutorado em Ciência da Computação pela Université Paul Sabatier, em Toulouse, França (2004), e realizou dois pós-doutorados, um na empresa Blue Elephant Systems gmbh, em Stuttgart, Alemanha (2006), e outro na Universidad Politécnica de Madrid - UPM (2018). Suas áreas de interesse incluem Interação Humano Computador, Requisitos de Software, Engenharia de Software, Informática na Educação e Abordagens de Ensino e Aprendizagem em Engenharia de Software.",
+      "fto" : "https://arquivos.unb.br/arquivos/2023105152024328179026b7493ed0e49/Foto_Andr.jpeg",
+    },
+    {
+      "email": "andrepenna@unb.br",
+      "nome": "ANDRE LUIZ ALMEIDA PENNA",
+      "bio": "Possui Bacharelado e Licenciatura em Física pela Universidade de Brasília, Mestrado em Física Teórica na área de teoria de campos, Doutorado em Física em Teoria de Campos e Partículas e Pós-Doutorado no Centro Internacional de Física da Matéria Condensada (CIFMC). Atualmente é professor efetivo de Física na Universidade de Brasília. Realiza pesquisa em Física Teórica atuando principalmente nos seguintes temas: Mecânica Estatística, Sistemas complexos, Fases topológicas da matéria e Teoria quântica de campos aplicada à matéria condensada.",
+      "fto" : "https://fga.unb.br/image_uploads/0000/0999/andre_big.gif",
+    },
+    {
+      "email": "andre.lanna@gmail.com",
+      "nome": "André Luiz Peron Martins Lanna",
+      "bio": "Possui graduação em Ciência da Computação pela Pontifícia Universidade Católica de Minas Gerais (2006) e mestrado em Engenharia Elétrica pela Pontifícia Universidade Católica de Minas Gerais (2009). Atualmente é professor assistente e aluno de doutorado da Universidade de Brasília. Tem experiência na área de Ciência da Computação, com ênfase em Engenharia de Software, atuando principalmente nos seguintes temas: reuso de softrware, linhas de produto de software, qualidade de software e processo de software.",
+      "fto" : "https://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4746286Z3",
+    },
+    {
+      "email": "andreiaacosta@unb.br",
+      "nome": "Andréia Alves Costa",
+      "bio": "Graduada em Química pela Universidade de Brasília (Bacharel em 2003 e Licenciada em 2006), e Mestre em Química pela mesma instituição (2006). Concluiu o doutorado em Química pela Universidade de Brasília (2011), participando em um projeto de doutorado Sandwiche (2009-2010) na University of Central Florida (USA). Experiência na área de Química Inorgânica com ênfase em Catálise, atuando principalmente na aplicação de catalisadores suportados em reações de oxidação, reações de esterificação para produção de biodiesel e reações de adsorção envolvendo hidrocarbonetos policíclicos aromáticos. Atualmente, trabalha como professora na Faculdade UnB-Gama (FGA) na área de Engenharia de Energia com ênfase em atividades envolvendo a área de Processamento de Petróleo e Gás.",
+      "fto" : "https://arquivos.unb.br/arquivos/2020097188d3e82049490ebf714c01af2/DSC_0794_4.JPG",
+    },
+    {
+      "email": "andrianov@unb.br",
+      "nome": "Artem Andrianov",
+      "bio": "Formado pela Universidade Nacional de Dnipropetrovsk (Ucrânia) com diploma de Mestrado em Ferramenta de Máquinas e Sistemas (2002). Ph.D. em Ciência dos Materiais (de gestão dos resíduos radioactivos e da radiação) na mesma instituição (2008). Leccionou as disciplinas de tecnologia aeroespacial como professor associado da Universidade Nacional de Dnipropetrovsk e estudou problemas de conversão de tecnologia aeroespacial para a gestão dos resíduos radioactivos como o principal especialista do Centro Aeroespacial da Educação Nacional da Juventude (Ucrânia). Possui experiência no desenvolvimento de materiais compósitos para blindagem de sistemas eletrônicos de satélites contra radiação espacial ionizante. Atualmente é professor da Universidade de Brasília (Campus Gama) no curso de Engenharia Aeroespacial, ministrando disciplinas e desenvolvendo pesquisas nas áreas de Mecânica de Estruturas Aeroespaciais e Projeto de Sistemas Aeroespaciais. ",
+      "fto" : "https://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4929129H5", 
+    },
+    {
+      "email": "bertoldi@unb.br ",
+      "nome": "Prof.Artur Elias de Morais Bertoldi",
+      "bio": "Possui graduação em Física pela Universidade Federal de São Carlos (2004) e mestrado em Ciências Mecânicas pela Universidade de Brasília (2007). Atualmente é professor Assistente da Universidade de Brasília. Tem experiência na área de Engenharia Aeroespacial, com ênfase em propulsão de foguetes, atuando principalmente nos seguintes temas: Sistemas Propulsivos Híbridos, combustíveis híbridos a base de hidrocarbonetos de cadeia longa, instabilidade de combustão em motores de foguete a propelente híbrido.",
+      "fot" : "https://arquivos.unb.br/arquivos/2020177047ab3c20459134b454fe1dfd7/artur.png", 
+    },
+    {
+      "email": "ambrasil@unb.br",
+      "nome": "Augusto César de Mendonça Brasil",
+      "bio": "Possui graduação em Engenharia Mecânica pela Universidade Federal do Pará (1988), mestrado em Engenharia Ambiental pela Universidade Federal do Espírito Santo (1992), doutorado em Engenharia Mecânica pelo Instituto Superior Técnico da Universidade Técnica de Lisboa (2000) e Pós Doutorado pelo Instituto Superior Técnico na área de Consumo Energético e Emissão de Poluentes de Veículos de Transportes. Atualmente é professor associado da Universidade de Brasília. Tem experiência na área de Engenharia Mecânica, Engenharia Ambiental e Engenharia de Energia. Atua principalmente nos seguintes temas: transportes e energia, biomassa como fonte energética, poluição atmosférica, consumos e emissões dos transportes e combustíveis alternativos.",
+      "fot" : "https://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4795678E4",
+    },
+    {
+      "email": "bruno.ribas@unb.br",
+      "nome": "BRUNO CESAR RIBAS",
+      "bio": "Possui graduação em Bacharelado em Ciência da Computação pela Universidade Federal do Paraná (2008), mestrado em Informática pela Universidade Federal do Paraná (2011) e doutorado em Informática pela Universidade Federal do Paraná (2015). Atualmente é professor adjunto da Universidade de Brasília. Tem experiência na área de Ciência da Computação, com ênfase em Ciência da Computação, atuando principalmente nos seguintes temas: software livre, unix, satisfatibilidade e cloud computing.",
+      "fto" : "https://arquivos.unb.br/arquivos/2020255182c0b52056377e30e961155a2/photo_2018-08-26_14-31-26.jpg",
+    },
+    {
+      "email": "bruno.pereira@unb.br",
+      "nome": "BRUNO LUIZ PEREIRA",
+      "bio": "Bacharel em Engenharia Mecatrônica, mestre e doutor em Engenharia Mecânica pela Universidade Federal de Uberlândia, desenvolve pesquisas nas áreas de veículos elétricos e híbridos, simulação de sistemas automotivos, controle, modelagem, otimização, métodos computacionais e inteligência computacional, sobretudo na subárea da teoria dos conjuntos fuzzy. Atualmente é professor adjunto da Universidade de Brasília (UnB), onde ministra as disciplinas de Fundamentos dos Veículos Elétricos e Sistemas Hidráulicos e Pneumáticos.",
+      "fto" : "https://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4335483Y6",
+    },
+    {
+      "email": "anflor@unb.br",
+      "nome": "Carla Tatiana Mota Anflor",
+      "bio": "Possui graduação em Engenharia Mecânica pela Universidade de Passo Fundo (2000), mestrado em Engenharia Mecânica pela Universidade Federal do Rio Grande do Sul (2003) e doutorado em Engenharia Mecânica pela Universidade Federal do Rio Grande do Sul (2007). Atualmente é Professora da Engenharia Automotiva pela Universidade de Brasília, Campus do Gama. Possui conhecimento na área de vibrações mecânicas e tratamentos de dados estocásticos empregando técnicas de análise espectral em sinais. Seu tema principal de atuação refere-se à pesquisa de desenvolvimento de métodos numéricos para problemas de otimização em sólidos empregando elementos de contorno. Membro integrante do Grupo de Mecânica Experimental e Computacional (GMEC) da Universidade de Brasília. Docente credenciado aos Programas de Pós-Graduação em Ciências Mecânicas e Pós-Graduação em Integridade de Materiais da Engenharia.",
+      "fot" : "https://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4770378U4",
+    },
+    {
+      "email": "rocha.carla@gmail.com/caguiar@unb.br",
+      "nome": "Carla Silva Rocha Aguiar",
+      "bio": "Carla Rocha é docente na Universidade de Brasília (UnB), no curso de Engenharia de Software. É pesquisadora e uma das coordenadoras do Laboratório Avançado de Produção Pesquisa e Inovação de Software (LAPPIS). Obteve seu doutorado em 2009 pelo LIRMM (Laboratoire d'Informatique, de Robotique et de Microélectronique de Montpellier), na área de processamento de imagens de profundidade no contexto de restauração e herança cultural. Possui graduação em Engenharia Mecatrônica (2005) pela Universidade de Brasília (UnB). Suas áreas de pesquisa e interesses são: métodos colaborativos e empíricos de desenvolvimento software, ecossistema das comunidades de software livre, mineração de repositórios de software, assistentes conversacionais (chatbots), DevOps, MLOps, educação, diversidade e minorias em Engenharia de Software.",
+      "fot" : "https://arquivos.unb.br/arquivos/2020049025f17f2054547e76459bd76e8/WhatsApp_Image_2020-07-06_at_09.34.26_1.jpeg", 
+    },
+    {
+      "email": "chantal@aerospace.unb.br ",
+      "nome": "Chantal Cappelletti",
+      "bio": "●\tDoutorado em  Engenharia Aeroespacial  - Scuola di Ingegneria Aerospaziale, Università di Roma Sapienza. ●\tMestrado em Engenharia Astronáutica -Scuola di Ingegneria Aerospaziale, Università di Roma Sapienza. Atuação profissional ●\tÉ Professor Adjunto (desde fevereiro 2013) em Sistemas Aeroespaciais na Faculdade do Gama, Universidade de Brasília - UnB, DF, Brasil. ●\tÉ membro eleito da IAA- International Academy of Astronautics ●\tÉ Sócio fondator da empresa GAUSS Srl (Itália). ●\tFoi Responsável do projeto SERPENS. ●\tFoi delegado da Agência Espacial Italiana no IADC (Inter- Agency Debris Committee) [2006-2012] ●\tPrêmio \"I Guidoniani\", Associação Italiana de Medicina Espacial (AIMAS) pela melhor pesquisa em biomedicina aeroespacial (área de engenharia) [2012] Experiência ●\tTem experiência na área de Engenharia Aeroespacial, com ênfase em Sistemas, Mecânica do Vôo Espacial, Projeto de Sistemas, Space Debris, Astrodinâmica ●\t12 anos de experiência em projetação de pequeno satélites, sendo Project Manager de 5 satélites (EduSat, UniCubeSat-GG, UniSat-5, SERPENS, TUPOD) e Principal Investigator do satélite UniSat-6. ●\tNa área de biomedicina aeroespacial fui o PI da duas missões GlioLab-0 lançados no espaço com o Space Shuttle no 2011 com as missões STS-134 e STS-135 ●\tPesquisador visitante na Morehead State University (2009-2012) ●\tPorfessor Assistente no curso de alta formação \"High-Level Postgraduate Advanced Course in Aerospace Engineering\"- Università di Roma- Sapienza ●\tAutor de mais de 30 pubblicações na area.",
+      "fot" : "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K8788563H3",
+    },
+    {
+      "email": "claudiaochoa@unb.br",
+      "nome": "CLAUDIA PATRICIA OCHOA DIAZ",
+      "bio": "É professora do curso de Engenharia Eletrônica da Universidade de Brasília, Faculdade Gama (FGA). Possui doutorado em Engenharia de Sistemas Eletrônicos e de Automação pela Universidade de Brasília (2015) e mestrado em Sistemas Mecatrônicos pela mesma instituição (2010). Possui graduação em Engenharia Eletrônica pela Universidad Industrial de Santander (2006). É coordenadora do Laboratório de Robótica e Sistema de Controle (LARSIS) da FGA. Desde 2022 atua como pró-coordenadora de gestão na plataforma tecnológica BEM-TE-VI, que tem por objetivo prestar serviços que agregam diversas iniciativas e soluções voltadas ao público-alvo de pessoas com deficiência. Sua área de atuação se encontra definida nas seguintes linhas temáticas: análise biomecânica do movimento humano com foco em reabilitação; estratégias de controle e de estimação em tecnologias de reabilitação e assistência; órteses, próteses, interfaces corpo e máquina; ergonomia e segurança do trabalho.",
+      "fto" : "https://arquivos.unb.br/arquivos/202017107213ae2040942aa9b697c2501/me.JPG",
+    },
+    {
+      "email": "vendittozzi@aerospace.unb.br",
+      "nome": "Cristian Vendittozzi",
+      "bio": "Possui mestrado em Engenharia Aeroespacial (2009), e doutorado em Engenharia de Materiais pela Sapienza, Universidade de Roma, Italia (2013) e completou a formação com um Mestrado em Administração de Empresas, (Executive MBA), pelo MIP, a business school do Politecnico di Milano (2014). Atualmente é professor adjunto da Universidade de Brasília - Faculdade UnB Gama nas áreas de Engenharia Aeroespacial e Automotiva. De 2007 para 2014 foi membro da equipe de desenho e desenvolvimento da missão espacial LARES. O satélite LARES foi colocado em órbita em fevereiro de 2012. Neste período, as principais tarefas realizadas foram: Projeto do Corpo Satellite (Qualification Model e Flight Model). Projeto de sistema de montagem de bordo para os Corne Cube Reflectors (CCR). Projeto do MGSE (equipamentos mecânicos de terra para o satellite). De 2010 a 2015 participou em vários projectos multidisciplinares: o Prin2008 (PRojeto de Interesse Nacional, financiado do Ministério da Universidade e da Pesquisa Italiano) e dois projetos de pós-doutorado (2013-2014 e 2014-2015), no departamento de engenharia de materiais, química e ambiente da Universidade Sapienza de Roma. É o autor de um livro, mais de trinta artigos científicos e duas patentes italianas.",
+      "fot" : "https://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K8380659A3", 
+    },
+    {
+      "email": "cristianeSramos@unb.br",
+      "nome": "Cristiane Soares Ramos",
+      "bio": "Professora Assistente na Faculdade Gama (FGA) da Universidade de Brasília (UnB), curso de Engenharia de Software. Doutoranda em Engenharia de Sistemas e Computação (COPPE/UFRJ). Mestre em Gestão do Conhecimento e Tecnologia da Informação área de concentração: Engenharia de software; Bacharel em Ciência da Computação e Tecnóloga em Processamento de Dados, pela Universidade Católica de Brasília. É credenciada pela Softex como Implementadora e Avaliadora do MPS.BR. Tem experiência em: desenvolvimento de software; gerência de projetos; implantação de processos segundo os modelos MR-MPS e CMMI-DEV; e avaliação segundo o MA-MPS / SCAMPI. Experiência em definição e melhoria de processos de software, implantação dos modelos de qualidade CMMI / MPS.BR, auditorias de qualidade e avaliação independente de garantia da qualidade de processo e produto. Exerce atividades como docente desde 2005 em cursos de pós-graduação ministrando disciplinas relacionadas à Qualidade de Software e Melhoria de Processos de Software.",
+      "fot" : "https://arquivos.unb.br/arquivos/202011108717482048458e7f63ad71db6/Foto_perfil.jpg",
+    },
+    {
+      "email": "jacques.unb@gmail.com",
+      "nome": "Cristiano Jacques Miosso",
+      "bio": "Professor Adjunto da Faculdade do UnB Gama desde 24/03/2011. Doutor em Engenharia Elétrica e de Computação pela Universidade do Texas em El Paso (UTEP), possui ainda mestrado em Engenharia Elétrica pela Universidade de Brasília (2001). Graduou-se por esta universidade em 1999, quando recebeu o prêmio de melhor aluno de graduação do departamento de Engenharia Elétrica. Suas áreas de interesse incluem processamento estatístico de sinais, compressive sensing, imageamento, ressonância magnética, processos estocásticos, aprendizagem de máquina e teoria de comunicação digital. Pelo seu trabalho de doutoramento, recebeu, em 2011, o prêmio de melhor aluno de doutorado do departamento de Engenharia Elétrica e de Computação, da UTEP, o prêmio de melhor tese de doutorado do mesmo departamento, e o prêmio de melhor tese de doutorado de toda a UTEP, incluindo todas as áreas de ciências exatas e ciências da saúde.",
+      "fot" : "https://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4768519U6",
+    },
+    {
+      "email": "caabreu@gmail.com",
+      "nome": "Cristina de Abreu Silveira",
+      "bio": "Possui graduação em Engenharia Elétrica pela Universidade Federal da Bahia (1979 - Eletrotécnica e 1986 - Eletrônica), graduação em Musicoterapia pela Universidade Católica do Salvador (1997), especialização em Tecnologia Digital pela Universidade Federal da Bahia (1993), especialização em Proteção de Sistemas de Geração e Transmissão pela Companhia Energética de São Paulo (1984), (bolsista do MEC/CEDATE pelo CENTEC), especialização em Equipamentos AT- Compensação Estática - Harmônicos na Siemens AG (bolsista pela Cooperação Técnica Internacional Brasil-Alemanha Fundação Carl Duisberg) Erlangen, Alemanha (1982/1983). Possui Mestrado em Engenharia Elétrica pela Universidade Federal da Bahia (1999) e Doutorado em Engenharia Elétrica pela Universidade Federal de Pernambuco (2004). Atuou como docente do 3º grau - Professora Associada 2 - no Instituto Federal de Educação, Ciência e Tecnologia da Bahia (ex-CEFET-BA) desde 1980 onde lecionou disciplinas do curso de Engenharia Industrial Elétrica e atua em projetos de pesquisa e desenvolvimento em parceria com outras instituições até 09 de dezembro de 2011, quando pediu vacância de seu cargo por posse em cargo inacumulável na Universidade de Brasília - Faculdade do Gama. Tem experiência profissional em Processamento de Energia e Sistemas Elétricos, atuando principalmente nas áreas de: compatibilidade eletromagnética, transitórios eletromagnéticos, interferência eletromagnética, eficiência energética, qualidade da energia elétrica e sistemas de aterramento. É membro do IEEE-BA, tendo sido Conselheira do Ramo Estudantil do IEEE/IFBA até 2011 e presidente do Capítulo de Aplicações Industriais no biênio 2010-2011. Foi Conselheira do CREA-BA pelo IFBA no período 2009-2011, Coordenadora da Câmara Especializada de Engenharia Elétrica do CREA-BA em 2010 e 2011 e Coordenadora Nacional das Câmaras /especializadas de Engenharia Elétrica do Sistema CONFEA/CREAs em 2011. Foi Membro do Colegiado do Curso de Engenharia Industrial Elétrica do IFBA de 2007 a 2009 e é professora colaboradora do Programa de Pós-Graduação em Engenharia Elétrica da Universidade Federal da Bahia. Atualmente encontra-se em estágio probatório na UnB - Campus Gama, como docente da área de Engenharia de Energia lecionando disciplinas da área de Sistemas Elétricos de Potência",
+      "fot" : "https://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4721387J6", 
+    },
+    {
+      "email": "daniel.c.araujo@gmail.com",
+      "nome": "DANIEL COSTA ARAUJO",
+      "bio": "Possui graduação em Engenharia de Telecomunicações pela Universidade de Fortaleza (2010), mestrado e doutorado em Engenharia de Teleinformática obtidos na Universiade Federal do Ceará em 2012 e 2016, respectivamente. Foi membro do Grupo de Pesquisa em Telecomunicações Sem Fio (GTEL), atuando na área de na Processamento de Sinais para Comunicações Sem Fio. Em 2013, foi pesquisador visitante na Ericsson Research Labs, Estocolmo, Suécia. Em 2015, participou de estágio doutoral por um período de 1 ano na mesma Ericsson, onde ficou envolvido em atividades de pesquisa relacionadas ao 5G da empresa em parceria com o grupo de pesquisa GTEL. Atualmente é membro do grupo de pesquisa Processamento de Sinais para Análise de Dados e Aprendizado de Sistemas (SIPRAL) e, desde 2019, é professor da Universidade de Brasília, onde atua nas áreas de processamento de arranjo, estimação de canal para sistemas de comunicação MIMO massivo e processamento estatístico de sinais.",
+      "fto" : "https://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4295643T5",
+    },
+    {
+      "email": "damuz@unb.br",
+      "nome": "DANIEL MAURICIO MUNOZ ARBOLEDA",
+      "bio": "Possui graduação em Engenharia Física - Universidad Del Cauca - Colômbia (2003), mestrado em Sistemas Mecatrônicos pela Universidade de Brasília (2006) e doutorado em Mecatrônica pela Universidade de Brasília (2012). Tem experiência na área de projeto de circuitos digitais, projeto e implementação de arquiteturas de hardware para aplicações embarcadas, atuando principalmente nos seguintes temas: descrição e síntese de circuitos usando VHDL, projeto de sistemas embarcados, técnicas bio-inspiradas de otimização, inteligencia coletiva e inteligencia artificial. Possui experiencia em prototipagem de circuitos digitais usando dispositivos FPGAs para aplicações de robótica, automação e controle. Áreas de Interesse (áreas de interesse de ensino e pesquisa) Projeto de sistemas em chip usando dispositivos FPGAs.",
+      "fto" : "https://arquivos.unb.br/arquivos/20200502449e162038378fcfee8d3d78c/foto_informal2.jpg",
+    },
+    {
+      "email": "daniel.sundfeld@unb.br",
+      "nome": "DANIEL SUNDFELD LIMA",
+      "bio": "Professor do magistério superior na Universidade de Brasilia, Faculdade do Gama (FGA), desde 2022. Doutor em Informática pela Universidade de Brasília (2017), com doutorado-sanduíche pela Universidade de Copenhague (2015) (Bolsista CAPES). Principal área de formação é computação paralela, computação de alto desempenho, unidades de processamento gráfico (GPU) e sistemas distribuídos, onde utiliza essas áreas para resolver problemas complexos da Bioinformática. Doutor em informática pela Universidade de Brasília, com período sanduíche na Universidade de Copenhague. Mestre e Bacharel em Ciência da computação pela mesma instituição. Atuou profissionalmente como desenvolvedor sênior (2007-2013) na Aker Security Solutions. Áreas de Interesse (áreas de interesse de ensino e pesquisa): Computação de alto desempenho, Computação Paralela, Bioinformática, Sistemas Distribuídos.",
+      "fto" : "https://arquivos.unb.br/arquivos/2022242239ab692420849f783c625559e/index.jpg",
+    },   
+    {
+      "email": "danielrosa@unb.br",
+      "nome": "Daniel Monteiro Rosa",
+      "bio": "possui graduação em Engenharia Mecânica pela Universidade Federal do Pará (2002), graduação em Tecnologia em Processamento de Dados pelo Centro de Ensino Superior do Pará (1994), mestrado em Engenharia Mecânica pela Universidade Estadual de Campinas (2004) e doutorado em Engenharia Mecânica pela Universidade Estadual de Campinas (2007). Tem experiência na área de Engenharia de Materiais e Metalúrgica, com ênfase em Propriedades Mecânicas dos Metais e Ligas, atuando principalmente nos seguintes temas: espaçamentos dendríticos, solidificação unidirecional descendente, convecção no líquido, ligas sn-pb e macroestrutura.",
+      "fot" : "https://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4759673U6", 
+    },
+    {
+      "email": "diogogarcia(at)unb.br",
+      "nome": "Diogo Caetano Garcia",
+      "bio": "Professor adjunto da Universidade de Brasília, Campus Gama. Possui graduação em Engenharia Elétrica (2006), mestrado em Engenharia Elétrica (2007) e doutorado em Engenharia Elétrica (2012), todos pela Universidade de Brasília. Atuou em projetos de pesquisa e desenvolvimento junto a diversas empresas e órgãos governamentais, tais como a Eletrobrás Eletronorte, Hewlett-Packard Brasil, Petrobrás e Samsung Research Brasil. Foi engenheiro de manutenção eletrônica na Eletronorte em 2007, e professor no Instituto Federal de Brasília (IFB) em 2011. Tem experiência em processamento digital de sinais, atuando principalmente em compressão de imagem e video, processamento 3D e de múltiplas vistas, super-resolução e qualidade de energia.",
+      "fot" : "https://arquivos.unb.br/arquivos/202015618332212038112d5302dd4fb22/citations_big.jpeg",
+    },
+    {
+      "email": "domenico.simone@aerospace.unb.br",
+      "nome": "Domenico Simone",
+      "bio": "Possui graduação (BSc+MSc) em Engenharia Aeronáutica pela University of Rome \"Sapienza\", e doutorado (PhD)  em Theoretical and Applied Mechanics pela University of Rome \"Sapienza\". Atualmente é Professor Adjunto da Universidade de Brasília. Tem experiência na área de Engenharia Aeroespacial, com ênfase em Propulsão Aeroespacial, atuando principalmente na Propulsão Química Espacial (Foguetes solidos, liquidos e Híbridos) e Aeronáutica, com ênfase em modelagem numérica de escoamentos reativos em Ramjet e Scramjet",
+      "fot" : "https://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4323748E6", 
+    },
+    {
+      "email": "eberthcorrea@gmail.com",
+      "nome": "Eberth de Almeida Corrêa",
+      "bio": "Possui graduação em Bacharel em Física pela Universidade de Brasília (1999), mestrado em Física pela Universidade de Brasília (2002) e doutorado em Física pela Universidade de Brasília (2006). Atualmente é professor adjunto da Universidade de Brasília Campus Gama-UnB-FGA. Seu principal interesse é na parte de simulações numéricas aplicadas à Física. Tem experiência na área de Física, com ênfase em Supercondutividade, atuando principalmente nos seguintes temas: Simulação Computacional, Grupo de Renormalização e Cálculos de Monte Carlo Clássico e Quântico.",
+      "fot" : "https://arquivos.unb.br/arquivos/20202100202b2f2060850ed5c4a65b31a/foto_recente.png", 
+    },
+    {
+      "email": "cueva@unb.br",
+      "nome": "EDISON GUSTAVO CUEVA GALARRAGA",
+      "bio": "Possui graduação em Engenharia Mecânica pela Escuela Politécnica Nacional de Quito, Equador (1993), mestrado em Engenharia Metalúrgica e de Materiais pela Universidade de São Paulo (1997), doutorado em Engenharia Metalúrgica e de Materiais pela Universidade de São Paulo (2002), e pós doutorado em Engenharia Mecânica pela Universidade de São Paulo (2005 e 2008). Atualmente é professor adjunto da Universidade de Brasília - Faculdade Gama. Tem experiência na área de Engenharia Metalúrgica e de Materiais, com ênfase em Estrutura dos Metais e Ligas, Transformação de Fase e Tratamentos Térmicos, atuando principalmente nos seguintes temas: desgaste de materiais por deslizamento, abrasão e erosão-cavitação, particularmente de ferros fundidos e aços carbono.",
+      "fto" : "https://fga.unb.br/image_uploads/0000/0163/edison_gustavo_cueva_calarraga_perfil_big.jpg",
+    },
+    {
+      "email": "edsonalves@unb.br",
+      "nome": "EDSON ALVES DA COSTA JUNIOR",
+      "bio": "O professor adjunto da Universidade de Brasília, no campus Gama (FGA), é licenciado e mestre em Matemática e doutor em Engenharia Elétrica, todos pela Universidade de Brasília. Ele já atuou como professor na União Educacional do Planalto Central, pesquisador do Instituto CTS e técnico especializado no Ministério do Desenvolvimento Social e Combate à Fome. Ele tem experiência na área de Matemática, com ênfase em Geometria Algébrica, e na área de Computação, com ênfase em Jogos Eletrônicos e Criptografia. Atualmente, ele trabalha em projetos de pesquisa na área de software embarcado e microcontroladores ARM. Suas áreas de interesse incluem Software Básico, Processamento Gráfico (Graphics), Linguagens de Programação, Teoria Eletromagnética, Microondas, Propagação de Ondas, Antenas e Teoria dos Números.",
+      "fto" : "https://fga.unb.br/image_uploads/0000/0169/edson_alves_da_costa_junior_perfil_big.jpg",
+    },    
+    {
+      "email": "mintsu@unb.br",
+      "nome": "Edson Mintsu Hung",
+      "bio": "Possui graduação, mestrado e doutorado pelo Departamento de Engenharia Elétrica da Universidade de Brasília. Atualmente é professor e coordenador de Engenharia Eletrônica na Universidade de Brasília no campus do Gama. Tem experiência na área de Engenharia Elétrica, com ênfase em Processamento de Sinais e Eletrônica, atuando principalmente nos seguintes temas: compressão de imagem, compressão de vídeo, processamento de imagens, sistemas embarcados e implementação de sistemas criptográficos (em software, hardware e firmware).",
+      "fot" : "https://fga.unb.br/image_uploads/0000/0133/edson_mintsu_hung_perfil_big.jpg", 
+    },
+    {
+      "email": "edna.canedo@gmail.com",
+      "nome": "Edna Dias Canedo",
+      "bio": "Doutora em Engenharia Elétrica pela Universidade de Brasília (UNB). Área de concentração: Telecomunicações. título concedido em 15.08.2012. Mestre pela Universidade Federal da Paraíba UFPB. Área de concentração: Sistemas de Software. Área Especifica: Engenharia de Software, título concedido em 29.08.2002. Graduada em Análise de Sistemas pela Universidade Salgado de Oliveira; Goiás (1999). Professora do curso de Engenharia de Software da Faculdade FGA Gama, da Universidade de Brasília UNB. Atua na área de desenvolvimento de sistemas desde 1998, tendo trabalhado como Analista de Sistemas na Empresa de Processamento de Dados do Estado de Goiás Prodago, até o ano de 2000. Em Brasília atuou na Poliedro como Consultora de Desenvolvimento e Gerência de Projetos e como Analista de Sistemas Pleno em Desenvolvimento na ECT - Empresa de Correios e Telégrafos até abril de 2010, desenvolvendo atividades na área de Governança em Tecnologia da Informação na implantação do framework COBIT. Desde 2000 dedica-se a atividades de docência universitária nos cursos de graduação e pós-graduação, atuando na área de Sistemas de Software, Redes de Petri, Engenharia de Software, Orientação a Objetos, Gerência de Projetos, Teste de Software, Arquitetura Orientada a Serviços, Programação e Governança em Tecnologia da Informação.",
+      "fot" : "https://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4705846A8", 
+    },
+    {
+      "email": "ecosta@unb.br",
+      "nome": "Edgard Costa Oliveira",
+      "bio": "Professor Adjunto da Universidade de Brasília, UnB, Campus Gama, cursos de graduação em Engenharia. Doutor e Mestre em Ciência da Informação pela UnB/CID (2006 e 2001). Pesquisador e professor em disciplinas: humanidades, engenharia de software, gerenciamento de projetos de TI, planejamento de sistemas de informação, produção de documentos e análise da informação. 20 anos de experiência profissional e de pesquisa em TI, com ênfase em segurança da informação, gestão de riscos, engenharia de software, gerenciamento de projetos e organização da informação.",
+      "fot" : "https://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4795431T3", 
+    },
+    {
+      "email": "elainevenson@unb.br",
+      "nome": "Elaine Venson",
+      "bio": " Professora do Curso de Engenharia de Software da Faculdade Gama (FGA), da Universidade de Brasília (UnB), vinculada ao CQTS (Centro de Qualidade e Testes de Software). Possui graduação e mestrado em Ciências da Computação pela Universidade Federal de Santa Catarina. Atuou por 10 anos no mercado de Engenharia de Software nas áreas de engenharia de requisitos, métricas de software, gestão de projetos e melhoria de processos. Exerceu cargos como coordenadora de grupos de analistas de requisitos, gerente de projeto, gerente de fábrica de software, especialista e coordenadora de métricas. Integrou equipes de definição de processos e avaliação de nível de maturidade CMMI. Participou ativamente de projetos de software de grande porte em organizações como Petrobras, Vale, Bank Boston e CAIXA Econômica Federal. ",
+      "fot" : "https://arquivos.unb.br/arquivos/202111203784532193127b3c6e06e85bf/aIMG_7499.jpg", 
+    },
+    {
+      "email": "emmanuel@unb.br",
+      "nome": "Emmanuel Pacheco Rocha Lima",
+      "bio": "Possui graduação em Engenharia Mecânica pela Universidade Federal de Pernambuco (1999), mestrado em Engenharia Mecânica pela Universidade Federal de Pernambuco (2002) e doutorado em Ciências na Área de Tecnologia Nuclear Materiais pelo Instituto de Pesquisas Energéticas e Nucleares - IPEN (2008). Tem experiência na área de Engenharia de Materiais e Metalúrgica, com ênfase em materiais metálicos, atuando principalmente nos seguintes temas: ligas de alumínio de alta formabilidade, cinética de recristalização, transformação de fases, decomposição em ligas de alumínio, evoluçao e controle microestrutural, aços rápidos, metalurgia do pó, sinterização e tratamentos termomecânicos. Atualmente é Professor Adjunto e Coordenador de Graduação do curso de Engenharia Automotiva da Universidade de Brasília Campus Gama - FGA/UnB.",
+      "fot" : "https://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4701165D8", 
+    },
+    {
+      "email": "eneidagv@unb.br",
+      "nome": "Eneida Gonzalez Valdes",
+      "bio": "Possui graduação em Engenharia Mecânica pelo Instituto Superior Politecnico Jose Antonio Echevarria (1984) e mestrado em Engenharia Mecânica pela Universidade de Brasília (1999). Tem experiência na área de Engenharia Mecânica, com ênfase em Projetos de Engenharia Mecânica, atuando principalmente em Projeto de Sistemas Mecânicos, Desenvolvimento de Equipamentos (produtos) e Projetos Industriais. Dezenove anos de experiência como professora universitária, ministrando diferentes disciplinas tais como: Desenho Técnico, Desenho de Arquitetura, Geometria Descritiva, Processos de Fabricação Mecânica, Mecânica Geral, Introdução a Robótica, Ciência dos Materiais, Resistência dos Materiais 1 e 2, Materiais de Construção Civil, Elementos de Máquinas I e II, Processos de Fabricação Mecânica I, e Materiais de Fabricação Mecânica I. Professora da Universidade de Brasília no Campus de Gama lecionando atualmente as disciplina de Desenho Industrial Assistido por Computador e Design e Concepção de Veículos.",
+      "fot" : "https://fga.unb.br/image_uploads/0000/1035/eneida_thumb.gif", 
+    },
+    {
+      "email": "evgarcia@unb.br",
+      "nome": "Euler de Vilhena Garcia",
+      "bio": "Professor Adjunto 2 da Universidade de Brasília, campus Gama. Possui experiência em pesquisas clínicas na área de eletrocardiologia, tendo sido engenheiro e pesquisador do Instituto do Coração do Hospital das Clínicas da Faculdade de Medicina da USP e consultor autônomo para a filial brasileira da GE Healthcare na área de equipamentos de eletrocardiologia. Seus interesses são na área de Engenharia Biomédica e Educação em Engenharia. Atua em equipes multidisciplinares, tendo publicado artigos científicos em periódicos internacionais das áreas de Engenharia Biomédica, Medicina/Cardiologia e Ciências da Saúde, bem como capítulo de livro na área de Eletrocardiologia (repolarização ventricular/micro-alternância de onda T).",
+      "fot" : "https://fga.unb.br/image_uploads/0000/0343/euler_garcia_big.jpeg", 
+    },
+    {
+      "email": "evandroleonardo@unb.br",
+      "nome": "Evandro Leonardo Silva Teixeira",
+      "bio": "Possui graduação em Eletromecânica pelo Centro Federal de Educação Tecnológica de Goiás (2004), Mestrado em Sistemas Mecatrônicos (2006) e Doutorado em Sistemas Mecatrônicos (2012) pela Universidade de Brasília. Atualmente é professor dos cursos de Engenharia Automotiva e Engenharia Eletrônica da Faculdade Gama - Universidade de Brasília. Tem experiência na área de Engenharia Elétrica, Mecânica e Computação atuando principalmente nos seguintes temas: Automação, Controle e Integração de Sistemas de Manufatura, Eletrônica Veicular, Sistemas Embarcados, Gerenciamento Integrado da Saúde Veicular (IVHM) e Sistema Produto-Serviço Industrial.",
+      "fot" : "https://arquivos.unb.br/arquivos/2020226060a16420415381fdebba5c099/1-s2.0-S0967066119301091-pic3.jpg", 
+    },
+    {
+      "email": "fabianamendes@unb.br",
+      "nome": "Fabiana Freitas Mendes",
+      "bio": "Doutorado Doctor of Philosophy, University of Oulu, Finlândia. Ano de Conclusão: 2021 Título da Tese: Insights from personality and decision-making in software engineering context   Pulicações: ●\tThe relationship between personality and value-based decision-making ●\tThe relationship between personality and decision-making: A systematic literature review ●\tInsights on the relationship between decision-making style and personality in software engineering Mestrado Mestre em Ciência da Computação pela Universidade Federal de Goiás Ano de Conclusão: 2010 Título da Dissertação: Melhoria de Tecnologia de Informação Multi-Modelo   Graduação Bacharel em Ciência da Computação pela Universidade Federal de Goiás Ano de Conclusão: 2007 Título do Trabalho de Final de Curso: Perspectivas Técnicas e Gerenciais nas Estratégias para Melhoria de Processos de Software",
+      "fot" : "https://arquivos.unb.br/arquivos/202014613120152040832ff8dd714efd5/2019-08-10_18.41.44.jpg", 
+    },
+    {
+      "email": "fabianosoares@unb.br",
+      "nome": "Fabiano Araujo Soares",
+      "bio": "Fabiano Araujo Soares graduou-se em Engenharia de Redes de Comunicações pela Universidade de Brasília em 2004 obteve o título de mestre em Engenharia Elétrica pela mesma universidade em 2007. Em 2013, também pela Universidade de Brasília, concluiu seu doutorado em Engenharia Eletrônica na área de processamento de sinais biomédicos. Como experiência profissional, Fabiano trabalhou na empresa de telecomunicações Brasil Telecom (2005 - 2006) na área comutação e na empresa Mahvla Telecomm (2006 - 2007) na área de TI. Foi pesquisador convidado do Laboratorio di Ingegneria del Sistema Neuromuscolare e della Riabilitazione Motoria LISiN, laboratório associado ao Politécnico de Torino, Torino - Itália (2008). Em fevereiro de 2014 participou de pesquisa em parceria com a University of Texas at El Paso (UTEP), como parte da cooperação entre as duas universidades. Atualmente é professor adjunto do curso de engenharia eletrônica no campus Gama da Universidade de Brasília. Fabiano tem experiência nas áreas de engenharia biomédica, processamento de sinais e imagens e reconhecimento de padrões. Suas áreas de interesse são: processamento de sinais e imagens, instrumentação eletrônica, sistemas inteligentes e eletrônica aeroespacial.",
+      "fot" : "https://arquivos.unb.br/arquivos/20202481375a2020571150f5bdc147879/Sem_ttulo.png", 
+    },
+    {
+      "email": "fabraz.at@unb.br",
+      "nome": "Fabricio Braz",
+      "bio": "Fabricio Braz é professor adjunto do curso de Engenharia de Software da Faculdade do Gama da Universidade de Brasília. De 2004 a 2012 desenvolveu atividades na área de segurança de software, tendo participado de vários projetos que tratam desse tema, quer seja como bolsista da UnB ou como consultor. Em 2009 conquistou o título de Doutor em Engenharia Elétrica, pesquisando Padrões de Projeto para Segurança de Software em parceria com o Security System Engineering Group da Universidade Flórida Atlântica. Desde 2013 tem pesquisado e na área de aprendizagem de máquina voltada para detecção de padrões, com aplicação em detecção de anomalia em tráfego de redes de comunicação de dados e sensoriamento remoto.",
+      "fot" : "https://arquivos.unb.br/arquivos/202016511985e42041190d90757c695e7/54357e_2c44bb8ee1c8414083b1bb04e8dcc9d5mv2.jpg",
+    },
+    {
+      "email": "fcarbajal@unb.br",
+      "nome": "Felix Martin Carbajal Gamarra",
+      "bio": " Possui Pós Doutorado pela Virginia Tech. Doutorado em Engenharia Química pela Universidade Estadual de Campinas (2006). Mestrado em Engenharia de Alimentos pela Universidade Estadual de Campinas (2004) e Graduação em Engenharia Química - Universidad Nacional Pedro Ruiz Gallo (2000). Experiência na área de Engenharia Química, Engenharia de Energia, Engenharia e Ciências de Materiais. Com ênfase no Desenvolvimento de Novos Métodos de Extração, Operações-Processos Industriais, Biorrefinarias, Biocombustíveis, Compostos Bioativos, simulação computacional, Materiais e desenvolvimento de novos Produtos e Materiais.",
+      "fot" : "https://sigaa.unb.br/sigaa/img/no_picture.png", 
+    },
+    {
+      "email": "fabioalfaia@unb.br ",
+      "nome": "Fábio Alfaia da Cunha",
+      "bio": "Graduado em Engenharia Mecânica pela Universidade Federal do Pará (1998-2002), com mestrado pela mesma instituição (2003-2005) e doutorado em Ciências Mecânicas pela Universidade de Brasília (2006-2010). Ingressou na Universidade de Brasília como professor substituto em 2008 e se tornou professor Adjunto em 2011. Atualmente é Professor Associado na UnB e atua nos cursos de Engenharia Aeroespacial, Automotiva e Energia. Pesquisa e orienta assuntos relacionados a simulação computacional da combustão de sólidos, líquidos e gases. ",
+      "fot" : "https://arquivos.unb.br/arquivos/2024164092ac5d30451505a49f70d3410/foto2024.png", 
+    },
+    {
+      "email": "fabiolisboa@unb.br",
+      "nome": "FABIO CORDEIRO DE LISBOA",
+      "bio": "Doutor em Ciências Mecânicas pela Universidade de Brasília, mestre em Engenharia Mecânica e de Materiais pela Universidade Tecnológica Federal do Paraná, especialista (MBA) em Gerenciamento de Projetos pela Fundação Getúlio Vargas (RJ) e Graduado em Engenharia Mecânica pela Universidade de Brasília. Professor do departamento de Engenharia Automotiva da UnB com pesquisas nas áreas de combustão e gaseificação com ênfase no aproveitamento de fontes renováveis de energia. Experiência em Gerenciamento de Projetos e desenvolvimentos de produtos, atuando em empresas como Nokia, Brastemp, Jabil, Ambev e Brady. Atualmente pesquisa o aproveitamento de resíduos de frutas amazônicas para produção de eletricidade.",
+      "fto" : "https://arquivos.unb.br/arquivos/202022814873c32047933bd7b4d329208/Foto_para_Moodle.png",
+    },
+    {
+      "email": "fabiomacedomendes@unb.br",
+      "nome": "Fábio Macedo Mendes",
+      "bio": "Possui mestrado em Física pela Universidade de Brasília(2006) e doutorado em Física pela Universidade de Brasília(2009). Atualmente é Professor Adjunto da Universidade de Brasília. Tem experiência na área de Física, com ênfase em Física Estatística. Atuando principalmente nos seguintes temas:Processos Gaussianos, Inferência Bayesiana, Processos estocásticos, Equação de Langevin.",
+      "fot" : "https://fga.unb.br/image_uploads/0000/0181/fabio_macedo_lurdes_perfil_big.jpg", 
+    },
+    {
+      "email": "storti@unb.br",
+      "nome": "FELIPE CHAGAS STORTI",
+      "bio": "Possui graduação em Física Bacharel pela Universidade Estadual de Londrina (2005), mestrado em Ciência e Tecnologia de Materiais pela Universidade Estadual Paulista Júlio de Mesquita Filho (2008) e doutorado em Ciências e Engenharia de Petróleo pela Universidade Estadual de Campinas (2013). Atualmente é professor adjunto da Universidade de Brasília, atuando na área de Engenharia Térmica, Engenharia de Petróleo e Gás e Eletromobilidade. Tem experiência na área de Engenharia Mecânica, com ênfase em Engenharia de Petróleo, atuando principalmente nos seguintes temas: escoamento multifásico, transferência de calor, separação submarina, separador, eficiência de separação e sistema de controle.",
+      "fto" : "https://arquivos.unb.br/arquivos/20220671448c562354992fa89bf903b9a/me_1.jpg",
+    },
+    {
+      "email": "fscardua@unb.br",
+      "nome": "Fernando Paiva Scardua",
+      "bio": "Fernando Paiva Scardua graduado em Engenharia Florestal pela Universidade de Brasília (1991), com mestrado em Ciências Florestais pela Escola Superior de Agricultura \"Luiz de Queiroz\" - ESALQ/USP - Piracicaba (1994), doutorado em Desenvolvimento Sustentável pela Universidade de Brasília (2003) e Pós-Doutorado pelo Institut de Recherche pour le Développement, França (2006). Atualmente é Professor Adjunto da Faculdade UnB Gama da Universidade de Brasília (UnB). Tem experiência na área ambiental nos seguintes temas: licenciamento ambiental, Políticas Públicas, Descentralização, Gestão Ambiental, Unidades de Conservação, Política Ambiental, Recursos Hídricos, Biodiversidade e Recursos Florestais. (17/02/2007)",
+      "fot" : "https://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4791957U9", 
+    },
+    {
+      "email": "fwcruz@unb.br",
+      "nome": "Fernando William Cruz",
+      "bio": "Possui graduação em Processamento de Dados pela Universidade de Brasília (1988), mestrado em Ciência da Computação pela Universidade Federal da Paraíba (1992) e doutorado em Ciências da Informação pela Universidade de Brasília (2008). Atualmente é professor da Universidade de Brasília - Campus do Gama. Tem experiência na área de Ciência da Computação, com ênfase em Telecomunicações, atuando principalmente nos seguintes temas: estudo de usuários, web semântica, bibliotecas digitais, computação musical, sistemas distribuídos e redes de computadores.",
+      "fot" : "https://arquivos.unb.br/arquivos/2020192187cc952040915bcf7e52e5803/IMG_0476.jpeg", 
+    },
+    {
+      "email": "fhsilva@unb.br",
+      "nome": "Flavio Henrique Justiniano Ribeiro Da Silva",
+      "bio": " Flávio concluiu o doutorado em Engenharia Elétrica na Escola de Engenharia de São Carlos (EESC) da Universidade de São Paulo (USP) em 2004. Atualmente é professor adjunto da Universidade de Brasília (UnB) - Faculdade do Gama. Atua na área de Engenharia Elétrica, com ênfase em análise e controle de sistemas não lineares com aplicações em sistemas elétricos de potência.",
+      "fot" : "https://sigaa.unb.br/sigaa/img/no_picture.png",
+    },
+    {
+      "email": "possa@unb.br",
+      "nome": "Prof. Gabriela Possa",
+      "bio": "Possui graduação em Física - Bacharelado pela Universidade de Brasília (2006), graduação em Física - Licenciatura pela Universidade de Brasília (2009), mestrado em Física pela Universidade de Brasília (2009) e mestrado em Engenharia Aeroespacial - Georgia Institute of Technology (2012). Atualmente é doutoranda pelo Instituto de Física da Universidade de Brasília e professora assistente na mesma instituição. Tem experiência nas áreas de física e engenharia aeroespacial, com ênfase em propulsão espacial, sistemas de vácuo, instrumentação científica e fotobiorreatores.",
+      "fot" : "https://sigaa.unb.br/sigaa/img/no_picture.png", 
+    },
+    {
+      "email": "cueva@unb.br",
+      "nome": "Edison Gustavo Cueva Galárraga",
+      "bio": "Possui graduação em Engenharia Mecânica pela Escuela Politécnica Nacional de Quito, Equador (1993), mestrado em Engenharia Metalúrgica e de Materiais pela Universidade de São Paulo (1997), doutorado em Engenharia Metalúrgica e de Materiais pela Universidade de São Paulo (2002), e pós doutorado em Engenharia Mecânica pela Universidade de São Paulo (2005 e 2008). Atualmente é professor adjunto da Universidade de Brasília - Faculdade Gama. Tem experiência na área de Engenharia Metalúrgica e de Materiais, com ênfase em Estrutura dos Metais e Ligas, Transformação de Fase e Tratamentos Térmicos, atuando principalmente nos seguintes temas: desgaste de materiais por deslizamento, abrasão e erosão-cavitação, particularmente de ferros fundidos e aços carbono.",
+      "fot" : "https://fga.unb.br/image_uploads/0000/0163/edison_gustavo_cueva_calarraga_perfil_big.jpg", 
+    },
+    {
+      "email": "georgemarsicano@unb.br",
+      "nome": "George Marsicano Corrêa",
+      "bio": "Atualmente, é docente do curso de Engenharia de Software na Universidade de Brasília (UnB). Mestre em Gestão do Conhecimento e da Tecnologia da Informação MGCTI (UCB), Especialista em Sistemas Orientados a Objetos (UCB) e Graduado em Processamento de Dados (UCB). Coach certificado pela Escola Internacional de Coach - The Newfield Network, Santiago do Chile, Gerente de Projeto certificado PMP e Scrum Master. Como docente atuou no curso de Pós-Graduação em Engenharia de Software, da Fundação Universa / Universidade Católica de Brasília, e como pesquisador / autor possui artigos publicados no Brasil e no exterior. Experiência, desde 1999, em Engenharia de Software, tendo atuado como: desenvolvedor, analista de requisitos, analista de negócios, analista de processos e gerente de projetos. Experiência, desde 2002, em projetos com utilização de processos baseado em RUP e tecnologia Java. Já participou da implantação de processos baseados em RUP, com apoio do CMMI e/ou MPS-Br. A partir de 2004, atua como Gerente de Projetos, utilizando a metodologia proposta pelo PMI. Nesse período, atuou no Governo Federal: SERPRO, MPOG, MS, MDS, TJDFT, CONAB e MPS; e em empresas privadas: Fóton Informática, Cast Informática, Politec e CTIS.",
+      "fot" : "https://arquivos.unb.br/arquivos/20220081144a0d2548630fe4303562ae1/FotoGeorge.jpeg", 
+    },
+    {
+      "email": "georges@unb.br ",
+      "nome": "Georges Daniel Amvame Nze",
+      "bio": "Possui graduação em Engenharia Elétrica pela Universidade de Brasília (1999), mestrado em Engenharia Elétrica pela Universidade de Brasília (2002) e doutorado em Engenharia Elétrica pela Universidade de Brasília (2006). Atualmente é professor adjunto-I da Universidade de Brasília. Tem experiência na área de Engenharia Elétrica, com ênfase em Sistemas de Telecomunicações, atuando principalmente nos seguintes temas: SIG para Dengue, Mini VANT e Inclusão Digital/Social. ",
+      "fot" : "https://fga.unb.br/image_uploads/0000/0975/georges_big.gif", 
+    },
+    {
+      "email": "gerardo.idrobo@gmail.com",
+      "nome": "Gerardo Antonio Idrobo Pizo",
+      "bio": "Possui graduação em Engenharia Física pela Universidade do Cauca (2005) - Colômbia e Mestrado em Sistemas Mecatrônicos pela Universidade de Brasilia (2009) - Brasil. Atualmente é Doutorando em Sistemas Mecatrônicos pela Universidade de Brasília e Professor Assistente da Universidade de Brasília (UnB), Faculdade UnB-Gama (FGA), onde atua no programa de Engenharia Eletrônica. Possui experiência na área de Eletrônica , Elétrica, Robótica, Mecatrônica, Automação, Ciências da Computação e Física. Atuando principalmente nos seguintes temas: Robótica, Desenvolvimento de sistemas reconfiguráveis, Instrumentação Óptica, Instrumentação Eletrônica, Controle Linear e Não Linear, Processamento Digital de Sinais, Imagens e Vídeo, Visão Computacional, Calibração de Câmeras, Digitalização de Superfícies, Varredura Laser, Reconstrução 3D e Banco de Dados.",
+      "fot" : "https://fga.unb.br/image_uploads/0000/1059/GERALDO_big.gif",
+    },
+    {
+      "email": "gilmar.beserra@gmail.com",
+      "nome": "Gilmar Silva Beserra",
+      "bio": "Possui graduação (2002), mestrado (2004) e doutorado (2010) em Engenharia Elétrica pela Universidade de Brasília. Tem trabalhado na área de Microeletrônica desde 2002, com ênfase em projeto de circuitos integrados digitais utilizando ferramentas Cadence, atuando como bolsista do Programa Nacional de Microeletrônica na área de Sistemas em Chip (SoC). Sua área de interesse no doutorado foi a modelagem de sistemas mistos em alto nível utilizando SystemC TLM (Transaction Level Modeling) e SystemC-AMS. Em seu pós-doutorado e posteriormente, como pesquisador visitante, trabalhou no projeto SYSMODEL no Instituto Real de Tecnologia (KTH), em Estocolmo. As atividades consistiram na implementação em SystemC de um framework com base na metodologia ForSyDe para a modelagem de sistemas heterogêneos utilizando diferentes modelos de computação.",
+      "fot" : "https://arquivos.unb.br/arquivos/20202310129c50204938129434355070f/rg3.jpg", 
+    },
+    {
+      "email": "giovannix@unb.br",
+      "nome": "Giovanni Almeida Santos",
+      "bio": "Professor Assistente da Universidade de Brasília (UnB). Doutorando do Programa de Pós-Graduação em Engenharia Elétrica da UnB. Possui título de Mestre em Informática (2001) e Graduação em Bacharelado em Ciência da Computação (1998) pela Universidade Federal da Paraíba - Campus II - Campina Grande. Áreas de interesse: Arquitetura Orientada a Serviços, Gerenciamento de Processos de Negócio, Robótica Educacional, Software livre.",
+      "fot" : "https://arquivos.unb.br/arquivos/2021120041361d2169813632f7bb04c53/perfil.jpg",
+    },
+    {
+      "email": "glauceny@unb.br",
+      "nome": "Glauceny Cirne de Medeiros",
+      "bio": "Possui graduação em ENGENHARIA CIVIL pela Universidade Federal da Paraíba (1998), mestrado em Estruturas e Construção Civil pela Universidade de Brasília (2001) e doutorado em Estruturas e Construção Civil pela Universidade de Brasília (2005). Atualmente, atua como professora e pesquisadora nos cursos de Engenharia, da Universidade de Brasília no Campus do Gama. Tem experiência na área de Engenharia Civil, com ênfase em Estruturas, atuando principalmente nos seguintes temas: métodos númericos, mecânica dos materiais e mecânica computacional.",
+      "fot" : "https://fga.unb.br/image_uploads/0000/0097/glauceny_cirne_de_medeiros_perfil_big.jpg", 
+    },
+    {
+      "email": "glauco.pedrosa@unb.br",
+      "nome": "GLAUCO VITOR PEDROSA",
+      "bio": "Possui graduação em Ciência da Computação pela Universidade Federal de Uberlândia (2009), mestrado em Ciência da Computação pela Universidade Federal de Uberlândia (2011), doutorado em Ciências da Computação e Matemática Computacional pela Universidade de São Paulo (2015) e pós-doutorado no ICMC/USP durante 2015 e 2016. Trabalhou como pesquisador visitante no NIH (National Institutes of Health) nos EUA em 2013 na área de processamento de imagens aplicada a imagens médicas. Atualmente é professor adjunto da Universidade de Brasília (UnB) atuando no curso de Eng. de Software e na Pós-Graduação em Computação Aplicada. Tem experiência na área de Ciência da Computação, com ênfase em Inteligência Artificial, com pesquisas relacionadas aos seguintes temas: Processamento de Imagens, Visão Computacional, Ciência de Dados e Governo Digital. Participa desde 2018 de projetos de pesquisas e desenvolvimento junto ao Governo Federal no apoio à transformação digital de serviços públicos do governo Brasileiro.",
+      "fto" : "https://arquivos.unb.br/arquivos/20201721680fbe2038082bb42e4e1a4ec/servletrecuperafoto.gif",
+    },
+    {
+      "email": "guillermo@unb.br",
+      "nome": "GUILLERMO ALVAREZ BESTARD",
+      "bio": "O professor é um especialista em Engenharia Mecatrônica com doutorado pela Universidade de Brasília (2017), mestrado em Informática Industrial e Automação (2003) e graduação em Engenharia de Controle e Automação (1998), ambos pela Universidade Tecnológica de Havana. Ele tem uma vasta experiência como pesquisador e professor, tendo atuado no Instituto de Cibernética, Matemática e Física (ICIMAF) do Ministério de Ciência, Tecnologia e Meio Ambiente de Cuba de 1998 a 2017, e como professor na Universidade Tecnológica de Havana de 2006 a 2017. Atualmente, ele é professor efetivo da Faculdade do Gama da Universidade de Brasília e do Programa de Pós-graduação em Engenharia Mecatrônica da mesma universidade. Ele tem uma extensa lista de publicações e participou de vários serviços científico-tecnológicos e projetos de pesquisa-desenvolvimento-inovação em programas nacionais e internacionais. Suas áreas de interesse podem ser encontradas no link fornecido.",
+      "fto" : "https://arquivos.unb.br/arquivos/20200771411d372056243a1f269e57336/2.png",
+    },
+    {
+      "email": "hgmoura@yahoo.com.br",
+      "nome": "Henrique Gomes de Moura",
+      "bio": "Graduação em Engenharia Mecânica pela Universidade Federal de Uberlândia (2002); Mestrado em Engenharia Mecânica pela Universidade Federal de Uberlândia (2005). Doutorado em Engenharia Mecânica pela Universidade Federal de Santa Catarina em 2010. Experiências nas áreas de métodos numéricos e matemáticos aplicados à engenharia mecânica, modelagem e projeto de sistemas vibroacústicos, controle de ruído e vibrações, engenharia de testes e engenharia de softwares.",
+      "fot" : "https://fga.unb.br/image_uploads/0000/0193/henrique_gomes_de_moura_perfil_big.jpg", 
+    },
+    {
+      "email": "henriquemenegaz@unb.br",
+      "nome": "HENRIQUE MARRA TAIRA MENEGAZ",
+      "bio": "Possui graduação em Engenharia Elétrica pela Universidade de Brasília (UnB) (2007), e mestrado (2011) e doutorado (2016) em Engenharia de Sistemas Eletrônicos e de Automação pela UnB. Atualmente é Professor Adjunto da Faculdade Gama, UnB.",
+      "fto" : "https://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4428808Z1",
+    },
+    {
+      "email": "hilmer@unb.br",
+      "nome": "Hilmer Rodrigues Neri",
+      "bio": "Possui mestrado em Ciência da Computação pela Universidade Federal de Campina Grande-UFCG (2002). Atua em Engenharia de Software e possui larga experiência profissional na área de processo de desenvolvimento de software e gestão de projetos de software, tendo atuado em empresas nas esferas pública e privada, além de ter sido consultor do Programa das Nações Unidas para Desenvolvimento-PNUD. Foi gestor de projetos de desenvolvimento e manutenção de software e de customização de processo de desenvolvimento de software. Atualmente é professor do curso de Engenharia de Software da Faculdade Gama, da Universidade de Brasília - UNB.",
+       "fot" : "https://fga.unb.br/image_uploads/0000/0199/hilmer_rodrigues_neri_perfil_big.jpg",
+    },
+    {
+      "email": "himilsys@unb.br",
+      "nome": "HIMILSYS HERNANDEZ GONZALEZ",
+      "bio": "Possui graduação em Engenharia Mecânica pelo Instituto Superior Politécnico José Antonio Echeverría, Cuba (1997), mestrado em Engenharia Mecânica e Doutorado pela Universidade de Brasília (2004, 2011). Tem experiência na área de Engenharia Mecânica, com ênfase em Engenharia Térmica, atuando principalmente nos seguintes temas: Combustão, câmara de combustão pré-misturada, turbinas a gás e quimiluminescência. Coordenadora do Curso de Engenharia Mecânica, no Centro Universitário de Brasília - UDF. Atualmente Professora da Universidade de Brasília no Campus de Gama, curso de Engenharia Automotiva,responsável pelas disciplinas Desenho Industrial Assistido por Computador - DIAC.",
+      "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png",
+    },
+    {
+      "email": "jeramos@unb.br",
+      "nome": "Jesús Ernesto Ramos Ibarra",
+      "bio": "Possui graduação em Engenharia Física e portanto uma formação sólida em física, matemática e informática. Eu sou capaz de modelar matematicamente e resolver problemas complexos em diversas áreas e adaptar-me rapidamente aos métodos emergentes. Ao mesmo tempo, estou na capacidade de pesquisa e desenvolvimento de novas tecnologias, e também posso identificar potenciais negócios de tecnologia em pesquisa realizada por outros cientistas. Eu fiz a minha pós-graduação em física na Universidade de Brasília, onde eu ganhei conhecimento aprofundizado na área de Física, especialmente em técnicas de caracterização e propriedades de materiais Magnéticos.",
+      "fot" : "https://fga.unb.br/image_uploads/0000/1071/JESUS_big.gif",
+    },
+    {
+      "email": "jhongoulart@yahoo.com.br",
+      "nome": "Jhon Nero Vaz Goulart",
+      "bio": "Possui graduação em Engenharia Civil pela Universidade de Passo Fundo (1999), Mestrado e Doutorado em Engenharia Mecânica pela Universidade Federal do Rio Grande do Sul na área de Fenômenos de transporte. Atua de forma numérica e experimental nas áreas envolvendo máquinas de fluxo, mecânica dos fluidos e turbulência. Como principais técnicas experimentais empregadas estão: anemometria de fio quente e transdutores de pressão. Suas principais pesquisas estão relacionadas a escoamento turbulento em canais compostos e feixe de barras, sobre cilindros e experimentação em turbomáquinas. Atualmente é Professor de ensino superior na Universidade de Brasília - Campus Gama, divisão de energia e vem se dedicando ao aprendizado de técnicas numéricas em CFD e BEM. Atualmente é professor credenciado no Programa de Pós-Graduação em Integridade de Materiais da Engenharia - PG-Intgr e é membro integrande do Grupo de Mecânica Experimental e Computacional da Universidade de Brasília - GMEC.",
+      "fot" : "https://arquivos.unb.br/arquivos/2021182151eab3217329750807ece4082/IMG_20201224_111834777_MP.jpg",
+    },
+    {
+      "email": "john.gardenghi@unb.br",
+      "nome": "JOHN LENON CARDOSO GARDENGHI",
+      "bio": "É bacharel em Ciência da Computação pela Universidade São Francisco (2011), mestre em Ciência da Computação pela Universidade de São Paulo (2014) e doutor em Ciência da Computação pela Universidade de São Paulo (2017). Atualmente, é professor adjunto na Faculdade do Gama da Universidade de Brasília, atuando no laboratório ITRAC da mesma universidade. Os principais interesses de pesquisa são métodos computacionais de otimização, programação não linear e engenharia de software.",
+      "fto" : "https://arquivos.unb.br/arquivos/20191422466e682020049811f036e56d1/foto_2019.png",
+    },
+    {
+      "email": "jcormane@unb.br",
+      "nome": "Jorge Andrés Cormane Angarita",
+      "bio": "Possui graduação e mestrado em Engenharia Elétrica pela Universidad Industrial de Santander (2003) - Colômbia. Doutorado em Engenharia Elétrica (2013) pela Universidade de Brasília. Atualmente é professor assistente da Universidade de Brasília. Tem experiência em Sistemas Elétricos de Potência, com ênfase em aplicações de técnicas de processamento de sinais em sistemas elétricos de potência, qualidade da energia elétrica e fontes renováveis para a geração de energia elétrica.",
+      "fot" : "https://arquivos.unb.br/arquivos/2020140164696320588106187dbbd88bc/Nova_Imagem.bmp", 
+    },
+    {
+      "email": "josianeaguiar@gmail.com",
+      "nome": "Josiane do Socorro Aguiar de Souza",
+      "bio": "Doutora e mestre em Desenvolvimento Sustentável pela Universidade de Brasília (UnB). Licenciada e bacharel em Geografia pela Universidade Federal do Amapá. Atualmente é professora adjunta da UnB/ FGA e pós-doutoranda com o Projeto de Geração Descentralizada de Energia por meio de fontes alternativas - Tecnologia e Produção de Energia elétrica na Faculdade de Tecnologia da UnB. Tem experiência na área de Geografia, com ênfase em Geografia Urbana, atuando principalmente nos seguintes temas: ordenamento territorial, desenvolvimento sustentável, indicadores, energia e ambiente, gestão ambiental e planejamento",
+       "fot" : "https://arquivos.unb.br/arquivos/20211920925a0c2139287103e65c180b6/foto_watsap2.jpg",
+    },
+    {
+      "email": "jfelicio@unb.br",
+      "nome": "José Felício da Silva",
+      "bio": "Possui graduação em Engenharia Elétrica Opção Eletronica pela Universidade Federal da Paraíba (1977) e doutorado em Genie Biologique - Institut National Polytechnique de Lorraine (1992). Tem experiência na área de Engenharia Biomédica, com ênfase em Instrumentação Odontológica e Médico-Hospitalar, atuando principalmente nos seguintes temas: engenharia clinica, redes neurais artificiais, sistema respiratorio, manutenção e integridade.",
+      "fot" : "https://fga.unb.br/image_uploads/0000/0205/jose_felicio_da_silva_perfil_big.jpg", 
+    },
+    {
+      "email": "jpetrocchi@unb.br",
+      "nome": "Juliana Petrocchi Rodrigues",
+      "bio": "Possui graduação em Bacharelado em Química pela Universidade de Brasília (2004) e Mestrado em físico-química pela mesma instituição. Doutorado também em química na UnB na área de produção de biocombustíveis derivados de biomassa.Tem experiência na área de Química, com ênfase em Química Orgânica e tecnologia química, atuando principalmente nos seguintes temas: biocombustíveis, biomassa, catalise, craqueamento térmico e catalítico, hidrocraqueamento, análises de combustíveis, cromatografia e educação ambiental. Atualmente, é Professora Adjunta na Universidade de Brasília, na área de Engenharia de Energia e Coordenadora de Extensão da UnB- Faculdade do Gama.",
+      "fot" : "https://arquivos.unb.br/arquivos/2023088066f4842738352a64f1bd549c0/foto_perfil_2.jpg",
+    },
+    {
+      "email": "jpleerocket@gmail.com, jungpyo@unb.br",
+      "nome": "JUNGPYO LEE",
+      "bio": "O professor adjunto na Faculdade de Engenharia da Universidade de Brasília é um especialista em engenharia aeroespacial com um doutorado em Engenharia Térmica e Propulsão pela Korea Aerospace University (2013). Sua tese focou na atenuação da instabilidade de combustão do foguete híbrido usando diafragma. Ele tem experiência significativa em propulsão híbrida e análise de transferência de fluxo/calor, tendo conduzido vários estudos experimentais, incluindo testes de motores de foguetes híbridos, inibição de combustão de motores de foguetes híbridos, previsão de desempenho balístico e desenvolvimento de foguetes híbridos. Ele também tem experiência em análise computacional, incluindo sistemas de tubulação, sistemas de refrigeração de motores e combustores de caldeiras. Sua formação acadêmica também inclui um mestrado em Engenharia Térmica e Propulsão (2007) e uma graduação em Engenharia Aeroespacial (2005), ambos pela Korea Aerospace University. Sua principal área de interesse é a Propulsão Química.",
+      "fto" : "https://arquivos.unb.br/arquivos/202111320846d1228450399ffa12349c0/5106051221543640203.jpg",
+    },
+    {
+      "email": "aguayo@unb.br",
+      "nome": "Leonardo Aguayo",
+      "bio": "Possui graduação em Engenharia Elétrica, Ênfase Telecomunicações pela Universidade de São Paulo (1994), mestrado em Engenharia Elétrica pela Universidade de São Paulo (1999) e Doutorado em Teleinformática pela Universidade Federal do Ceará (2008). Atuou durante 5 anos no Instituto Nokia de Tecnologia em pesquisas de redes sem fio. Trabalhou como pesquisador associado da Universidade de Brasília e como bolsista na Universidade de São Paulo. Tem experiência na área de Engenharia Elétrica, com ênfase em Sistemas de Telecomunicações, atuando principalmente nos seguintes temas: redes neurais artificais, análise de séries temporais, filtros adaptativos e algoritmos RLS rápidos. Atuou como Professor Visitante no Departamento de Engenharia Elétrica na UnB e atualmente é Professor Adjunto na UnB, Campus do Gama.",
+      "fot" : "https://fga.unb.br/image_uploads/0000/1101/LEONARDO_big.gif",
+    },
+    {
+      "email": "leandrocardoso@unb.br",
+      "nome": "LEANDRO XAVIER CARDOSO",
+      "bio": "Possui graduação em Física Bacharelado e Licenciatura pela Universidade Federal de Goiás (2005/2007), mestrado em Física Aplicada pela Universidade Federal de Goiás (2008) e Doutorado em Física pela Universidade Federal de Sergipe(2012) e Pós-Doutorando em Engenharia Biomédica pela Universidade de Brasília (UnB). Atualmente é professor Adjunto II na Universidade de Brasilia Campos Gama - UnB/FGA e coordenador das Engenharias. Também é pesquisador/docente do Stricto Sensu, Mestrado em Engenharia Biomédica e membro do conselho de Pesquisa da Premier Educação Superior. Tem experiência nas áreas de Física, com ênfase em Física da Matéria Condensada, e Engenharia Nuclear Aplicada, com ênfase em física médica e Ambiental, e Cristalografia Estrutural, e Ensino de Física, atuando principalmente nos seguintes temas: formação de professores, estrutura cristalina, análise de fármacos e inibidores biológicos, guanidinas, difração de raios X, enaminonas, Absorção de raios X, física experimental, caracterização de materiais, metrologia das radiações ionizantes e detectores de radiação, Espectrometria gama.",
+      "fto" : "https://arquivos.unb.br/arquivos/2021131134f2572094309068e79d5eff2/Leandro.JPG",
+    },
+    {
+      "email": "lbomcarvalho@gmail.com",
+      "nome": "Lindomar Bomfim de Carvalho",
+      "bio": "É Bacharel e Licenciado em Física pela Universidade de Brasília (1997 e 1998) e Doutor em Física pela Universidade de Houston - Texas, US (2005). Tem experiência na área de Física da Matéria Condensada, com ênfase no estudo de estruturas de Líquidos e Sólidos, propriedades magnéticas dos sólidos; difractometria; espalhamento de nêutrons; XRD e montagem e operação de sistema de crescimento de filmes finos por sputtering; experiência na montagem e uso de forno de centelha voltaica (Tri-arc furnace) - preparação de amostras inter-metálicas. Tem também trabalhado na montagem e operação da plataforma de medidas físicas (Physical Property Measurements System - PPMS), especialmente com as opções Capacidade Térmica (HC), VSM e ACMS.",
+      "fot" : "https://fga.unb.br/image_uploads/0000/0151/lindomar_bomfim_de_carvalho_perfil_big.jpg",  
+    },
+    {
+      "email": "loana@unb.br",
+      "nome": "Loana Nunes Velasco",
+      "bio": "Graduada em 2005 pela Universidade Federal de Mato Grosso, no curso de Engenharia Elétrica, mestrado no programa de pós-graduação da Universidade Estadual Paulista Júlio de Mesquita Filho do campus de Ilha Solteira, na área de Qualidade de Energia (2007). Doutorado na Universidade Federal de Uberlândia, na Área de Qualidade de Energia, (2013).",
+      "fot" : "https://arquivos.unb.br/arquivos/2022216028b828246243491e5aae204dd/FOTO_TEAMS.jpg",
+    },
+    {
+      "email": "lmbrasil@gmail.com",
+      "nome": "Lourdes Mattos Brasil",
+      "bio": "Lourdes Mattos Brasil possui graduação em Engenharia Elétrica pela Universidade Federal de Santa Catarina (1989), Mestrado em Engenharia Elétrica pela Universidade Federal de Santa Catarina (1994) e concluiu o doutorado em Engenharia Elétrica pela Universidade Federal de Santa Catarina em 1999, sendo parte realizado na Facultés Universitaires Notre-Dame de La Paix (FUNDP), Namur Belgium (1998). Realizou estágio Pós-Doutoral no Programa de Pós-Graduação em Engenharia Biomédica da Universidade Federal da Paraíba (2001-2002). Atualmente é Professor Adjunto da Universidade de Brasília (UnB), Faculdade UnB-Gama (FGA), onde atua na Engenharia Eletrônica, bem como é coordenadora do Lato Sensu em Engenharia Clínica e do Stricto Sensu, Mestrado em Engenharia Biomédica. Tem experiência na área de Engenharia Biomédica, com ênfase em Informática em Saúde, atuando principalmente nos seguintes temas: informática em saúde, inteligência artificial em saúde, engenharia biomédica, redes neurais artificiais, sistemas baseados no conhecimento, descoberta de conhecimento, realidade virtual, sistemas tutores inteligentes, sistemas especialistas híbridos e gestão do conhecimento. Suas produções técnicas-científicas permeiam essas áreas, bem como suas publicações de livros, prêmios, palestras/seminários, pareceres, consultorias. Também participa como membro das sociedades brasileira e internacional: SBC, SBEB e IEEE.",
+      "fot" : "https://fga.unb.br/image_uploads/0000/0103/lourdes_mattos_brasil_perfil_big.jpg", 
+    },
+    {
+      "email": "luciano.unb@gmail.com",
+      "nome": "Luciano Emidio Neves da Fonseca",
+      "bio": "Possui doutorado em Engenharia Oceânica pela Universidade de New Hampshire, EUA (2001), mestrado em Engenharia Elétrica pela Universidade Estadual de Campinas (1990) e graduação em Engenharia Elétrica pela Universidade de Brasília (1986). Atualmente é Professor Adjunto da Faculdade de Engenharia do Gama da Universidade de Brasília. Foi Professor Associado da University of New Hampshire, Departamento de Engenharia Oceânica; e Especialista do Programa de Geofísica Marinha da Comissão Oceanográfica Intergovernamental da Nações Unidas. Tem experiência na área de Engenharia Oceânica e Processamento digital de Sinais, com ênfase em Acústica Submarina, atuando principalmente nos seguintes temas: Geofísica marinha, Sensoriamento Remoto, GIS marinho e Visualização Científica de dados oceanográficos, ciências oceânicas e geoengenharia. Atualmente é Coordenador Geral de Graduação do Campus UnB-Gama, onde são ministrados cursos de Engenharia Aeroespacial, Engenharia Automotiva, Engenharia de Energia, Engenharia Eletrônica e Engenharia de software.",
+      "fot" : "https://arquivos.unb.br/arquivos/20200202017b512057463edc60763d09d/20525577_1324385751006224_4911600222133387043_n.jpg", 
+    },
+    {
+      "email": "lucianonoleto@unb.br",
+      "nome": "Luciano Gonçalves Noleto",
+      "bio": "Luciano Gonçalves Noleto é Engenheiro Mecânico (2004), mestre em Ciências Mecânicas (2006) e Doutor em Ciências Mecânicas (2010) pela Universidade de Brasília. No presente momento é professor adjunto da Universidade de Brasília, lotado na Faculdade UnB Gama e atuando no curso de Engenharia de Energia. Durante os anos de 2006 a 2008 exerceu o cargo de professor substituto no departamento de Engenharia Mecânica da UnB, lecionando nas áreas de Termodinâmica, Mecânica dos Fluidos, Transferência de Calor e Métodos Numéricos. Os temas recorrentes nos trabalhos publicados são: Escoamentos Turbulentos, Escoamentos Ambientais, Turbinas Hidráulicas, Métodos Numéricos e Método dos Elementos Finitos.",
+      "fot" : "https://arquivos.unb.br/arquivos/20201721587fd92041578c3e266ddea38/IMG_2456.JPG",
+    },
+    {
+      "email": "filomeno@unb.br",
+      "nome": "LUIS FILOMENO DE JESUS FERNANDES",
+      "bio": "Possui graduação em Engenharia Eletrótécnica pela Faculdade de Engenharia da Universidade do Porto (1991), mestrado em Engenharia Elétrica pela Universidade de Brasília (1996) e doutorado em Engenharia Elétrica pela Universidade de Brasília (2007). , atuando principalmente nos seguintes temas: identificação de sistemas, wavelets, equação de lyapunov, redução de modelo e espaço de estados.",
+      "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png",
+    },
+    {
+      "email": "taneguti@unb.br",
+      "nome": "LUIZA YOKO TANEGUTI",
+      "bio": "A professora adjunta na FGA-UnB é graduada em Matemática e Ciências pela UFSCAR, possui mestrado em Engenharia Elétrica pela Unicamp e doutorado em Engenharia Mecânica pela EESC/USP. Ela tem formação em Desenho, Modelagem, Simulação e Análise de dados. Além disso, ela atuou como avaliadora de Cursos de Engenharia do Inep-MEC e trabalhou como consultora em vários Organismos Internacionais junto ao INEP, MEC e CNE. Ela também realizou consultorias em várias empresas como Coordenadora de Projetos. Natural de São Carlos - SP, ela é católica e casada com duas filhas. Suas áreas de interesse incluem simulação, desenho e matemática, matemática computacional e modelagem matemática.",
+      "fto" : "https://arquivos.unb.br/arquivos/2020158065f87e2052805cf7b633c596a/IMG_20190104_193912918.jpg",
+    },
+    {
+      "email": "lcarlos@unb.br",
+      "nome": "LUIZ CARLOS MIYADAIRA RIBEIRO JUNIOR",
+      "bio": "O professor adjunto da Universidade de Brasília é graduado em Tecnologia em Processamento de Dados pela Faculdade de Informática de Lins, com especialização em Análise de Sistemas pela mesma instituição e IBM. Ele também possui mestrado em Ciência da Computação pela Universidade Federal de São Carlos e doutorado em Engenharia Elétrica pela Escola Politécnica da Universidade de São Paulo. Com 8 anos de experiência profissional na área de desenvolvimento de software, ele atuou como Analista de Requisitos, Arquiteto de Software e Gerente de Projetos em grandes empresas de desenvolvimento de software. Ele participa de projetos de melhoria de processos de software, baseados nos modelos de qualidade de software CMMI e MPS.BR. Além disso, ele tem mais de 10 anos de experiência acadêmica como professor universitário e pesquisador. Suas áreas de interesse incluem Engenharia de Software e Sistemas de Informação.",
+      "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png",
+    },
+    {
+      "email": "manuelbarcelos@unb.br e manuelbarcelos@aerospace.unb.br",
+      "nome": "MANUEL NASCIMENTO DIAS BARCELOS JUNIOR",
+      "bio": "O professor é graduado em Engenharia Mecânica pela Universidade de Brasília (1999), possui mestrado na mesma área pela mesma universidade (2001) e doutorado em Engenharia Aeroespacial pela University of Colorado (2006). Ele tem experiência em Engenharia Mecânica e Aeroespacial, com foco em calibração de transdutores dinâmicos e otimização de sistemas aeroelásticos. Seus principais temas de atuação incluem tubo de choque, escoamento compressível, incerteza de medição, transdutores de pressão, calibração dinâmica, aeroelasticidade, elementos finitos, volumes finitos, escoamentos laminar e turbulento, otimização de forma, geração de malhas, processamento de dados e visualização gráfica. Suas áreas de interesse abrangem projeto e otimização de sistemas de engenharia, simulação numérica, métodos experimentais e metrologia, termodinâmica e transferência de calor, sistemas propulsivos, e estruturas e materiais avançados.",
+      "fto" : "https://arquivos.unb.br/arquivos/20200530273b362051238f00c8aab609a/Foto_Manuel.png",
+    },
+    {
+      "email": "andrade@unb.br",
+      "nome": "MARCELINO MONTEIRO DE ANDRADE",
+      "bio": "Com uma carreira acadêmica que abrange pesquisa, ensino e extensão universitária, o professor tem uma forte ênfase em processamento de sinais, instrumentação eletrônica e soluções computacionais. Ele tem uma extensa lista de publicações acadêmicas e tem experiência como docente em várias disciplinas de engenharia e computação. Além disso, ele desempenhou um papel fundamental na fundação do Campus de Engenharia da UnB em Gama/DF e atuou como coordenador do curso de Engenharia Eletrônica. Ele também orientou vários alunos em diversos contextos acadêmicos e acumulou experiência profissional em várias empresas do setor público e privado antes de sua atuação universitária. Ele é graduado em Engenharia Elétrica (1992-1997), possui mestrado (1999-2000) e doutorado (2003-2006) na mesma área. Suas áreas de interesse incluem Processamento Digital de Sinais, Instrumentação Eletrônica e Métodos Computacionais.",
+      "fto" : "https://arquivos.unb.br/arquivos/20210950805088224265403146e7fd801/eu.jpg",
+    },
+    {
+      "email": "marcelobs@unb.br",
+      "nome": "MARCELO BENTO DA SILVA",
+      "bio": "O professor da Faculdade UnB Gama, Curso de Engenharia de Energia, é graduado e mestre em Química pela Universidade Federal de São Carlos (UFSCar) e doutor em Ciências da Engenharia Ambiental pela Universidade de São Paulo (EESC-USP). Ele atua na área de química ambiental, com foco em limnologia de reservatórios hidrelétricos, monitoramento de gases de efeito estufa, índice de qualidade de água e produção de biocombustíveis. Suas áreas de interesse incluem Química e Ciências Ambientais.",
+      "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png",
+    },
+    {
+      "email": "batistuta@unb.br",
+      "nome": "MARCUS VINICIUS BATISTUTA",
+      "bio": "O professor adjunto da Universidade de Brasília é graduado em Engenharia Elétrica pela mesma universidade em 1991, onde também obteve seu mestrado em 1994 e doutorado em 2007. Ele tem experiência em diversas subáreas da Engenharia Elétrica, incluindo Automação Eletrônica de Processos Elétricos e Industriais, Materiais e Componentes Semicondutores, Simulação de Dispositivos e Sistemas em Nanoeletrônica, Fabricação de Nanoestruturas e Inteligência Computacional.",
+      "fto" : "https://fga.unb.br/image_uploads/0000/0145/marcus_vinicius_batistuta_perfil_big.jpg",
+    },
+    {
+      "email": "chaffim@unb.br",
+      "nome": "MARCUS VINICIUS CHAFFIM COSTA",
+      "bio": "Marcus Chaffim é Professor Adjunto de Engenharia Eletrônica na Faculdade UnB Gama (FGA/UnB) e atua no Programa de Pós-Graduação em Engenharia Biomédica (PPGEB). Ele possui doutorado, mestrado e graduação em Engenharia Elétrica pela Universidade de Brasília (UnB). Sua experiência abrange Engenharia Elétrica, com ênfase em Engenharia Eletrônica e Processamento de Sinais, incluindo processamento digital de sinais e imagens, compressão de sinais e imagens, processamento de sinais biológicos, engenharia biomédica, análise de sinais e imagens e qualidade da energia elétrica. Ele já ministrou aulas de laboratório de Sistemas Digitais e auxiliou na disciplina Introdução ao Processamento de Sinais Sísmicos. Trabalhou em projetos de pesquisa e desenvolvimento, incluindo o desenvolvimento de ferramentas computacionais para análise e avaliação do desequilíbrio em redes de energia elétrica e tratamento de sinais de eletromiografia em atividades subaquáticas. Suas áreas de interesse incluem Engenharia Elétrica, Processamento Digital de Sinais, Bioengenharia, Compressão de Sinais e Qualidade da Energia.",
+      "fto" : "https://arquivos.unb.br/arquivos/2020136165f6ed20481316fec15472752/marcus-chaffim_Foto_Lattes.jpg",
+    },
+    {
+      "email": "zizanunes@gmail.com",
+      "nome": "MARIA ALZIRA DE ARAUJO NUNES",
+      "bio": "A professora adjunta da Faculdade UnB Gama (Engenharia Automotiva) da Universidade de Brasília é graduada em Engenharia Mecânica pela Universidade Federal de Uberlândia-UFU, onde também obteve seu mestrado e doutorado na área de Mecânica dos Sólidos e Vibrações com ênfase em Acústica. Ela tem experiência como consultora e pesquisadora (P&D) na área de Acústica e Vibrações, com aplicação direta em compressores herméticos. Atualmente, dedica-se à pesquisa na área de acústica (industrial, ambiental e veicular), vibrações e dinâmica multicorpos (MBS). Seus temas de experiência incluem identificação de fontes sonoras industriais, controle de ruído ambiental e industrial, simulações em elementos finitos, otimização, análise modal, síntese modal e dinâmica MBS. Suas áreas de interesse abrangem Acústica e Vibrações, Sistemas Dinâmicos, Métodos de Síntese e Otimização Aplicados ao Projeto Mecânico, e Controle de Sistemas Mecânicos.",
+      "fto" : "https://arquivos.unb.br/arquivos/202401604142a73019453d32c9ae91b7a/WhatsApp_Image_2024-01-24_at_13.56.16.jpeg",
+    },
+    {
+      "email": "souesil@unb.br",
+      "nome": "Maria de Fátima Souza e Silva",
+      "bio": "Possui graduação em Engenharia Civil pela Universidade Federal de Santa Maria (1987), graduação em Matemática e Física Licenciatura Plena pela Faculdade Imaculada Conceição (1982), mestrado em Engenharia Civil pela Universidade Federal do Rio Grande do Sul (1995) e doutorado em Engenharia de Produção pela Universidade Federal de Santa Catarina (2005). Atualmente é professor adjunto 4 da Faculdade UnB Gama, responsável pelas disciplinas de Gestão da Produção e Qualidade. Compõe o quadro de professores do Programa de Pós-graduação em Desenvolvimento, Sociedade e Cooperação Internacional onde ministrou as disciplinas de Políticas Públicas (enfase em avaliação), Metodologia Científica e Teorias do Desenvolvimento. Orientou uma dissertação de mestrado no Programa de Pós-graduação em Estruturas e Construção Civil, uma no Programa de Pós-graduação em Arquitetura e Urbanismo e uma no Programa de Pós-graduação em Ciência da Informação. Atualmente, orienta no PPGDSCI uma dissertação de mestrado. Tem experiência na área de Gestão da Produção, atuando nos seguintes campos: Educação em Engenharia; Habitação de Interesse Social; Gestão da Produção com ênfase em edificações e automotiva; Processo de Projetos Tecnológicos, incluindo sistemas e processos de monitoramento de políticas públicas, desenvolvimento de projetos de fábricas baseados na gestão de processos e desenvolvimento de protótipos de projetos inovadores como carros elétricos e sistemas alternativos para a produção de energia. Possui 33 artigos publicados em anais de eventos, dois artigos publicados em periódicos científicos, um livro publicado em co-autoria e dois capítulos de livros em co-autoria.",
+      "fot" : "https://fga.unb.br/image_uploads/0000/1137/maria_big.jpg", 
+    },
+    {
+      "email": "pilar@unb.br",
+      "nome": "MARIA DEL PILAR HIDALGO FALLA",
+      "bio": "A professora associada da Universidade de Brasília, Faculdade Gama, é graduada em Química pela Universidad Nacional Mayor-Lima Perú e em Tecnologia de Laboratório Químico pelo Instituto Superior Tecnológico Simón Bolivar- Lima Perú. Ela possui mestrado em Química Analítica pelo Instituto de Química da USP, onde desenvolveu sistemas para detecção de reagentes de flotação-xantato por análises em fluxo. Em 2005, obteve doutorado no Departamento de Engenharia Metalúrgica e Materiais da Escola Politécnica da USP, focando no desenvolvimento de sensores baseados em nanossemicondutores para detecção de gases poluentes. Realizou pós-doutorados na área de nanosensores e nariz eletrônico, com aplicação na detecção de gasolina adulterada, sendo bolsista do CNPq e FAPESP. Em 2010, coordenou projetos de desenvolvimento sustentável da usina de biodiesel a partir de óleo de fritura da Prefeitura da USP e Instituto de Energia da Escola Politécnica, além de projetos de energias alternativas financiados pelo CNPq. Em 2013, obteve mestrado com ênfase em Engenharia de Petróleo e Gás na Universidade Católica de Petrópolis-RJ, desenvolvendo e caracterizando fluidos de perfuração de petróleo. Além disso, tem experiência de 9 anos na indústria petroquímica, na área de lubrificantes e pesquisa e controle de qualidade em refinarias de petróleo, e realizou consultorias importantes em empresas industriais no Brasil e no Peru.",
+      "fto" : "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4761019P1",
+    },
+    {
+      "email": "bernardes@unb.br",
+      "nome": "MARIANA COSTA BERNARDES MATIAS",
+      "bio": "Mariana Costa Bernardes Matias é uma professora permanente da Universidade de Brasília, atuando no curso de Engenharia Eletrônica da Faculdade do Gama. Ela é doutora em Sistemas Automáticos e Microeletrônicos pela Université Montpellier 2 e em Engenharia de Sistemas Eletrônicos e de Automação pela Universidade de Brasília, com co-tutela em 2012. Além disso, possui mestrado em Engenharia Elétrica e graduação em Engenharia Mecatrônica, ambos pela Universidade de Brasília, concluídos em 2009 e 2005, respectivamente. Foi bolsista do CNPq de 2008 a 2009 e bolsista Capes no programa de co-tutela Colégio Doutoral Franco-Brasileiro de 2010 a 2012. Mariana tem experiência na área de Controle e Automação, com ênfase em Robótica, e seus principais interesses são robótica médica e interação humano-robô.",
+      "fto" : "https://arquivos.unb.br/arquivos/2020230127461b20526939855bf6c16ef/WhatsApp_Image_2020-07-13_at_13.13.33.jpeg",
+    },
+    {
+      "email": "vitferrari@gmail.com",
+      "nome": "MARIA VITORIA DUARTE FERRARI",
+      "bio": "A Professora Associada do Curso de Engenharia de Energia e Vice-Diretora do Parque de Inovação e Sustentabilidade do Ambiente Construído (PISAC)/PCTec é uma Auditora Ambiental certificada pela SGS. Ela possui uma sólida formação acadêmica, com graduação em Engenharia Florestal e doutorado em Agronomia com área de concentração em Solos e Nutrição de Plantas, ambos pela Universidade Federal de Viçosa. Além disso, ela tem um mestrado em Agronomia com área de concentração em Fisiologia Vegetal pela Universidade Estadual de Londrina. Suas áreas de interesse incluem Sistemas Integrados de Gestão (abrangendo Meio Ambiente, Qualidade, Saúde e Segurança, Responsabilidade Ambiental e Social), Educação 4.0, Ecologia e Psicologia Ambiental.",
+      "fto" : "https://arquivos.unb.br/arquivos/202003806217932049675cb2fbcd62da4/DSC_0333-2.jpg",
+    },
+    {
+      "email": "mariliamfg@gmail.com",
+      "nome": "Marília Miranda Forte Gomes",
+      "bio": "Bacharel em Estatística pela Universidade de Brasília (2005). Mestre (2008) e Doutora (2011) em Demografia pelo programa de Pós-Graduação do Centro de Desenvolvimento e Planejamento Regional Cedeplar/FACE/UFMG. Atualmente é Professora Adjunta da Faculdade do Gama (FGA) da Universidade de Brasília (UnB). Áreas de interesse: Probabilidade e Estatística, Estatística Aplicada, Métodos Quantitativos Aplicados às Engenharias, Ciências Contábeis e Atuariais/Administração/Ciências Sociais/Relações Internacionais/Saúde/Ciências biológicas, População e saúde, Técnicas de Análise Demográfica, Envelhecimento, Mortalidade e Previdência.",
+       "fot" : "https://sigaa.unb.br/sigaa/img/no_picture.png",
+    },
+    {
+      "email": "marioand@unb.br",
+      "nome": "Mário Andrade",
+      "bio": "Possui graduação e mestrado em Engenharia de Produção pela Escola de Engenharia de São Carlos (USP). Possui experiência profissional nas áreas de manufatura enxuta e gestão da cadeia de suprimentos, bem como em modelagem e redesenho de processos. Atuou em empresas privadas de diferentes segmentos e em empresas públicas, em projetos de transformação organizacional. Principais temas de interesse são: metodologias e ferramentas de análise e transformação organizacional, manufatura enxuta, gestão da cadeia de suprimentos, aprendizagem baseada em problemas/projetos.",
+      "fot" : "https://arquivos.unb.br/arquivos/2022112188a3cb2577144289f5d135f9e/moa_2.jpeg", 
+    },
+    {
+      "email": "mateusmiranda@unb.br",
+      "nome": "Mateus Rodrigues Miranda",
+      "bio": "Pós-Doutorado em Design de Transporte e Ergonomia do Produto pela Universidade de Quebec em Montreal - UQÀM (2015). - Doutorado em Ciências Mecânicas pela Universidade de Brasília (2014). - Mestrado em Engenharia Aeronáutica e Mecânica pelo Instituto Tecnológico de Aeronáutica / ITA (2004). - Graduação em Engenharia Mecânica pela Universidade de Brasília (2000) Professor Adjunto da Universidade de Brasília - UnB (Campus Gama) nos Cursos de Engenharia Automotiva e de Engenharia Aeroespacial, ministrando disciplinas e desenvolvendo pesquisas nas áreas de Design Automotivo, Ergonomia do Produto e Sistemas Aeroespaciais. Experiência profissional nas áreas de Engenharia Mecânica, Engenharia Aeronáutica, Design de Produto e Ergonomia, incluindo trabalhos desenvolvidos na EMBRAER (2004-2009), onde atuou como engenheiro de desenvolvimento do produto. Também atuou profissionalmente nas áreas automação e inspeção veicular. Membro do Laboratório de Arte e Tecnociência - LART, desenvolvendo pesquisas nas áreas de Projeto de Produto, Design, Ergonomia, Simulação e Realidade Virtual.",
+      "fot" : "https://arquivos.unb.br/arquivos/202006111361ff20463131959cc7f11dc/foto_perfil_menor2.jpg",
+    },
+    {
+      "email": "matheusbernardini@unb.br",
+      "nome": "MATHEUS BERNARDINI DE SOUZA",
+      "bio": "Doutor (2017) em Matemática pela Universidade Estadual de Campinas. Mestre (2013), Bacharel (2011) e Licenciado (2012) em Matemática pela Universidade de Brasília. Atualmente é Professor Adjunto na Universidade de Brasília (Faculdade do Gama) e pesquisa em semigrupos numéricos, gapsets e semigrupos numéricos generalizados. É o atual Coordenador Regional da OBMEP no DF. Áreas de Interesse (áreas de interesse de ensino e pesquisa): Semigrupos Numéricos, Combinatória e Teoria dos Números.",
+      "fto" : "https://arquivos.unb.br/arquivos/2021245101d45c2096503a525d4168f6e/Perfil.png",
+    },
+    {
+      "email": "maura@unb.br",
+      "nome": "Maura Angelica Milfont Shzu",
+      "bio": "Professora da Universidade de Brasília, campus Gama. Possui doutorado em Estruturas e Construção Civil pela Universidade de Brasília (2006), mestrado em Engenharia Civil, área de concentração: Estruturas e Construção Civil, pela Universidade Federal de Pernambuco (2001), e graduação em Engenharia Civil pela Universidade de Pernambuco (1997). Atuou durante dois anos como engenheira calculista de estruturas e fundações. Lecionou na graduação e pós-graduação do curso de engenharia civil da UnB na condição de monitora e estagiária. Lecionou na graduação dos cursos de engenharia civil e elétrica da UnB, na condição de professora substituta. Tem experiência acadêmica na área de Engenharia Civil, com ênfase em Mecânica dos Sólidos e Mecânica da fratura, atuando principalmente na área de otimização e propagação de fissuras.",
+      "fot" : "https://arquivos.unb.br/arquivos/202012303701b420474519724e2ba6774/WhatsApp_Image_2020-06-09_at_19.34.04.jpeg",
+    },
+    {
+      "email": "serr.mau@gmail.com",
+      "nome": "Maurício Serrano",
+      "bio": "Possui graduação em Engenharia da Computação pela Universidade Federal de São Carlos (2001) e mestrado em Ciência da Computação pela Universidade Federal de São Carlos (2003). Foi docente da Universidade de Franca e professor contratado pelo Departamento de Ciência da Computação do ICMC/USP - São Carlos, ministrando disciplinas da área da computação. Defendeu a tese de doutorado em 23 de Agosto de 2011 na Pontifícia Universidade Católica do Rio de Janeiro (PUC-Rio), orientado pelo Professor Dr. Julio Cesar Sampaio do Prado Leite. Atualmente, é professor adjunto na Universidade de Brasília, campus do Gama (UnB/FGa), no curso de Engenharia de Software. Tem experiência na área de Ciência da Computação, com ênfase em Engenharia de Software, atuando principalmente nos seguintes temas: arquitetura de software, engenharia de requisitos, rastreabilidade, sistemas multi-agentes (mas), paradigma intencional e robótica educacional.",
+      "fot" : "https://arquivos.unb.br/arquivos/20200252175954205888395e8adf3014b/photo_2020-06-01_15-19-11.jpg", 
+    },
+    {
+      "email": "mileneserrano@unb.br",
+      "nome": "Milene Serrano",
+      "bio": "Sou graduada em Engenharia de Computação pela Universidade Federal de São Carlos (UFSCar) e pós-graduada (mestrado) em Ciência da Computação pela mesma instituição de ensino, sob a orientação da Professora Dra. Rosângela Aparecida Dellosso Penteado. Durante a realização do mestrado, fui bolsista CAPES por mérito e classificação segundo os critérios do Departamento de Computação da UFSCar. Fiz estágio supervisionado para docente da UFSCar, ministrando aulas para alunos de graduação na disciplina de \"Paradigmas de Linguagem de Programação\". Participei de um projeto de pesquisa \"Projeto Apyon Studio - Fase II : Modelo Gráfico de Dependência entre as Regras de Negócio e o Impacto Físico Financeiro sobre a Manutenção\". Ao longo desse projeto, fui bolsista FAPESP TTI nível 4. Atuei como pesquisadora e desenvolvedora, integrante do projeto no módulo de Regras de Negócio e colaboradora nos demais módulos do projeto. Conclui meu doutorado em Ciência - Informática na Pontifícia Universidade Católica do Rio de Janeiro (PUC-Rio) na área de Engenharia de Software sob a orientação do Professor Ph.D Carlos José Pereira de Lucena. Além disso, realizei parte do meu doutorado na Universidade de Toronto, no Canadá, sob a orientação do Professor Ph.D John Mylopoulos, e apoiada financeiramente pelo CNPQ com uma bolsa SWE. Atuo como colaboradora (pesquisadora e desenvolvedora) no Grupo de Pesquisa do Laboratório de Engenharia de Software (LES - PUC-Rio). Esse grupo desenvolve vários projetos e conta com o apoio financeiro de agências de fomento (ex. FINEP, CNPq e CAPES) bem como de empresas privadas (ex. IBM e Globo.com). Atualmente, sou professora, Adjunta, com regime de dedicação exclusiva, na Universidade de Brasília (UnB-FGA), no curso de Engenharia de Software. Meus interesses concentram-se nas áreas de Engenharia de Software, Engenharia de Requisitos, Arquitetura de Software, Engenharia Reversa/Reengenharia. Dentre os tópicos de interesse, têm-se: (i) diferentes Paradigmas, com destaque para Sistemas Multiagentes, Orientação a Objetos, Orientação a Comportamento e Orientação à Meta; (ii) Transparência de Software; (iii) Computação Ubíqua, Pervasiva e Móvel; (iv) Engenharia de Domínio & Engenharia de Aplicação; e (v) Robótica Educacional.",
+      "fot" : "https://arquivos.unb.br/arquivos/2020056248469c20442167f941a0ca4cc/Milene_-_Foto.png", 
+    },
+    {
+      "email": "marcioavelar@unb.br",
+      "nome": "Márcio Henrique de Avelar Gomes",
+      "bio": "Possui doutorado em Engenharia Mecânica pela Universidade Federal de Santa Catarina (2002) (em convênio com o \"Institut für Technische Akustik - Rheinisch-Westfalischen Technischen Hochschule/Aachen\"), mestrado em Engenharia Mecânica pela Universidade Federal de Santa Catarina (1998) e especialização em Jornalismo Científico pela Universidade Estadual de Campinas (2004). Atualmente é Professor Adunto da Universidade de Brasília (UnB - Gama). Tem experiência em áreas da Engenharia Mecânica e Engenharia Civil, especificamente em Vibrações e Acústica, atuando principalmente nos seguintes temas: acústica, acústica arquitetônica, difusores acústicos, simulações acústicas, medições acústicas, psicoacústica, controle de ruído industrial, ensaios não destrutivos para indústria aeroespacial, análise modal e projetos mecânicos relacionados à dinâmica estrutural.",
+      "fot" : "https://sigaa.unb.br/sigaa/img/no_picture.png", 
+    },
+    {
+      "email": "niltoncs@unb.br",
+      "nome": "NILTON CORREIA DA SILVA",
+      "bio": "Professor da Faculdade de Engenharias Gama da Universidade de Brasília (FGA/UnB), é graduado em Computação pela Universidade Estadual de Goiás (UEG), possui mestrado e doutorado em Ciência da Computação e Processamento de Dados e Análise Ambiental, respectivamente, ambos pela Universidade de Brasília (UnB). Realizou dois estágios de pós-doutorado em Técnicas Computacionais para Análises Temporais em Imagens de Sensores Remotos e um estágio de pós-doutorado em reconhecimento de padrões em séries temporais de dados ambientais. Sua experiência se concentra na área de Ciência da Computação, com ênfase em Inteligência Artificial, atuando principalmente com Redes Neurais Artificiais, Redes Neurais Profundas, Aprendizado de Máquina e Processamento de Linguagem Natural em projetos de análises em grandes volumes de dados (Big Data): Imagens Digitais, Textos e Dados Corporativos. Atualmente, coordena o laboratório de Inteligência Artificial da Universidade de Brasília (Gama).",
+      "fto" : "https://arquivos.unb.br/arquivos/2020090019676920547460c2e4c9016a4/Nilton.jpg",
+    },
+    {
+      "email": "olexiy@aerospace.unb.br",
+      "nome": "Olexiy Shynkarenko",
+      "bio": "1997 - 2000 Bsc - Faculdade de Física e Tecnologia, Departamento de Motores de Foguete, Universidade Nacional de Dnipropetrovsk, Ucrânia. 2000 - 2002 Especialização - Faculdade de Física e Tecnologia, Departamento de de Motores de Foguete, Universidade Nacional de Dnipropetrovsk, Ucrânia. 2006 - PhD em Engenharia Aeroespacial, area - \"Motores de foguetes e sistemas de fornecimento de energia para foguetes\" - Universidade Nacional de Dnipropetrovsk, Ucrânia. 2008 - Post-Doutorado - Middle East Technical University, Department of Aerospace Engineering, Ankara, Turkey. 2006 - 2013 - Professor - Universidade Nacional de Dnipropetrovsk, Departamento de Motores de Foguete, Ucrânia. 2013 - Atual - Professor - Engenharia Aeroespacial, Faculdade Gama, Universidade de Brasilia, Brasil. 2015 - 2017 - Coordenador - Engenharia Aeroespacial. 2018 - Atual - Lider do Grupo de Pesquisa CNPq \"Laboratório de Propulsão Química\"",
+      "fot" : "https://arquivos.unb.br/arquivos/20200321630f2c2045600889deab794a3/Pass_O.jpg",
+    },
+    {
+      "email": "paologessini@unb.br",
+      "nome": "Paolo Gessini",
+      "bio": " Possui graduação em (BSc+MSc in) Ingegneria Aeronautica - Università degli Studi di Roma La Sapienza (1994), mestrado em (MSc in) Aeronautical & Astronautical Engineering - Ohio State University (1999) e doutorado em (PhD in) Aerospace Engineering - University of Southampton (2006). Atualmente é professor adjunto da Universidade de Brasília. Tem experiência na área de Engenharia Aeroespacial, com ênfase em Propulsão Aeroespacial, e na área de Física de Plasmas, atuando principalmente na Propulsão Elétrica Espacial e áreas afins, como Tochas de Plasma, mas também na Propulsão Química, em particular Foguetes Híbridos",
+      "fot" : "https://fga.unb.br/image_uploads/0000/2604/Paolo_G_big.jpg", 
+    },
+    {
+      "email": "patriciabraga@unb.br",
+      "nome": "Patrícia Regina Sobral Braga",
+      "bio": "Formada pela Universidade de Brasília, tanto no curso de Bacharelado em Química (2002) como em Licenciatura em Química (2006). Possui o título de mestre na área de Química Inorgânica também pela Universidade de Brasília (2005). Seu mestrado se baseou na Química com ênfase em Foto-Química Inorgânica, atuando principalmente nos seguintes temas: processos oxidativos avançados com os corantes Preto de Eriocromo T, Vermelho Congo e Azur II. Aplicou seus estudos nas análises por UV para processos Fenton, foto-Fenton e catalálise heterogênea. É doutora pela UnB (2011) com ênfase em Catálise se dedicando ao estudo de catalisadores mesoporosos aplicados em reações industriais: reação de ciclização intramolecular do (+)-citronelal e esterificação do ácido oléico com etanol.",
+      "fot" : "https://arquivos.unb.br/arquivos/2021244024ef962141075b9bf02b0092d/DSC03198.JPG", 
+    },
+    {
+      "email": "paulameyer@unb.br",
+      "nome": "PAULA MEYER SOARES",
+      "bio": "Graduada em Ciências Econômicas pela Universidade de Fortaleza (1990), Mestrado em Economia de Empresas pela Fundação Getúlio Vargas - SP (1994), extensão do mestrado pela Ecole Superieure des Sciences et Etudes Commerciale, ESSEC, Cergy Pontoise-França. e Doutorado em Economia de Empresas pela Fundação Getúlio Vargas - SP (2002). Professor adjunto da Faculdade do Gama-FGA e do Mestrado Profissional em Propriedade Intelectual e Transferência de Tecnologia - PROFNIT Ponto focal UnB. Ministra as disciplinas de Politicas Públicas, Economia da energia e Engenharia Econômica. Atua nos seguintes temas: políticas públicas, energia e inovação. Desde 2022 é diretora de eventos da Sociedade Brasileira de Planejamento Energético -SBPE.",
+      "fto" : "https://arquivos.unb.br/arquivos/2020117243a5f0204361986afb1e1f753/IMG_9800_1.JPG",
+    },
+    {
+      "email": "pedro.lavinas@gmail.com",
+      "nome": "Pedro Nery Lavinas",
+      "bio": "Professor de Matemática Aplicada da Universidade de Brasília - Campus Gama (FGA/UnB) desde Fev/2013. Doutor em Engenharia Mecânica pela Escola Politécnica da Universidade de São Paulo (2010). Possui graduação em Engenharia Mecânica pela Universidade Estadual de Campinas (2003). Tem experiência na área de Mecânica dos Fluidos, Interação Fluido-Estrutura, Estabilidade Hidrodinâmica, Equações Diferenciais e Análise Numérica.",
+      "fot" : "https://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4762077A2", 
+    },
+    {
+      "email": "polliana.martins@unb.br",
+      "nome": "POLLIANA CANDIDA OLIVEIRA MARTINS",
+      "bio": "Possui doutorado em Ciências Mecânicas pela Universidade de Brasília (2020), mestre em Engenharia Mecânica pela Universidade Federal de Uberlândia (2014) e bacharel em Engenharia Mecânica pela Universidade Federal de Uberlândia (2011) . Atualmente é Professora adjunta na Universidade de Brasília, Faculdade do Gama, atuando nas áreas de análise numérica e controle de fenômenos aeroelásticos, dinâmica de estruturas aeronáuticas, projeto conceitual de aeronaves, otimização multidisciplinar de produto aeronáutico. Atuou como professora EBTT no Instituto Federal de Goiás na grande área de Engenharia Mecânica, com foco em Projetos Mecânicos e Mecânica dos Sólidos. Foi engenheira de desenvolvimento de produto na Embraer na área de Desenvolvimento Tecnológico no grupo de Aeroelasticidade. Atualmente está credenciada no Programa de Pós Graduação em Integridade de Materiais de Engenharia, da Universidade de Brasília.",
+      "fto" : "https://arquivos.unb.br/arquivos/202113716472282293300ddb0c7c3410f/photo.JPG",
+    },
+    {
+      "email": "rafael.mendes@unb.br",
+      "nome": "RAFAEL CASTILHO FARIA MENDES",
+      "bio": "Professor Adjunto do curso de Engenharia Aeroespacial da Universidade de Brasília, possui doutorado em Ciências Mecânicas pela mesma instituição (2020), com mestrado na mesma área (2015) e graduação em Engenharia de Energia também pela Universidade de Brasília (2013). Tem experiência na área de mecânica dos fluidos e energias renováveis. Suas linhas de pesquisa abrangem vários aspectos no contexto de turbinas hidrocinéticas e turbinas eólicas, passando pelo design de rotores, avaliação de desempenho, incluindo estudos sobre características do escoamento em diferentes configurações de arranjos, e estudos de escoamentos turbulentos. Além disso, possui experiência em técnicas experimentais em túnel de vento e em simulações de dinâmica dos fluidos computacional (CFD).",
+      "fto" : "https://arquivos.unb.br/arquivos/202219303135fb2497786aab8e2e21e66/IMG20220706091140.jpg",
+    },
+    {
+      "email": "rafael@fis.unb.br",
+      "nome": "Rafael Morgado Silva",
+      "bio": "Possui graduação em Física pela Universidade Estadual de Campinas (1998), mestrado em Física pela Universidade de Brasília (2001) e doutorado em Física pela Universidade de Brasília (2004). Realizou estágio pós doutoral no departamento de Matemática da Universidade de Brasília, e atualmente é professor adjunto, na área de sistemas eletrônicos, com atuação no novo Campus do Gama da Universidade de Brasília. Tem experiência em computação e programação paralela, com ênfase no desenvolvimento de arquiteturas para computação de alta performance em cluster e no desenvolvimento de aplicações científicas massivamente paralelas. Desenvolveu diversos algoritmos paralelos, dentre os quais algoritmos tipo Monte Carlo para simulação de processos estocásticos e implementações do algorítimo genético. Também tem experiência na área de Física Estatística e Processos Estocásticos, tendo publicado dez artigos científicos em periódicos internacionais qualis A. Atualmente desenvolve pesquisas em computação de alta performance, buscando sistemas de hardware com melhor relação custo/benefício, além de desenvolver bibliotecas para programação científica e simulações de sistemas físicos.",
+      "fot" : "https://sigaa.unb.br/sigaa/img/no_picture.png",
+    },
+    {
+      "email": "rafael.rodrigues@unb.br",
+      "nome": "RAFAEL RODRIGUES DA SILVA",
+      "bio": "Rafael Rodrigues da Silva é um professor na Faculdade do Gama (FGA) da Universidade de Brasília (UnB). Ele possui graduação em Engenharia Automotiva e mestrado em Sistemas Mecatrônicos, ambos pela Universidade de Brasília. Rafael tem experiência na indústria automotiva, onde trabalhou como engenheiro por cinco anos. Atualmente, ele é um professor assistente na Universidade de Brasília.",
+      "fto" : "https://arquivos.unb.br/arquivos/202316121546b127603555a0e0ac1b6e3/foto.jpg",
+    },
+    {
+      "email": "RejaneCosta@unb.br",
+      "nome": "Rejane Maria da Costa Figueiredo",
+      "bio": "Doutora em Engenharia Mecânica pela Escola de Engenharia de São Carlos - EESC/USP (2002), área de terceirização de serviços de tecnologia da informação. Mestre em Ciências da Computação e Matemática Computacional pela Universidade de São Paulo ICMC/USP (1997), área de engenharia de software - engenharia reversa de software. Graduada em Análise de Sistemas pela Universidade de Ribeirão Preto (1990). Professora do curso de Engenharia de Software da Faculdade FGA Gama, da Universidade de Brasília - UNB. Desenvolve atividades acadêmicas como professora e pesquisadora nas áreas de Qualidade de Software e Aquisição de Software, e Governança em Tecnologia da Informação: Contratação de Serviços de TI. Coordenadora do Grupo de Pesquisa CNPq UnB Governança em TI. Implementadora do Modelo Brasileiro de Processos de Sofware (MPS.BR). Membro, como especialista, do Núcleo de Governança em Tecnologia da Informação (NGovTI) da Comissão de Coordenação do SISP SLTI/MPOG. Interesse nas áreas de: Engenharia de Software - Qualidade de Software; Governança em Tecnologia da Informação - Contratação de Serviços de TI, Outsourcing/Terceirização, e Qualidade de Serviços.",
+      "fot" : "https://arquivos.unb.br/arquivos/2020248050bb112043804175f6552145c/Rejane_Figueiredo.gif", 
+    },
+    {
+      "email": "renan@unb.br",
+      "nome": "Renan Utida Barbosa Ferreira",
+      "bio": "Possui graduação (2006) e mestrado (2009) em Engenharia Elétrica e doutorado (2015) em Engenharia de Sistemas Eletrônicos e de Automação pela Universidade de Brasília. Atualmente é Professor Adjunto do curso de Engenharia Eletrônica da Universidade de Brasília. Tem experiência na área de Engenharia Elétrica, com ênfase em Processamento de Sinais, atuando principalmente nos seguintes temas: processamento e compressão de imagens e vídeos.",
+       "fot" : "https://arquivos.unb.br/arquivos/202005020871a420436280a9cdadbda8d/rosto_2020_oculos.jpeg",
+    },
+    {
+      "email": "renatocoral@unb.br",
+      "nome": "Renato Coral Sampaio",
+      "bio": "Renato Coral Sampaio, possui graduação em Engenharia Mecatrônica pela Universidade de Brasília (2004), mestrado em Ciência da Computação pela Universidade de Brasília (2013) atualmente está cursando o doutorado em Sistemas Mecatrônicos na UnB. É professor de Eng. de Software na Faculdade do Gama (UnB) desde 2015. Tem experiência na área de Sistemas em Arquiteturas Reconfiguráveis (FPGA), design de Sistemas em Chip (SoCs), Sistemas Embarcados em Tempo Real, Robótica, Controle Preditivo e Algoritmos de otimização Bio-inspirados.",
+      "fot" : "https://sigaa.unb.br/sigaa/img/no_picture.png",
+    },
+    {
+      "email": "rvlopes@unb.br",
+      "nome": "Renato Vilela Lopes",
+      "bio": "Possui graduação em Engenharia Elétrica pela Universidade Estadual Paulista Júlio de Mesquita Filho - UNESP (2004), mestrado em Engenharia Eletrônica e Computação pelo Instituto Tecnológico de Aeronáutica - ITA (2007) na área de Controle de Sistemas Dinâmicos e doutorado em Engenharia Eletrônica pela Universidade de Brasília - UNB (2014) na área de Identificação de Sistemas Dinâmicos Híbridos. Em 2011 foi aprovado em concurso público para professor na Universidade de Brasília (UnB) campus Faculdade do Gama (FGA), onde atua desde então. Tem experiência na área de Controle e Modelagem de Sistemas, atuando principalmente nos seguintes temas: controle preditivo, filtragem de sistemas dinâmicos, identificação e modelagem de sistemas. Durante os anos de 2006 e 2009 trabalhou na empresa Tecumseh do Brasil na cidade de São Carlos-SP, indústria do segmento de compressores herméticos para refrigeração, onde atuou como Analista e Pesquisador no projeto e desenvolvimento de motores elétricos de indução monofásico, tendo realizado vários trabalhos de Modelagem, Identificação, Simulação e Programação.",
+      "fot" : "https://arquivos.unb.br/arquivos/2020194047ce482085121d6f69b842771/Renato.jpg", 
+    },
+    {
+      "email": "rhander@unb.br",
+      "nome": "RHANDER VIANA",
+      "bio": "Possui graduação (2001), mestrado (2004) e doutorado (2009) em Engenharia Mecânica pela Universidade Federal de Uberlândia. Tem experiência na área de Engenharia Mecânica, com ênfase em Materiais e Processos de Fabricação, e Engenharia de Superfície: Furação, Fresamento, Alumínio, Ferro Fundido Vermicular, Ferramentas de Corte, Materiais para Ferramentas de Corte, Monitoramento de Desgaste de Ferramentas, Monitoramento dos Sinais de Potência e Força na Usinagem, Revestimentos Finos, Caracterização de Revestimentos Finos, Ensaios Tribológicos e Texturização a Laser. Foi professor do curso de Engenharia Mecânica da Universidade Federal de Goiás no período de 2011 a 2014, e também atuou na área de propriedade industrial, como pesquisador em propriedade industrial na Divisão de Patentes de Metalurgia e Materiais do Instituto Nacional da Propriedade Industrial no período de 2007 a 2011. Atualmente é professor associado do curso de Engenharia Automotiva da Universidade de Brasília Campus.",
+      "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png",
+    },
+    {
+      "email": "rikosdf@gmail.com",
+      "nome": "Ricardo Ajax Dias Kosloski",
+      "bio": "Graduação em Engenharia Elétrica pela Universidade de Brasília (1981) e especialização em Análise de Sistemas pela ETUC Católica/DF (1985). Pós graduação em Engenharia de Software, pela Universidade Católica de Brasília - UcB (2003) e Mestrado em Gestão do Conhecimento e da Tecnologia da Informação, também pela UcB (2005). A atuacao inclui experiencia na área de engenharia elétrica de 1981 a 1993, em estudos relacionados ao projetos de equipamentos da transmissão. Como Analista de sistemas desde 1993 ate hoje, atuando desde as áreas clássicas de desenvolvimento de software (sistemas de informação; tecnologia da informação e banco de dados), até, hoje em dia, atuações focadas no estudo e aplicação de métricas e estimativas em projetos de desenvolvimento de software; produtividade e qualidade de software e uso de modelos de maturidade na industria de software tais como: CMMI e MPS.Br, além da ISO 9000:2000, ISO 14504, ISO 12207 e ISO 9126.",
+      "fot" : "https://arquivos.unb.br/arquivos/2020208163b3242055000f431e6d46b55/Nova_foto.jpg",
+    },
+    {
+      "email": "ricardoc@unb.br",
+      "nome": "Ricardo Matos Chaim",
+      "bio": "Possui graduação em Administração e Informática, mestrado e Doutorado em Ciência da Informação pela UnB. Atualmente é professor Adjunto da Universidade de Brasília, para o curso de Engenharia de Software. Tem experiência na área de gestão governamental e Engenharia de Sistemas, atuando nos seguintes temas: marketing estratégico para a Internet, gerenciamento de riscos e incertezas, Engenharia de Software. Atua como pesquisador no IBTI/UnB e atuou como pesquisador no CEFTRU/UnB (Centro Interdisciplinar de Estudos em Transporte) e na coordenação de seu laboratório de sistemas. Trabalhou na Embrapa por dois anos atuando em projetos de cooperação internacional como consultor do Banco Interamericano de Desenvolvimento (Projeto PROCENSUL II). Atuou na Empresa de Tecnologia e Informações da Previdência Social - DATAPREV onde exerceu as funções técnicas de analista de sistemas, de gerente de projetos para a Internet e de gestor de terceirizações de projetos de sistemas e qualidade de software baseado na técnica de pontos por função. Entre as funções administrativas atuou como gerente de serviços para a Procuradoria Geral do INSS e para a Auditoria Geral do INSS. Cedido à Presidência da República, atuou por dois anos na Assessoria Técnica da Ministra da Controladoria-Geral da União/Presidência da República (CGU) e na Assessoria do Ouvidor-Geral da República. Atuou junto à Assessoria da Diretoria de Negócios da DATAPREV em Brasília, relacionando-se com órgãos como a Advocacia Geral da União, Ministério da Previdência Social e Instituto Nacional do Seguro Social - INSS. Foi gerente estadual da DATAPREV para o DF período em que auxiliou na estruturação da Secretaria Executiva da DATAPREV no âmbito de sua Presidência, sendo o primeiro Secretário Executivo do órgão. Sua experiência em docência se iniciou em 2000 tendo atuado como professor e coordenador de turmas de graduação e pós-graduação em Tecnologia da Informação. Já lecionou em cursos de pós-graduação junto a instituições como ENAP e UPIS em disciplinas relacionadas ao Marketing Estratégico e Gestão da Informação, inclusive em disciplinas de ensino à distância, bem como junto ao FGV Management da Fundação Getúlio Vargas em Brasília nos cursos de MBA em Administração Estratégica de Sistemas de Informação, ministrando a disciplina gestão de demandas; no MBA em Previdência e Gestão de Fundos de Pensão, ministrando a disciplina gerenciamento de riscos; e, coordenando o curso de MBA Auditoria Interna com ênfase em Auditoria de Desempenho e Avaliação de Programas para a Funasa e Tribunal de Contas do DF.",
+      "fot" : "https://sigaa.unb.br/sigaa/img/no_picture.png", 
+    },
+    {
+      "email": "fragelli@hotmail.com",
+      "nome": "Ricardo Ramos Fragelli",
+      "bio": "Possui graduação em Engenharia Mecânica (2000), Mestrado em Engenharia Mecânica (2003) e Doutorado em Ciências Mecânicas, todos pela Universidade de Brasília (2010). Atualmente é professor Adjunto da Universidade de Brasília, onde recebeu vários prêmios nacionais no uso de TICs na educação superior e inovações no Ensino de Engenharia. É líder do Grupo de Pesquisas em Sistemas Inteligentes e Adaptativos (GPSIA) da Faculdade UnB Gama (FGA) onde desenvolve pesquisas em Sistemas Tutores Inteligentes e Adaptativos aplicados à Educação e assuntos correlatos tais como Mecânica Computacional, Simuladores Interativos, Redes Quantizadas, Educação em Engenharia, Educação a Distância e Objetos de Aprendizagem Multiformes.",
+      "fot" : "https://arquivos.unb.br/arquivos/202003024440042055259d3e41418077d/Screenshot_20200807-080033_Facebook.jpg", 
+    },
+    {
+      "email": "jacobi@unb.br",
+      "nome": "Ricardo Pezzuol Jacobi",
+      "bio": "RICARDO PEZZUOL JACOBI concluiu o doutorado em Ciências Aplicadas - Université Catholique de Louvain em 1993. Foi professor do Instituto de Informática da UFRGS no período de 1989 a 1998. Atualmente é professor associado da Universidade de Brasilia. Foi Diretor do Instituto de Ciências Exatas da UnB no período de 2004 a 2007. Em agosto de 2008 assumiu a Vice-Direção do Campus UnB Gama, onde foram criados quatro novos cursos de engenharia. Atua na área de Ciência da Computação e Microeletrônica, com ênfase em CAD, arquiteturas reconfiguráveis e sistemas monoliticos (SoC).",
+      "fot" : "https://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4781781Y6", 
+    },
+    {
+      "email": "ritasilva@unb.br",
+      "nome": "Rita de Cássia Silva",
+      "bio": "Possui graduação em Engenharia Civil pela Universidade de Brasília (1995), mestrado em Estruturas e Construção Civil pela Universidade de Brasília (1999) e doutorado em Engenharia Mecânica Confiabilidade Estrutural - École Nationale des Ponts et Chaussées (2004). Possui experiência nas áreas de Mecânica dos Sólidos e Confiabilidade Estrutural. Atualmente, é professora adjunto da Universidade de Brasília - Faculdade UnB Gama na área de Engenharia Automotiva. Tem se dedicado a uma nova linha de pesquisa relacionada à área de Modelagem Multicorpos (MBS) com ênfase em suspensões veiculares. É uma das coordenadoras do Grupo de Modelagem e Simulação de Sistemas Automotivos (GMSSA).",
+      "fot" : "https://sigaa.unb.br/sigaa/img/no_picture.png",
+    },
+    {
+      "email": "robertobaptista@unb.br",
+      "nome": "ROBERTO DE SOUZA BAPTISTA",
+      "bio": "Roberto de Souza Baptista é professor no curso de Engenharia Eletrônica na Faculdade do Gama, Universidade de Brasília (UnB). É doutor em Engenharia de Sistemas Eletrônicos e de Automação com habilitação em Engenharia Biomédica na UnB. Sua pesquisa tem foco em Tecnologias Assistivas e Robótica de Reabilitação e possui publicações em congressos internacionais e periódicos da área. Realizou estágio de Doutorado Sanduíche no Instituto Nacional de Pesquisa em Informática e Automática (INRIA) em Montpellier, na França (2015) e estágio de Doutorado Sanduíche na Universidade Técnica de Kaiserslautern, Kaiserslautern, na Alemanha (2013). Possui mestrado em Engenharia Elétrica (2011), com foco em Modelagem e Identificação de Sistemas e Robótica Aérea, e graduação em Engenharia Mecatrônica (2005), ambos pela UnB. Tem experiência na indústria tendo realizado um programa de Trainee na Aleamanha pela empresa fabricante de máquinas de fundição sob pressão Oskar Frech GmBH e atuado como engenheiro de vendas pela sua subsidiária no Brasil.",
+      "fto" : "https://arquivos.unb.br/arquivos/2020035169290f2040441181a4c08c84b/Foto3x4-2020-02.jpg",
+    },
+    {
+      "email": "rmiracer@unb.br",
+      "nome": "Rodrigo Andres Miranda Cerda",
+      "bio": "Possui graduação em Engenharia em Computação e Informática pela Universidad de Magallanes (2001), mestrado em Geofísica Espacial pelo Instituto Nacional de Pesquisas Espaciais (2005) e doutorado em Geofísica Espacial pelo Instituto Nacional de Pesquisas Espaciais (2010). Atualmente é professor Adjunto da Universidade de Brasília no campus do Gama (UnB-Gama). Tem experiência na área de Geociências, com ênfase em Ambiente Solar-Terrestre, atuando principalmente nos seguintes temas: turbulência intermitente, caos espaçotemporal, dinâmica não-linear e sincronização. ",
+      "fot" : "https://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4126612Y6", 
+    },
+    {
+      "email": "ramunoz@unb.br",
+      "nome": "RODRIGO ARBEY MUNOZ MENESES",
+      "bio": "Rodrigo Arbey Muñoz Meneses é um professor na Faculdade do Gama (FGA) da Universidade de Brasília (UnB). Ele possui graduação em Engenharia Física pela Universidade do Cauca-Colômbia (2007), mestrado em Sistemas Mecatrônicos pela Universidade de Brasília UnB (2010) e doutorado em Sistemas Mecatrônicos pela Universidade de Brasília UnB (2013). Sua ênfase de pesquisa é na área da Ciência dos Materiais, especialmente na síntese de nanopartículas cerâmicas funcionais aplicáveis a dispositivos microeletrônicos, concretamente sensores de oxigênio automotivos e células a combustível de óxido sólido. Ele tem experiência com métodos de síntese para obtenção da matéria prima: co-precipitação e o método dos precursores poliméricos Pechini. Suas linhas de pesquisa estão relacionadas com caracterizações microestruturais, processamento cerâmico e caracterização de corpos de prova. Atualmente, ele leciona as disciplinas Materiais de Construção para Engenharia e Métodos Experimentais para Engenharia.",
+      "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png",
+    },
+    {
+      "email": "rtoledo@unb.br",
+      "nome": "RONNE TOLEDO",
+      "bio": "Ronne Toledo é um professor na Faculdade do Gama (FGA) da Universidade de Brasília (UnB). Ele se graduou em Engenharia Mecânica pela Universidade de Brasília em 1999. Em 2003, concluiu seu mestrado pelo Instituto Superior Técnico (IST) em Lisboa, Portugal. Ele é doutor em Engenharia Mecânica e Aeroespacial pela Universidade da Califórnia, Irvine, Estados Unidos, tendo concluído sua formação acadêmica em 2013. Ronne tem experiência no desenvolvimento de códigos numéricos para modelagem da combustão de particulados e propulsão elétrica. Atualmente, ele está trabalhando como docente da Universidade de Brasília na Faculdade do Gama na área de Projetos de Sistemas Aeroespaciais com ênfase em satélites.",
+      "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png",
+    },
+    {
+      "email": "ronniamorim@gmail.com",
+      "nome": "Ronni Geraldo Gomes de Amorim",
+      "bio": "Possui graduação em Física pela Universidade de Brasília(2003), graduação em Matemática pela Universidade Católica de Brasília(1999), mestrado em Física pela Universidade de Brasília(2006), doutorado em Física pela Universidade de Brasília(2009) e pós-doutorado pela International Centre of Condensed Matter Physics of University of Brasilia(2012). Atualmente é Professor Adjunto da Universidade de Brasília. Tem experiência na área de Física, com ênfase em Física -Matemática. Atuando principalmente nos seguintes temas:função de Wigner, grupos de Lie, produto de Weyl, operador-estrela.",
+      "fot" : "https://arquivos.unb.br/arquivos/2022243012fd8a229630656a51e48f02e/foto_ronni.jpg", 
+    },
+    {
+      "email": "roseanyvieira@yahoo.com.br",
+      "nome": "Roseany de Vasconcelos Vieira Lopes",
+      "bio": "Possui graduação em Engenharia Química pela Universidade Federal da Paraíba(2002), mestrado em Engenharia Química pela Universidade Federal de Campina Grande(2005), doutorado em Química pela Universidade de Brasília(2009) e pós-doutorado pela Universidade de Brasília(2010). Atualmente é Professor Adjunto I da Universidade de Brasília e Revisor de periódico da Journal of the American Oil Chemists' Society (Online). Tem experiência na área de Engenharia Química, com ênfase em Processos Industriais de Engenharia Química. Atuando principalmente nos seguintes temas:Análise Térmica, Caracterização de Óleos Vegetais, Polióis obtidos a partir de recursos renováveis, Poliuretanas.",
+      "fot" : "https://sigaa.unb.br/sigaa/img/no_picture.png", 
+    },
+    {
+      "email": "rudi@unb.br",
+      "nome": "Rudi Henri van Els",
+      "bio": "Formado em Engenharia Elétrica pela Universidade Federal do Maranhão (1990), mestrado em Engenharia Elétrica pela Universidade de Brasília na área de controle e computação (1994) e Doutorado pelo Centro de Desenvolvimento Sustentável da Universidade de Brasília (2008). Professor associado da Universidade de Brasilia do curso de engenharia de energia no campus Gama. Tem experiência na área de Engenharia Elétrica, com ênfase em Controle de Processos e Automação. Desenvolve pesquisas nas áreas de energia renovável, eletrificação rural, veículos elétricos e desenvolvimento sustentável.",
+      "fot" : "https://arquivos.unb.br/arquivos/201924111171232031393738136fd3208/pasfoto.png",
+    },
+    {
+      "email": "sbkhalil@unb.br",
+      "nome": "Saleh Barbosa Khalil",
+      "bio": "Possui graduação em Engenharia Mecânica Ênfase Automobilística pelo Centro Universitário da FEI (1990) e mestrado em Engenharia Mecânica pela Universidade de Brasília (2001); atuando principalmente nos seguintes temas: Aerodinâmica de um corpo rombudo, Túnel de vento, Teste de protótipos, Desenvolvimento de projetos na área de automobilística, Sistemas de freio a ar modificados, Combustível alternativo e Motores de combustão interna.",
+      "fot" : "https://arquivos.unb.br/arquivos/202022404922c7204807435cfe89805a1/40_Saleh_Khalil_fga.jpg",
+    },
+    {
+      "email": "luz_msandra@hotmail.com",
+      "nome": "Sandra Maria da Luz",
+      "bio": "Possui graduação em Engenharia Industrial Química pela Faculdade de Engenharia Química de Lorena (2001), mestrado em Biotecnologia Industrial pela Faculdade de Engenharia Química de Lorena (2004) e Doutorado em Biotecnologia Industrial pela Escola de Engenharia de Lorena/USP. Desenvolveu atividades de pesquisa no Instituto Superior Tecnico de Lisboa em Portugal em 2006 (Doutorado Sanduíche) e entre 2008-2009 (Pós-doutorado em Ecodesign). Tem experiência na área de Engenharia Química, com ênfase em Tecnologia Química, Biotecnologia Industrial e Materiais, atuando principalmente nos seguintes temas: fibras naturais, celulose, compósitos, processamento de compósitos, morfologia, modificação química, avaliação de ciclo de vida e ecodesign. Atualmente é professora na Universidade de Brasília, atuando no curso de Engenharia de Energia e na coordenação do Programa de pós-graduação em Integridade de Materiais da Engenharia",
+      "fot" : "https://arquivos.unb.br/arquivos/2020154014b3172041192a65b5294b5d4/Untitled.jpg", 
+    },
+    {
+      "email": "smflima@yahoo.com.br",
+      "nome": "Sandra Maria Faleiros Lima",
+      "bio": "Possui graduação em ciências sociais - Sociologia e antropologia - bacharelado pela Universidade Estadual de Campinas (1986), licenciatura pela Universidade Estadual de Campinas (1987), mestrado em Educação pela Universidade Estadual de Campinas (1996) e doutorado em Educação pela Universidade Estadual de Campinas (2002). Atualmente é professora adjunta IV da Universidade Federal de Tocantins - UFT e pesquisadora associada na Universidade de Brasília - UnB. Tem experiência nas áreas de Sociologia, antropologia, Patrimônio, Cultura e meio ambiente, suas linhas de pesquisa são: Patrimônio, Cultura e Meio Ambinte; Políticas Públicas, cultura e sustentabilidade; Território, Meio Ambiente e Sociedade; Educação, Cultura e Meio Ambiente; Participação, Movimentos Sociais e Novas Formas de Associativismo;diálogos de saberes interétnicos e de seu saber fazer em relação ao conhecimento científico; Interdisciplinaridade e Inovação.",
+      "fot" : "https://fga.unb.br/image_uploads/0000/0277/sandra_maria_faleiros_lima_perfil_big.jpg", 
+    },
+    {
+      "email": "sandrohaddad@gmail.com",
+      "nome": "Sandro Augusto Pavlik Haddad",
+      "bio": "Sandro A. P. Haddad nasceu em Anapolis-Goias, Brasil, em 8 de Fevereiro de 1977. Recebeu o titulo de Engenheiro Eletricista pela Universidade de Brasilia (UnB) em 2000. Foi premiado como o melhor aluno da turma 1/2000. Em 2001, iniciou seu doutorado pela Universidade de Tecnologia de Delft (Delft University of Technology - TUDelft, Electronics Research laboratory), Holanda. Seu projecto de pesquisa era parte de uma Plataforma de Processamento de Sinais Biomedicos para Baixa Potencia Tempo Real de Deteccao de Sinais Cardiacos (BioSens - Biomedical Signal Processing Platform for Low-Power Real-Time Sensing of Cardiac Signals). Sua pesquisa incluia, desenvolvimento de circuitos analogicos de baixa tensao e baixissima potencia e sistemas biomedicos e circuitos analogicos de alta frequencia para sistemas de comunicacao UWB. Ele recebeu o titulo de Ph.D. em microeletronica em dezembro de 2006 com a tese, Ultra Low-Power Biomedical Signal Processing An Analog Wavelet Filter Approach for Pacemakers . De 2007 a 2010, trabalhou na Freescale Semicondutores como engenheiro projetista de circuitos integrados (Analog IC Designer). Durante esse período, ele trabalhou no grupo de desenvolvimento de circuitos em gerenciamento de energia (power management) e no grupo de IP´s analógicos. Além disso, contribuindo na divisão de pesquisa e inovação da Freescale, possui duas patentes registradas no escritório de patentes dos Estados Unidos (USPTO United States Patente and Trademark Office). Em 2010, iniciou suas atividades na Universidade de Brasília (UnB) como Professor Adjunto. Atualmente é professor da Engenharia Eletrônica da Faculdade do Gama (FGA/UnB) e ministra disciplinas na área de microeletrônica e de Projeto de Circuitos Integrados. Também participa do programa de mestrado em Engenharia Biomédica da Faculdade UnB Gama (FGA) e do Programa de Pós-Graduação Sistemas Eletrônicos e Automação (PGEA/ENE) do departamento de Engenharia Elétrica da Universidade de Brasília, onde orienta alunos de mestrado e doutorado na sua linha de pesquisa que inclui: circuitos integrados analógicos e mistos (mixed-signal), processamento analógico de sinais de baixa tensão e baixíssima potência (ultra low-power) para sistemas biomédicos implantados e circuitos analógicos de alta frequência para sistemas de comunicação UWB. Adicionalmente, participa como gerente técnico do centro de Design (Design House) para projetos de Circuito Integrados, DFCHIP, implantado em um ambiente compartilhado com incubadora de empresas, CDT/UnB. Como resultado de suas pesquisas em microeletrônica, ele tem por volta de 50 publicações cientificas entre elas, um livro lançando pela ed. Springer, capítulos de livros, diversas conferencias internacionais (IEEE) e também alguns artigos em periódicos de relevância do IEEE.",
+      "fot" : "https://arquivos.unb.br/arquivos/202000825382532058200cdd5262565fe/P_20180711_082348_BF_p.jpg", 
+    },
+    {
+      "email": "sebastien@unb.br",
+      "nome": "SEBASTIEN ROLAND MARIE JOSEPH RONDINEAU",
+      "bio": "Tiago Alves da Fonseca é um professor adjunto na Faculdade do Gama, Universidade de Brasília, com experiência em Engenharia Elétrica. Ele possui mestrado e doutorado em Ciências da Computação, Processamento de Sinais e Telecomunicações pela Université de Rennes 1, França. Ele dirige o Lab Telecom - LCEPT da UnB desde 2016. Tiago tem experiência em Sistemas, Guerra Eletrônica, Teoria Eletromagnética, Micro-ondas, Propagação de Ondas, Antenas, e atua principalmente em temas como antenas multi-feixe, lentes dielétricas, “antenna arrays”, “discrete lens array”, antenas planares/conformes e micro-ondas, modelagem eletromagnética e ótica, circuitos, retificação / modulação de sinais Laser/THz e RF, Radio Defined by Software, RFID, equipamento e Gateway para IoT, otimização convexa, Machine Learning. Ele tem 23 anos de experiência em engenharia de sistemas / elétrica, Modelagem eletromagnética / óptica (Técnicas analíticas/numéricas), Antenas e Circuitos (Passivos / ativos, até micro-ondas).",
+      "fto" : "https://arquivos.unb.br/arquivos/202001618044f120497007f1e8ba9165d/Screenshot_20200421-014120.png",
+    },
+    {
+      "email": "ulhoa@unb.br",
+      "nome": "Sergio Costa Ulhoa",
+      "bio": "Possui graduação em Física (bacharelado e licenciatura) pela Universidade de Brasília (2005). Tem experiência na área de Física, com ênfase em Relatividade Geral e Teoria de Campos, atuando principalmente nos seguintes temas: Teleparalelismo e Teorias de Calibre.",
+      "fot" : "https://sigaa.unb.br/sigaa/img/no_picture.png", 
+    },
+    {
+      "email": "sergiofreitas@unb.br",   
+      "nome": "Sergio Antônio Andrade de Freitas",
+      "bio": "Graduado em Engenharia Elétrica (enfase eletrônica, Engenharia de Computação) pela Universidade Federal de Uberlândia (1990), Mestre em Computação pela Universidade Federal do Rio Grande do Sul (1993) e Doutor em Engenharia Elétrica pela Universidade Federal do Espírito Santo (2005). Desde 2009 é professor da Universidade de Brasília - UnB onde atua no curso de Engenharia de Software da Faculdade UnB Gama - FGA. Foi diretor de Ensino de Graduação a Distância (2010-2011) e Diretor Técnico de Graduação (2012) ambas diretorias do Decanato de Ensino de Graduação / UnB. Foi diretor da UG 154079 até março/2016. É membro do corpo docente do Programa de Pós-Graduação em Computação Aplicada (PPCA). Foi diretor do Centro de Educação a Distância (CEAD / UnB). Desde 2018 é Decano (Pró-Reitor) de Ensino da Graduação da UnB.  De 1999 a 2009 foi professor do Departamento de Informática da Universidade Federal do Espírito Santo - UFES e membro do Programa de Pós-Graduação em Informática - PPGI / UFES. Tem experiência na área de Ciência da Computação e Engenharia de Computação. Na UFES foi diretor de Pesquisa e Pós-Graduação da Pró-Reitoria de Pesquisa e Pós-Graduação, coordenador de Graduação do curso de Engenharia de Computação, Diretor Geral do Núcleo de Processamento de Dados e Coordenador Administrativo do PoP-ES / RNP. É avaliador do Sistema Nacional de Avaliação da Educação Superior - SINAES / INEP / MEC desde 2006.",
+      "fot" : "https://arquivos.unb.br/arquivos/202215922233cf25756177289cb19cd21/foto2.Sergio.sem_fundo.v2.jpg", 
+    },
+    {
+      "email": "shscarneiro@unb.br",
+      "nome": "SERGIO HENRIQUE DA SILVA CARNEIRO",
+      "bio": "Possui graduação em Engenharia Mecânica-Aeronáutica pelo Instituto Tecnológico de Aeronáutica (1987), mestrado em Engenharia Aeronáutica e Mecânica pelo Instituto Tecnológico de Aeronáutica (1993), na área de Estruturas, e doutorado em Engineering Mechanics - Virginia Polytechnic Institute and State University (2000). Atualmente é Professor Adjunto do Curso de Engenharia Aeroespacial na Universidade de Brasília - UnB. Foi Gerente do Projeto KC-390 na COPAC - Comissão Coordenadora do Programa Aeronave de Combate, do Comando da Aeronáutica. Tem experiência na área de Engenharia Aeronáutica e Aeroespacial, com participação em projetos de veículos lançadores e de aeronaves, atuando principalmente nos seguintes temas: análise estrutural, modelagem por elementos finitos, dinâmica estrutural, vibrações mecânicas, análise modal experimental, mecânica da fratura, fadiga, damage detection, propagação de trincas e espectro de cargas de fadiga.",
+      "fto" : "https://arquivos.unb.br/arquivos/2022145184437a2376276ab3f2a8c58a9/Sergio_Terno.jpeg",
+    },
+    {
+      "email": "rodrigues.suelia@gmail.com ",
+      "nome": "Suélia de Siqueira Rodrigues Fleury Rosa",
+      "bio": "Possui graduação em Engenharia Eletrônica pela Universidade Estadual Paulista Júlio de Mesquita Filho (2001), Mestrado em Engenharia Eletrônica - Mecatrônica - Instituto Tecnológico de Aeronáutica (2005). Doutorado em Engenharia Eletrônica - Biomédica pela Universidade de Brasília (2008). Recebeu o Premio Nacional Santander-Universia de Biotecnologia pelo projeto de sua Tese de Doutorado em 2008 e o Prêmio Jovem Inventor da FAPDF, primeiro lugar em 2009. Como Orientadora recebeu o Prêmio Jovem Inventor da FAPDF, primeiro lugar, 2011. É revisor de congressos tais como: scientific committee collaborating with the - 21st International Congress of Mechanical Engineering; Annual International Conference of the IEEE Engineering in Medicine and Biology Society; Membro de Comitê Técnico e Cientifico VI CONFIAM - Congresso de Física Aplicada à Medicina; XVIII Congresso Brasileiro de Automática; do Congresso Nacional de Matemática Aplicada e Computacional CNMAC 2012 34; 2012 IEEE Symposium on Business, Engineering & Industrial Applications. Foi parecerista ad hoc avaliando trabalhos no Edital do Prêmio de Incentivo em Ciência e Tecnologia para o SUS em 2010. Foi parecerista ad hoc avaliando Projetos de pesquisa da Fundação de Amparo e Pesquisa do Distrito Federal - FAPDF. Tem experiência na área de Engenharia Biomédica, atuando principalmente em Modelagem de sistemas fisiologicos via Bond Graph. Suas áreas de pesquisa em Engenharia Biomédica: Physiological Modeling; Medical Devices and Systems and Neuroengineering. Pesquisadora e Fundadora do Laboratório de Engenharia e Biomaterial (BioEngLab - LEI) da Faculdade Gama Universidade de Brasilia UnB - FGA. Professora Adjunto do Curso Engenharia Eletrônica, Universidade de Brasilia (UnB) e do Curso de Pós-Graduação em Engenharia Biomédica UnB. Publicou 2 livros em língua portuguesa; 2 artigos em periódicos científicos, 52 artigos completos em congressos nacionais e internacionais, 1 capítulos de livro internacional e 5 depósitos de patentes. Co-orienta 2 teses de doutorado, orientou 1 dissertação de mestrado, orienta 2 dissertações de mestrado; orientou 1 monografia de lato sensu; 23 projetos de iniciação científica e 3 projetos de final de curso.",
+      "fot" : "https://arquivos.unb.br/arquivos/20202342333451204963910fbc0c948fa/Professora_Suelia_-_fotos_Thas_Mallon-1-6.jpg",
+    },
+    {
+      "email": "avilas@unb.br",
+      "nome": "Suzana Moreira Avila",
+      "bio": " possui graduação em Engenharia Civil pela Universidade de Brasília (1993), mestrado em Estruturas e Construcao Civil pela Universidade de Brasília (1997) e doutorado em Engenharia Civil pela Pontifícia Universidade Católica do Rio de Janeiro (2002). Atualmente é professora adjunta da Universidade de Brasília, na Faculdade de Engenharia UnB-Gama, atuando junto aos cursos de Engenharia Automotiva e Engenharia de Energia. Tem experiência na área de Engenharia, com ênfase em Mecânica das Estruturas, Dinâmica Estrutural e Controle de Sistemas, atuando principalmente nos seguintes temas: dinâmica (linear e não-linear) e controle. É membro do corpo docente do Programa de Pós-Graduação em Integridade de Materiais da Universidade de Brasília.",
+      "fot" : "https://arquivos.unb.br/arquivos/2020235215ca9f20588121b1738dc7163/eu_suzana.jpg", 
+    },
+    {  
+      "email": "tais.calliero@gmail.com",
+      "nome": "Tais Calliero Tognetti",
+      "bio": "Possui graduação em Matemática Bacharelado pela Universidade de Santa Cruz do Sul (2000), mestrado em Engenharia Elétrica pela Universidade de São Paulo (2005), doutorado em Engenharia Elétrica pela Universidade Estadual de Campinas (2009) e Doutorado em Systèmes Automatiques pelo Institut National Des Sciences Appliquées de Toulouse, França. Pós-doutorado na Faculdade de Engenharia Elétrica e de Computação da UNICAMP. Tem experiência na área de Matemática, com ênfase em estabilidade de sistemas dinâmicos não-lineares, atuando principalmente nos seguintes temas: princípio de invariância de LaSalle, teoria de Lyapunov e desigualdades matriciais lineares.",
+      "fot" : "https://sigaa.unb.br/sigaa/img/no_picture.png", 
+    },
+    {
+      "email": "tatilista@unb.br",
+      "nome": "Tatiane Evangelista",
+      "bio": "Possui graduação em Matemática pela Universidade Estadual Paulista Júlio de Mesquita Filho (2003), mestrado em Ciências Matemática [Sjrp] pela Universidade Estadual Paulista Júlio de Mesquita Filho (2006) e doutorado em Matemática Aplicada pela Universidade Estadual de Campinas (2009). Atualmente é professor adjunta da Universidade de Brasília, campus Gama. Tem experiência na área de Matemática, atuando principalmente em otimização linear.",
+      "fot" : "https://arquivos.unb.br/arquivos/2024097012d87b3043805cd9dd24a5a27/IMG_20240106_204755_586.jpg", 
+    },
+    {
+      "email": "thaismaiar@unb.br",
+      "nome": "Thais Maia Araújo",
+      "bio": "Atualmente é coordenadora e professora do curso de Engenharia de Energia da Faculdade UnB Gama. Trabalha com queimada de florestas, com emissão de poluentes veiculares, energias renováveis e gaseificação de biomassa. Leciona disciplinas na área térmica e planejamento energético. Possui graduação em Engenharia Industrial Química pela Faculdade de Engenharia Química de Lorena (1985), mestrado em Engenharia e Tecnologias Espaciais pelo Instituto Nacional de Pesquisas Espaciais (1988) e doutorado em Engenharia Mecânica pela Universidade Estadual Paulista Júlio de Mesquita Filho (1995).",
+      "fot" : "https://sigaa.unb.br/sigaa/img/no_picture.png", 
+    },
+    {
+      "email": "thiagocordeiro@unb.br",
+      "nome": "Thiago Felippe Kurudez Cordeiro",
+      "bio": "Possui graduação em Engenharia Mecatrônica pela Universidade de Brasília (2009) e mestrado em Engenharia Eletrônica e Computação pelo Instituto Tecnológico de Aeronáutica (2012). Atualmente é professor Assistente da Universidade de Brasília e aluno de doutorado também pela Universidade de Brasília. Tem experiência na área de Engenharia Aeroespacial, com ênfase em fusão de dados, estimação de atitude e navegação inercial auxiliada.",
+      "fot" : "https://arquivos.unb.br/arquivos/2020234124465a2049277efb1b4ff7f4b/Thiago.jpg", 
+    },
+    {
+      "email": "thiagofernandesoliveira@gmail.com ",
+      "nome": "Thiago Fernandes Oliveira",
+      "bio": "Graduação em Engenharia Mecânica (2006), mestrado em Ciências Mecânicas pela Universidade de Brasília (2011) e doutorado em andamento (início em 2011) com ênfase em geração de energia e desenvolvimento sustentável, atuando principalmente nos seguintes temas: desenvolvimento sustentável, turbina hidrocinética, difusores, montagem, automação e calibração de bancadas experimentais, instrumentação, sensores, transdutores, túnel de água e vento, medição de esforços estáticos e dinâmicos em aerofólios, visualização de escoamento, extensometria, LabView e SolidWorks. Doutorado com ênfase em medições de flutuação de pressão na superfície de pás de ventiladores axiais. ",
+      "fot" : "https://fga.unb.br/image_uploads/0000/1053/thiago_big.jpg", 
+    },
+    {
+      "email": "fonsecafga@unb.br",
+      "nome": "TIAGO ALVES DA FONSECA",
+      "bio": "Tiago Alves da Fonseca é um professor na Faculdade do Gama (FGA) da Universidade de Brasília (UnB). Ele possui graduação, mestrado e doutorado em Engenharia Elétrica pela mesma universidade. Tiago tem experiência na área de Engenharia de Software e Processamento Digital de Sinais. Além disso, ele tem contribuído para a pesquisa acadêmica, com projetos focados em diversas áreas da Engenharia Elétrica.",
+      "fto" : "https://sigaa.unb.br/sigaa/img/no_picture.png",
+    },
+    {
+      "email": "vandorissoli@gmail.com",
+      "nome": "Vandor Roberto Vilardi Rissoli",
+      "bio": "Professor da área de Informática e Tecnologia da UnB desde 2014. Passou a residir em Brasília em 2001, atuando como docente da graduação (cursos de Ciência da Computação e Sistemas de Informação) e pós-graduação (lato sensu em Banco de Dados, lato sensu em Data Warehouse e stricto sensu em Gestão do Conhecimento e da Tecnologia da Informação). Concluiu sua graduação em Análise de Sistemas na Universidade de Ribeirão Preto (UNAERP) em 1994, onde também se tornou especialista em Análise de Sistemas em 1996. Prosseguiu seus estudos com mestrado em Ciência da Computação, na área de Inteligência Artificial, na Universidade Federal de São Carlos (UFSCar) em 1999 e entre alguns cursos de extensão universitária na área de Informática, Administração e Educação também se tornou doutor em Informática na Educação na Universidade Federal do Rio Grande do Sul (UFRGS) em 2007. Vem trabalhando em projetos de pesquisa e desenvolvimento em várias áreas de conhecimento, envolvendo empresas, instituições governamentais e de ensino (Oracle, Banco do Brasil, Embrapa, Secretaria da Fazenda do Estado de São Paulo, UNAERP, UCB, entre outras), durante toda sua jornada profissional e acadêmica, onde, como estudante, conseguiu apoio financeiro de órgãos de fomento à pesquisa nacional (Fundap, Capes, CNPq, FAPDF e outros).",
+      "fot" : "https://arquivos.unb.br/arquivos/20222301666e7d244951330e9fc9cb3f6/foto_pessoal_Moodles.png",
+    },
+    {
+      "email": "vcastro@unb.br",
+      "nome": "Vanessa Maria de Castro",
+      "bio": "Professora Adjunta da Universidade de Brasília, UnB, Faculdade UnB Gama, curso de Engenharia de Energia. Doutora em Desenvolvimento Sustentável pela UnB (2004), Mestre em Educação pela University of Reading/Inglaterra (1999) e Geógrafa pelo UniCeub (1992). Pesquisa na área de sociedade e tecnologia, avaliação de políticas públicas, políticas educacionais, programas de transferência de renda e indicadores de desenvolvimento sustentável e socioeconômicos. Docente do Programa de Pós Graduação em Direitos Humanos e Cidadania, do Centro de Estudos Avançados Multidisciplinares da Universidade de Brasília",
+      "fot" : "https://arquivos.unb.br/arquivos/2023009016d03a28935361510cbb05a1f/VMC_foto_.jpg", 
+    },
+    {
+      "email": "vrispoli@pgea.unb.br",
+      "nome": "Vinicius de Carvalho Rispoli",
+      "bio": "Professor Adjunto IV na Faculdade UnB Gama na Universidade de Brasília. Graduação (2005) e Mestrado (2007) em Matemática; e Doutorado (2014), com período sanduíche na University of Michigan, em Engenharia Biomédica todos pela Universidade de Brasília. Tenho experiência/interesse em Matemática Aplicada, nas seguintes áreas: Equações Diferenciais Ordinárias, Equações Diferenciais Parcias, Métodos Numéricos para Equações Diferenciais e Processamento de Imagens. Atualmente é Vice-Coordenador Acadêmico Institucional do Programa de Mestrado Profissional em Matemática da Universidade de Brasília (Profmat/UnB).",
+      "fot" : "https://arquivos.unb.br/arquivos/20231680462fed28126551b1e43030705/servletrecuperafoto.png",
+    },
+    {
+      "email": "wandercleber@gmail.com",
+      "nome": "Wander Cleber M. Pereira da Silva",
+      "bio": "Paraense de Bujaru, cursou História, Filosofia e Psicologia na Universidade Federal do Pará - UFPa, Mestrado e Doutorado em Psicologia na Universidade de Brasília - UnB. Fez especialização em Ontologia da Linguagem na Universidade Católica de Brasília, é certificado como Coaching Empresarial pela Newfield Consulting - Brasil/USA. Foi Professor do IBMEC-Brasília, e Coordenador do curso de especialização em Governança Corporativa da FGV (in company), Coordenador do curso de Governança em TI da Fundação Universa e do UniDF. Atuou como consultor em diversas organizações públicas na implantação de modelos de gestão de excelência. Foi Presidente-Fundador do Instituto de Tecnologia, Gestão e Educação (ITGE)l. Participa de grupos de pesquisa em Governança de TI, com ênfase no setor público, Aprendizagem Organizacional, Gestão do Conhecimento e Ética nas organizações. Atualmente é professor do Curso de Engenharia de Software da Faculdade UnB-Gama (FGA)",
+      "fot" : "https://arquivos.unb.br/arquivos/2020149009225320563781cf1db337d01/Wander_Whatsapp.jpg", 
+    },
+    {
+      "email": "waamaral@unb.br",
+      "nome": "Wellington Avelino do Amaral",
+      "bio": "Possui graduação em Engenharia Elétrica pela Universidade Estadual Paulista(2002), mestrado em Engenharia Elétrica pela Universidade de Brasília(2004)e doutorado em Engenharia Elétrica pela Universidade Estadual de Campinas(2009). Atualmente é Professor Adjunto da Universidade de Brasília e Assessor científico do Fundação de Amparo à Pesquisa do Estado de São Paulo. Tem experiência na área de Engenharia Elétrica, com ênfase em Projeto de Circuitos Integrados. Atuando principalmente nos seguintes temas:Low Noise Amplifier, RX Front-End, Radio Frequency, cmos.",
+      "fot" : "https://sigaa.unb.br/sigaa/img/no_picture.png", 
+    },
+    {
+      "email": "reis.william@unb.br",
+      "nome": "WILLIAM REIS SILVA",
+      "bio": "O professor adjunto da Universidade de Brasília - UnB, Faculdade UnB Gama, possui vasta experiência na área de Estimação e Controle, Mecânica do Voo, Dinâmica de Atitude de Satélites Artificiais, Dinâmica Orbital e Astrodinâmica. Sua formação acadêmica é robusta, com graduação em Física pela Universidade Estadual Paulista Júlio de Mesquita Filho, FEG - UNESP (2009), mestrado em Física também pela FEG - UNESP (2012), doutorado em Engenharia e Tecnologia Espaciais pelo Instituto Nacional de Pesquisas Espaciais, INPE (2016) e um estágio pós-doutoral no Instituto Tecnológico de Aeronáutica, ITA (2018). Suas áreas de interesse para ensino e pesquisa incluem Métodos de Estimação de Estados, Determinação de Atitude e Órbita, Dinâmica Orbital e de Atitude, Theter Satellites, Mitigação de Space Debris, Dinâmica de Escape, Modelos de Três e N Corpos, e Aplicações em Astrodinâmica.",
+      "fto" : "https://arquivos.unb.br/arquivos/2020132228baf120383371dc093d09678/10983159_841560552602216_7326419115884902826_n.jpg",
+    },
+    {
+      "email": "wytler@yahoo.com",
+      "nome": "Wytler Cordeiro dos Santos",
+      "bio": "Possui graduação em Bacharel em Física pela Universidade de Brasília (1998), graduação em Licenciatura em Física pela Universidade de Brasília (2001), mestrado em Física pela Universidade de Brasília (2001) e doutorado em Física pela Universidade de Brasília (2006). Atualmente é professor adjunto da Universidade de Brasília. Tem experiência na área da Teoria de Campos, Física das Partículas Elementares e Relatividade Geral.",
+      "fot" : "https://arquivos.unb.br/arquivos/20200890402de72057250c18f2832660f/nkbaph.jpg",
+    },
+    {
+      "email": "yehoshua_115@yahoo.com",
+      "nome": "Yevsey Yehoshua Sobolevsky",
+      "bio": "Possui graduação em matematica pela Universidade estatal de Voronej(1973), mestrado em matematica pela universidade Estatal de Voronej(1975), doutorado em matematica pela universidade Estatal de Voronej(1985) e pós-doutorado pela Hebrew University Of Jerusalem(1995). Atualmente é Professor Adjunto da Universidade de Brasília. Tem experiência na área de Matemática, com ênfase em Matemática Aplicada. Atuando principalmente nos seguintes temas:average principle, differential equation.",
+      "fot" : "https://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4284703Z7", 
+    },
+    {
+      "email": "paologessini@unb.br",
+      "nome": "PAOLO GESSINI",
+      "bio": "Possui graduação em (BSc+MSc in) Ingegneria Aeronautica - Università degli Studi di Roma La Sapienza (1994), mestrado em (MSc in) Aeronautical Astronautical Engineering - Ohio State University (1999) e doutorado em (PhD in) Aerospace Engineering - University of Southampton (2006). Atualmente é Professor Associado da Universidade de Brasília e Diretor de Inteligência Estratégica e Novos Negócios da Agência Espacial Brasileira. Tem experiência na área de Engenharia Aeroespacial, com ênfase em Propulsão Aeroespacial, e na área de Física de Plasmas, atuando principalmente na Propulsão Elétrica Espacial e áreas afins, como Tochas de Plasma, mas também na Propulsão Química, em particular Foguetes Híbridos.",
+      "fto" : "https://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4266308Z9",
+    },
+    {
+      "email": "clenio.fonseca@unb.br",
+      "nome": "CLENIO EMIDIO DA FONSECA",
+      "bio": "Professor dos cursos de Ciências de dados, Segurança da Informação, Gestão em Tecnologia da Informação, Análise e Desenvolvimento de Sistemas Faculdade de Tecnologia e Inovação - SENAC/DF, Professor dos cursos de Sistemas de Informação e Tecnólogo em Análise e Desenvolvimento de Sistemas, Gestão Pública , Pedagogia e Administração da Faculdade Mauá - GO / Linear, desde agosto/2016. Atuou como Coordenador dos cursos de TI da Faculdade Mauá-GO de agosto de 2016 a agosto de 2018. Coordenador Pedagógico e de Projetos em Treinamentos em TI da Unifel - São Paulo em licitações públicas em órgãos como Senado Federal, Capes, Cofen, Infraero e Caesb.Intercambista de Inglês na Internacional House em Sydney-AU em 2015 por 6 meses.Lecionou por 13 anos nos Cursos Técnicos, básicos, In Company no Senac DF, além de atuar como Supervisor de Estagio.Também atuou como Sócio Administrativo e Instrutor na Capacita.TI Treinamentos trabalhando com licitações de Cursos de TI em diversos órgãos do Governo, inclusive a PR(Presidência da República) entre outras grandes empresas como; O Globo, Huawei Tecnologies, Kinross e Autotrac. Experiência na área de consultoria em Excel como terceirizado no Sebrae, desenvolvimento de sistemas e banco de dados, manutenção em hardware, manutenção e projetos de software e sites, palestras online, trabalhos de locução e edição de Videos para youtube.",
+      "fto" : "https://arquivos.unb.br/arquivos/2024054173237f30601871dc9569bf6da/3x4.jpg",
+    },
+    {
+      "email": "cristiane.loesch.de.souza.costa@unb.br",
+      "nome": "CRISTIANE LOESCH DE SOUZA COSTA",
+      "bio": "Professora Doutora do Instituto Superior Educacional de Brasília (IESB), com doutorado em Geofísica Espacial pelo Instituto Nacional de Pesquisas Espaciais (INPE) (2009). Possui Mestrado em Astrofísica também pelo INPE (2004) e graduação em Matemática (Licenciatura) pela Universidade de Taubaté (2001). Leciona, disciplinas de matemática de física, no ensino universitário, em cursos de exatas, desde 2014. Tem experiência na área de Geociências, com ênfase em Física Solar-Terrestre, atuando principalmente nos seguintes temas: simulação MHD 3D global, CMEs, choques, campos magnéticos, baixa coroa solar, magnetopausa terrestre, reconexão magnética, cosmologia, ruído 1/f, filtros digitais, algoritmos genéticos, dados do BEAST.",
+      "fto" : "https://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4764024D6",
+    },
+    {
+      "email": "euclides.delgado.marques.santanna@unb.br",
+      "nome": "EUCLIDES DELGADO MARQUES SANT ANNA",
+      "bio": "Euclides Delgado Marques Santanna é um professor na Faculdade do Gama (FGA) da Universidade de Brasília (UnB). Ele é graduado em Engenharia Automotiva pela mesma universidade. Euclides tem experiência na área de Engenharia Mecânica, com ênfase em Desenho Industrial, Otimização Topológica, Manufatura Aditiva, Prototipagem Rápida, Design e Projeto Mecânico. Ele tem trabalhado principalmente nos seguintes temas: Additive Manufacturing (DMSLS, SLS, DLP e FDM), Digital Manufacturing & Design, Generative Design for Performance and Weight Reduction. Além disso, ele tem contribuído para a pesquisa acadêmica, com projetos focados em metodologia para o desenvolvimento do processo de manufatura aditiva aplicado ao setor aeroespacial/aeronáutico considerando estruturas auxéticas e giroides.",
+      "fto" : "https://arquivos.unb.br/arquivos/20242220187d7c30327013c2f143c9c33/Eu_atual.png.jpg",
+    },
+    {
+      "email": "rose.shimizu@unb.br",
+      "nome": "ROSE YURI SHIMIZU",
+      "bio": "Rose Yuri Shimizu é uma professora na Faculdade do Gama (FGA) da Universidade de Brasília (UnB). Ela possui graduação em Ciência da Computação e mestrado em Informática, ambos pela Universidade Federal do Paraná. Sua experiência na área de Ciência da Computação é destacada pela ênfase em análise de dados para Sistemas Tutores Inteligentes. Além disso, ela tem experiência na área de sistemas de informação, com ênfase em desenvolvimento web e para dispositivos móveis. Rose também tem contribuído para a pesquisa acadêmica, com projetos focados em técnicas de múltiplas representações externas para construir simuladores de cálculos e traçados gráficos.",
+      "fto" : "https://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K8333714D9",
+    },
+    {
+      "email": "tiago.brito@unb.br",
+      "nome": "TIAGO MARTINS DE BRITO",
+      "bio": "Engenheiro Eletrônico, Mestre em Sistemas Mecatrônicos e Doutorando em Sistemas Mecatrônicos pela UnB. Atua como Professor na FGA-UnB e Pesquisador no LaRM-UnB, com foco em Robôs Autônomos, Controle de Movimento Robótico, Visão Computacional e Inteligência Artificial. Publicações em periódicos científicos e apresentações em congressos. Membro do IEEE.",
+      "fto" : "https://arquivos.unb.br/arquivos/20242150017874307189807d90a5a9f6c/IMG_20240325_155547.jpg",
+    },
    ]
     export default todosOsProfessores;
   
