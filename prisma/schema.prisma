@@ -43,7 +43,7 @@ model Turma {
 }
 
 model Avaliacao {
-  id                   Int    @id @default(autoincrement())
+  id                   Int    @id 
   turma                Turma  @relation(fields: [professorId, materiaId], references: [professorId, materiaId])
   materiaId            String
   professorId          String
