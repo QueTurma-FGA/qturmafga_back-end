@@ -44,6 +44,35 @@ routes.post('/register-many-professors', async (req, res) => {
   return res.json({ message: 'Cadastro de professores realizado com sucesso!' });
 });
 
+
+routes.get('/get-professor/:email', async (req, res) => {
+  const { email } = req.params;
+
+  try {
+    const professor = await prisma.professor.findUnique({
+      where: { email },
+      include: {
+        materias: {
+          include: {
+            materia: true,
+          },
+        },
+      },
+    });
+
+    if (!professor) {
+      return res.status(404).json({ error: 'Professor não encontrado' });
+    }
+
+    return res.json(professor);
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ error: 'Erro ao buscar o professor' });
+  }
+});
+
+
+
 routes.get('/list-all-turmas', async (req, res) => {
   const turmas = await prisma.turma.findMany({
     include: {
