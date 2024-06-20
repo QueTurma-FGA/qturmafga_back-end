@@ -56,23 +56,25 @@ routes.get('/list-all-turmas', async (req, res) => {
 });
 
 
-routes.get('/list-professors-of-turma/:codigo', async (req, res) => {
-  const { codigo } = req.params;
+routes.get('/list-professors-of-turma/:materiaId', async (req, res) => {
+  const { materiaId } = req.params;
 
   try {
-    const turma = await prisma.turma.findUnique({
-      where: { codigo },
+    const turmas = await prisma.turma.findMany({
+      where: { materiaId },
       include: {
         professor: true,
         materia: true,
       },
     });
 
-    if (!turma) {
+    if (turmas.length === 0) {
       return res.status(404).json({ error: 'Turma não encontrada' });
     }
 
-    return res.json(turma);
+    const professors = turmas.map(turma => turma.professor);
+
+    return res.json(professors);
   } catch (error) {
     console.error(error);
     return res.status(500).json({ error: 'Erro ao buscar os professores da turma' });
