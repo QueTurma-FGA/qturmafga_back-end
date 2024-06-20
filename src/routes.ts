@@ -56,6 +56,31 @@ routes.get('/list-all-turmas', async (req, res) => {
 });
 
 
+routes.get('/list-professors-of-turma/:codigo', async (req, res) => {
+  const { codigo } = req.params;
+
+  try {
+    const turma = await prisma.turma.findUnique({
+      where: { codigo },
+      include: {
+        professor: true,
+        materia: true,
+      },
+    });
+
+    if (!turma) {
+      return res.status(404).json({ error: 'Turma não encontrada' });
+    }
+
+    return res.json(turma);
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ error: 'Erro ao buscar os professores da turma' });
+  }
+});
+
+
+
 // Rota para listar todas as avaliações
 routes.get('/list-all-avaliacoes', async (req, res) => {
   try {
