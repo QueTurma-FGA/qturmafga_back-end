@@ -111,25 +111,40 @@ routes.get('/list-professors-of-turma/:materiaId', async (req, res) => {
 });
 
 
+routes.post('/add-avaliacao', async (req, res) => {
+  const { materiaId, professorId, didatica, metodologia, coerenciaDeAvaliacao, disponibilidade, materiaisDeApoio } = req.body;
 
-// Rota para listar todas as avaliações
-routes.get('/list-all-avaliacoes', async (req, res) => {
+  console.log('Received data:', req.body);
+
+  // Validação básica dos campos obrigatórios
+  if (!materiaId || !professorId || didatica == null || metodologia == null || coerenciaDeAvaliacao == null || disponibilidade == null || materiaisDeApoio == null) {
+    console.error('Validation failed:', { materiaId, professorId, didatica, metodologia, coerenciaDeAvaliacao, disponibilidade, materiaisDeApoio });
+    return res.status(400).json({ error: 'Todos os campos são obrigatórios' });
+  }
+
   try {
-    const avaliacoes = await prisma.avaliacao.findMany({
-      include: {
-        turma: {
-          include: {
-            materia: true,
-            professor: true,
-          },
-        },
+    // Cria uma nova avaliação no banco de dados
+    const avaliacao = await prisma.avaliacao.create({
+      data: {
+        materiaId,
+        professorId,
+        didatica,
+        metodologia,
+        coerenciaDeAvaliacao,
+        disponibilidade,
+        materiaisDeApoio,
       },
     });
-    return res.json(avaliacoes);
+    return res.status(201).json(avaliacao);
   } catch (error) {
-    console.error(error);
-    return res.status(500).json({ error: 'Erro ao buscar as avaliações' });
+    console.error('Database error:', error);
+    return res.status(500).json({ error: 'Erro ao adicionar a avaliação' });
   }
 });
+
+
+
+
+
 
 export default routes;
