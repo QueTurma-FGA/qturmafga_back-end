@@ -143,7 +143,55 @@ routes.post('/add-avaliacao', async (req, res) => {
 });
 
 
+routes.get('/average-avaliacoes/:professorId', async (req, res) => {
+  const { professorId } = req.params;
 
+  try {
+    // Buscar todas as avaliações do professor pelo professorId
+    const avaliacoes = await prisma.avaliacao.findMany({
+      where: { professorId },
+    });
+
+    // Se não houver avaliações, retornar média 1
+    if (avaliacoes.length === 0) {
+      const professor = await prisma.professor.findUnique({
+        where: { email: professorId },
+      });
+      if (!professor) {
+        return res.status(404).json({ error: 'Professor não encontrado' });
+      }
+      return res.json({ professorId, mediaGeral: "1.00" });
+    }
+
+    // Calcular a média das avaliações do professor
+    let total = 0;
+    avaliacoes.forEach(avaliacao => {
+      total += (
+        avaliacao.didatica +
+        avaliacao.metodologia +
+        avaliacao.coerenciaDeAvaliacao +
+        avaliacao.disponibilidade +
+        avaliacao.materiaisDeApoio
+      );
+    });
+
+    const mediaGeral = (total / (avaliacoes.length * 5)).toFixed(2);
+
+    // Buscar o email do professor
+    const professor = await prisma.professor.findUnique({
+      where: { email: professorId },
+    });
+
+    if (!professor) {
+      return res.status(404).json({ error: 'Professor não encontrado' });
+    }
+
+    return res.json({ professorId, mediaGeral });
+  } catch (error) {
+    console.error('Erro ao calcular a média das avaliações:', error);
+    return res.status(500).json({ error: 'Erro ao calcular a média das avaliações' });
+  }
+});
 
 
 
