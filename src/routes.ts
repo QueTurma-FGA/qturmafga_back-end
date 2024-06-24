@@ -116,14 +116,14 @@ routes.post('/add-avaliacao', async (req, res) => {
 
   console.log('Received data:', req.body);
 
-  // Validação básica dos campos obrigatórios
+  
   if (!materiaId || !professorId || didatica == null || metodologia == null || coerenciaDeAvaliacao == null || disponibilidade == null || materiaisDeApoio == null) {
     console.error('Validation failed:', { materiaId, professorId, didatica, metodologia, coerenciaDeAvaliacao, disponibilidade, materiaisDeApoio });
     return res.status(400).json({ error: 'Todos os campos são obrigatórios' });
   }
 
   try {
-    // Cria uma nova avaliação no banco de dados
+  
     const avaliacao = await prisma.avaliacao.create({
       data: {
         materiaId,
@@ -147,12 +147,12 @@ routes.get('/average-avaliacoes/:professorId', async (req, res) => {
   const { professorId } = req.params;
 
   try {
-    // Buscar todas as avaliações do professor pelo professorId
+    
     const avaliacoes = await prisma.avaliacao.findMany({
       where: { professorId },
     });
 
-    // Se não houver avaliações, retornar média 1
+    
     if (avaliacoes.length === 0) {
       const professor = await prisma.professor.findUnique({
         where: { email: professorId },
@@ -163,7 +163,7 @@ routes.get('/average-avaliacoes/:professorId', async (req, res) => {
       return res.json({ professorId, mediaGeral: "1.00" });
     }
 
-    // Calcular a média das avaliações do professor
+    
     let total = 0;
     avaliacoes.forEach(avaliacao => {
       total += (
@@ -177,7 +177,7 @@ routes.get('/average-avaliacoes/:professorId', async (req, res) => {
 
     const mediaGeral = (total / (avaliacoes.length * 5)).toFixed(2);
 
-    // Buscar o email do professor
+    
     const professor = await prisma.professor.findUnique({
       where: { email: professorId },
     });
