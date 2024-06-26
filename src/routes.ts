@@ -30,21 +30,6 @@ routes.get('/list-all-professors', async (req, res) => {
   return res.json(professores);
 });
 
-routes.post('/register-many-professors', async (req, res) => {
-  const allProfessores = todosOsProfessores;
-
-  if (!allProfessores.length) {
-    return res.json({ message: "Não há professores para serem cadastrados!" });
-  }
-
-  await prisma.professor.createMany({
-    data: todosOsProfessores,
-  });
-
-  return res.json({ message: 'Cadastro de professores realizado com sucesso!' });
-});
-
-
 routes.get('/get-professor/:email', async (req, res) => {
   const { email } = req.params;
 
@@ -111,88 +96,77 @@ routes.get('/list-professors-of-turma/:materiaId', async (req, res) => {
 });
 
 
-routes.post('/add-avaliacao', async (req, res) => {
-  const { materiaId, professorId, didatica, metodologia, coerenciaDeAvaliacao, disponibilidade, materiaisDeApoio } = req.body;
 
-  console.log('Received data:', req.body);
+routes.post('/create-avaliacao', async (req, res) => {
+  const { professorId, didatica, metodologia, coerenciaDeAvaliacao, disponibilidade, materiaisDeApoio } = req.body;
 
-  
-  if (!materiaId || !professorId || didatica == null || metodologia == null || coerenciaDeAvaliacao == null || disponibilidade == null || materiaisDeApoio == null) {
-    console.error('Validation failed:', { materiaId, professorId, didatica, metodologia, coerenciaDeAvaliacao, disponibilidade, materiaisDeApoio });
+  if (!professorId || didatica === undefined || metodologia === undefined || coerenciaDeAvaliacao === undefined || disponibilidade === undefined || materiaisDeApoio === undefined) {
     return res.status(400).json({ error: 'Todos os campos são obrigatórios' });
   }
 
   try {
-  
-    const avaliacao = await prisma.avaliacao.create({
+    const novaAvaliacao = await prisma.avaliacao.create({
       data: {
-        materiaId,
         professorId,
         didatica,
         metodologia,
         coerenciaDeAvaliacao,
         disponibilidade,
-        materiaisDeApoio,
+        materiaisDeApoio
       },
     });
-    return res.status(201).json(avaliacao);
+
+    return res.status(201).json(novaAvaliacao);
   } catch (error) {
-    console.error('Database error:', error);
-    return res.status(500).json({ error: 'Erro ao adicionar a avaliação' });
+    console.error('Erro ao criar a avaliação:', error);
+    return res.status(500).json({ error: 'Erro ao criar a avaliação' });
   }
 });
 
 
-routes.get('/average-avaliacoes/:professorId', async (req, res) => {
-  const { professorId } = req.params;
-
+routes.get('/media-avaliacoes', async (req, res) => {
   try {
-    
+    // Buscar todas as avaliações
     const avaliacoes = await prisma.avaliacao.findMany({
-      where: { professorId },
+      include: {
+        professor: true, 
+      },
     });
 
     
     if (avaliacoes.length === 0) {
-      const professor = await prisma.professor.findUnique({
-        where: { email: professorId },
-      });
-      if (!professor) {
-        return res.status(404).json({ error: 'Professor não encontrado' });
-      }
-      return res.json({ professorId, mediaGeral: "1.00" });
+      return res.json({ media: 1, professorEmail: '' });
     }
 
-    
-    let total = 0;
-    avaliacoes.forEach(avaliacao => {
-      total += (
-        avaliacao.didatica +
-        avaliacao.metodologia +
-        avaliacao.coerenciaDeAvaliacao +
-        avaliacao.disponibilidade +
-        avaliacao.materiaisDeApoio
-      );
-    });
+ 
+    const totalAvaliacoes = avaliacoes.length;
+    const totalGeral = avaliacoes.reduce((acc, avaliacao) => {
+      return acc + ((avaliacao.didatica + avaliacao.metodologia + avaliacao.coerenciaDeAvaliacao + avaliacao.disponibilidade + avaliacao.materiaisDeApoio) / 5);
+    }, 0);
 
-    const mediaGeral = (total / (avaliacoes.length * 5)).toFixed(2);
+    const mediaGeral = totalGeral / totalAvaliacoes;
 
     
-    const professor = await prisma.professor.findUnique({
-      where: { email: professorId },
-    });
+    const mediaEscala5 = Math.min(Math.max(mediaGeral, 1), 5);
 
-    if (!professor) {
-      return res.status(404).json({ error: 'Professor não encontrado' });
-    }
+  
+    const professorEmail = avaliacoes.length > 0 ? avaliacoes[0].professor.email : '';
 
-    return res.json({ professorId, mediaGeral });
+    return res.json({ media: mediaEscala5, professorEmail });
   } catch (error) {
     console.error('Erro ao calcular a média das avaliações:', error);
     return res.status(500).json({ error: 'Erro ao calcular a média das avaliações' });
   }
 });
 
-
-
 export default routes;
+
+
+
+
+
+
+
+
+
+
