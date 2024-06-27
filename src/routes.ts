@@ -124,21 +124,22 @@ routes.post('/create-avaliacao', async (req, res) => {
 });
 
 
-routes.get('/media-avaliacoes', async (req, res) => {
+
+routes.get('/media-avaliacao/:email', async (req, res) => {
+  const { email } = req.params;
+
   try {
-    // Buscar todas as avaliações
+    
     const avaliacoes = await prisma.avaliacao.findMany({
-      include: {
-        professor: true, 
-      },
+      where: { professorId: email }
     });
 
-    
+   
     if (avaliacoes.length === 0) {
-      return res.json({ media: 1, professorEmail: '' });
+      return res.json({ media: 1, professorEmail: email });
     }
 
- 
+   
     const totalAvaliacoes = avaliacoes.length;
     const totalGeral = avaliacoes.reduce((acc, avaliacao) => {
       return acc + ((avaliacao.didatica + avaliacao.metodologia + avaliacao.coerenciaDeAvaliacao + avaliacao.disponibilidade + avaliacao.materiaisDeApoio) / 5);
@@ -146,18 +147,16 @@ routes.get('/media-avaliacoes', async (req, res) => {
 
     const mediaGeral = totalGeral / totalAvaliacoes;
 
-    
+   
     const mediaEscala5 = Math.min(Math.max(mediaGeral, 1), 5);
 
-  
-    const professorEmail = avaliacoes.length > 0 ? avaliacoes[0].professor.email : '';
-
-    return res.json({ media: mediaEscala5, professorEmail });
+    return res.json({ media: mediaEscala5, professorEmail: email });
   } catch (error) {
     console.error('Erro ao calcular a média das avaliações:', error);
     return res.status(500).json({ error: 'Erro ao calcular a média das avaliações' });
   }
 });
+
 
 export default routes;
 
