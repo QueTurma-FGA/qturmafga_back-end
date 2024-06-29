@@ -153,11 +153,10 @@ routes.get('/media-avaliacoes/:email', async (req, res) => {
   }
 });
 
-routes.get('/avaliacoes-professor/:email', async (req, res) => {
-  const { email } = req.params;
+routes.get('/avaliacoes-professor/:email/:criterio', async (req, res) => {
+  const { email, criterio } = req.params;
 
   try {
-   
     const professor = await prisma.professor.findUnique({
       where: { email }
     });
@@ -166,25 +165,43 @@ routes.get('/avaliacoes-professor/:email', async (req, res) => {
       return res.status(404).json({ error: 'Professor não encontrado' });
     }
 
-    
     const avaliacoes = await prisma.avaliacao.findMany({
       where: { professorId: email }
     });
 
-    
     if (avaliacoes.length === 0) {
-      return res.json({ message: 'Nenhuma avaliação encontrada para este professor' });
+      return res.json(0);
     }
 
-    return res.json({ professorEmail: email, avaliacoes });
+    const validCriteria = [
+      'didatica',
+      'metodologia',
+      'coerenciaDeAvaliacao',
+      'disponibilidade',
+      'materiaisDeApoio'
+    ];
+
+    if (!validCriteria.includes(criterio)) {
+      return res.status(400).json({ error: 'Critério inválido' });
+    }
+
+    const total = avaliacoes.reduce((sum, avaliacao) => {
+      return sum + avaliacao[criterio];
+    }, 0);
+
+    const media = (total / avaliacoes.length).toFixed(2);
+
+    return res.json(parseFloat(media));
   } catch (error) {
     console.error('Erro ao listar as avaliações do professor:', error);
     return res.status(500).json({ error: 'Erro ao listar as avaliações do professor' });
   }
 });
 
-
 export default routes;
+
+
+
 
 
 
