@@ -125,7 +125,7 @@ routes.post('/create-avaliacao', async (req, res) => {
 
 
 
-routes.get('/media-avaliacao/:email', async (req, res) => {
+routes.get('/media-avaliacoes/:email', async (req, res) => {
   const { email } = req.params;
 
   try {
@@ -134,30 +134,56 @@ routes.get('/media-avaliacao/:email', async (req, res) => {
       where: { professorId: email }
     });
 
-   
+    
     if (avaliacoes.length === 0) {
-      return res.json({ media: 1, professorEmail: email });
+      return res.json({ professorEmail: email, mediaGeral: 0 });
     }
 
-   
-    const totalAvaliacoes = avaliacoes.length;
-    const totalGeral = avaliacoes.reduce((acc, avaliacao) => {
-      return acc + ((avaliacao.didatica + avaliacao.metodologia + avaliacao.coerenciaDeAvaliacao + avaliacao.disponibilidade + avaliacao.materiaisDeApoio) / 5);
+    
+    const total = avaliacoes.reduce((sum, avaliacao) => {
+      return sum + avaliacao.didatica + avaliacao.metodologia + avaliacao.coerenciaDeAvaliacao + avaliacao.disponibilidade + avaliacao.materiaisDeApoio;
     }, 0);
 
-    const mediaGeral = totalGeral / totalAvaliacoes;
+    const mediaGeral = (total / (avaliacoes.length * 5)).toFixed(2);
 
-   
-    const mediaEscala5 = Math.min(Math.max(mediaGeral, 1), 5);
-
-    return res.json({ media: mediaEscala5, professorEmail: email });
+    return res.json({ professorEmail: email, mediaGeral: parseFloat(mediaGeral) });
   } catch (error) {
-    console.error('Erro ao calcular a média das avaliações:', error);
-    return res.status(500).json({ error: 'Erro ao calcular a média das avaliações' });
+    console.error('Erro ao calcular a média das avaliações do professor:', error);
+    return res.status(500).json({ error: 'Erro ao calcular a média das avaliações do professor' });
   }
 });
 
-// Mudança boba
+routes.get('/avaliacoes-professor/:email', async (req, res) => {
+  const { email } = req.params;
+
+  try {
+   
+    const professor = await prisma.professor.findUnique({
+      where: { email }
+    });
+
+    if (!professor) {
+      return res.status(404).json({ error: 'Professor não encontrado' });
+    }
+
+    
+    const avaliacoes = await prisma.avaliacao.findMany({
+      where: { professorId: email }
+    });
+
+    
+    if (avaliacoes.length === 0) {
+      return res.json({ message: 'Nenhuma avaliação encontrada para este professor' });
+    }
+
+    return res.json({ professorEmail: email, avaliacoes });
+  } catch (error) {
+    console.error('Erro ao listar as avaliações do professor:', error);
+    return res.status(500).json({ error: 'Erro ao listar as avaliações do professor' });
+  }
+});
+
+
 export default routes;
 
 
